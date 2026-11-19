@@ -1,0 +1,58 @@
+BOREMAN STEP 25A - DATASET READINESS AUDIT
+=======================================================
+Input file: outputs\step23_modelling_readiness\01_all_records_with_readiness_labels.csv
+Total rows: 51,437
+Total columns: 40
+Timestamp candidates: ['Timestamp', 'timestamp_original', 'timestamp_ist', 'timestamp_namibia', 'flag_invalid_timestamp', 'flag_duplicate_timestamp_review']
+Source-row candidates: ['source_row_number']
+Sensor columns detected: ['tds', 'humidity', 'Temperature']
+
+COLUMN NAMES:
+- source_row_number (int64)
+- Timestamp (str)
+- tds (float64)
+- humidity (float64)
+- Temperature (float64)
+- timestamp_original (str)
+- tds_original (float64)
+- humidity_original (float64)
+- Temperature_original (float64)
+- timestamp_ist (str)
+- timestamp_namibia (str)
+- flag_invalid_timestamp (bool)
+- flag_confirmed_testing (bool)
+- flag_constant_plateau (bool)
+- flag_tds_zero (bool)
+- flag_tds_negative (bool)
+- flag_humidity_outside_0_100 (bool)
+- data_classification (str)
+- flag_missing_sensor_value (bool)
+- eligible_for_environmental_analysis (bool)
+- quality_control_reasons (str)
+- quality_control_status (str)
+- step20_row_number (int64)
+- flag_tds_iqr_review (bool)
+- flag_humidity_iqr_review (bool)
+- flag_Temperature_iqr_review (bool)
+- flag_any_iqr_review (bool)
+- step21_row_number (int64)
+- flag_tds_abrupt_change_review (bool)
+- flag_humidity_abrupt_change_review (bool)
+- flag_Temperature_abrupt_change_review (bool)
+- flag_any_abrupt_change_review (bool)
+- flag_duplicate_timestamp_review (bool)
+- analysis_group (str)
+- clock_period (str)
+- namibia_date (str)
+- namibia_hour (str)
+- flag_any_non_plateau_review (bool)
+- modelling_readiness_group (str)
+- proposed_temporal_split (str)
+
+IMPORTANT:
+- This audit is read-only.
+- No observations were deleted or modified.
+- No missing values were imputed.
+- No model was trained.
+- Timestamp parsing in this audit is diagnostic only.
+- Review the CSV outputs before approving feature preparation.

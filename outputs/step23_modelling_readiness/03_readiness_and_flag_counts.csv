@@ -1,0 +1,4 @@
+modelling_readiness_group,record_count,distinct_namibia_dates,start_date,end_date,flag_constant_plateau_count,flag_tds_zero_count,flag_tds_negative_count,flag_humidity_outside_0_100_count,flag_any_iqr_review_count,flag_any_abrupt_change_review_count,flag_duplicate_timestamp_review_count
+PLATEAU_REVIEW_EXCLUDE_FROM_PRIMARY,30430,27,2026-10-02,2026-11-07,30430,156,0,0,1571,7,0
+PRIMARY_CANDIDATE_NO_CURRENT_REVIEW_FLAGS,17253,21,2026-10-04,2026-10-29,0,0,0,0,0,0,0
+SECONDARY_CANDIDATE_REVIEW_FLAGS_PRESENT,3754,25,2026-10-02,2026-10-31,0,166,0,0,2714,1198,2

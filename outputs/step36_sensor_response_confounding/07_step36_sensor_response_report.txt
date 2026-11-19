@@ -1,0 +1,32 @@
+BOREMAN STEP 36 - SENSOR RESPONSE AND ENVIRONMENTAL CONFOUNDING INVESTIGATION
+==================================================================================
+Input rows: 51437
+Unique primary TRAIN observations analysed: 11937
+TRAIN dates verified: 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-11, 2026-10-12, 2026-10-13, 2026-10-14
+
+METHOD
+- Strictly filtered proposed_temporal_split == TRAIN.
+- Strictly filtered modelling_readiness_group containing PRIMARY.
+- Used canonical timestamp_namibia converted to Africa/Windhoek.
+- Used each unique source_row_number once.
+- Calculated raw TDS-temperature and TDS-humidity correlations by fold and fixed day/night band.
+- Calculated residual correlations after removing date and hour-of-day group means.
+- Calculated consecutive first-difference correlations only within the same date and intervals <=5 minutes.
+- Summarised actual sampling intervals and recorded metadata gaps.
+- No model training, imputation, interpolation, calibration claims or source-data modification.
+
+INTERPRETATION LIMITATIONS
+- Correlation and adjusted correlation do not establish causation.
+- Date/hour adjustment removes group means only; it does not control every environmental or operational factor.
+- SHT20 temperature must not be treated as water temperature without confirmed placement.
+- The dataset does not establish whether TDS temperature compensation is enabled or how it is configured.
+- TDS readings alone cannot establish water safety or laboratory accuracy.
+- First differences are sensitive to measurement noise and sampling intervals.
+
+OUTPUTS
+- 01_raw_sensor_correlations_by_fold_and_timeband.csv
+- 02_date_hour_adjusted_associations.csv
+- 03_consecutive_change_correlations.csv
+- 04_sampling_interval_by_train_date.csv
+- 05_sensor_summary_by_fold_and_timeband.csv
+- 06_sensor_metadata_and_validation_gaps.csv

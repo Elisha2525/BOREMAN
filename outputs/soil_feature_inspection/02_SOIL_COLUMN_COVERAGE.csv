@@ -1,0 +1,422 @@
+﻿file_type,column_name,total_rows,nonblank_count,missing_or_blank_count,nonblank_percentage,numeric_parse_count,numeric_parse_percentage_of_all_rows,unique_nonblank_values
+profiles,PRID,439,439,0,100.0,0,0.0,439
+profiles,Dataset,439,439,0,100.0,0,0.0,14
+profiles,PRID Let,439,439,0,100.0,0,0.0,16
+profiles,PRID Dig,439,439,0,100.0,437,99.54,292
+profiles,ALT PRID,439,231,208,52.62,0,0.0,231
+profiles,"Date 
+(YYYY-MM-DD)",439,320,119,72.89,41,9.34,58
+profiles,"Date 
+(DD-Mon-YY)",439,238,201,54.21,0,0.0,56
+profiles,"Date 
+(DD/MM/YYYY)",439,238,201,54.21,0,0.0,56
+profiles,Year,439,320,119,72.89,320,72.89,9
+profiles,Month,439,279,160,63.55,279,63.55,11
+profiles,Day,439,238,201,54.21,238,54.21,27
+profiles,Coordinate Reference System,439,439,0,100.0,0,0.0,2
+profiles,Latitude,439,439,0,100.0,439,100.0,416
+profiles,Longitude,439,439,0,100.0,439,100.0,429
+profiles,"Elevation m 
+GPS",439,303,136,69.02,303,69.02,162
+profiles,"Elevation m
+SRTM",439,422,17,96.13,422,96.13,266
+profiles,Country ID,439,0,439,0.0,0,0.0,0
+profiles,Data Origin,439,439,0,100.0,0,0.0,11
+profiles,Surveyor(s),439,431,8,98.18,0,0.0,27
+profiles,Status,439,218,221,49.66,0,0.0,6
+profiles,Profile Classification Original,439,187,252,42.6,0,0.0,81
+profiles,Profile Classification Original Code ,439,130,309,29.61,0,0.0,47
+profiles,Classification System,439,319,120,72.67,0,0.0,2
+profiles,WRB2015 Reclassification RSG ,439,187,252,42.6,0,0.0,7
+profiles,WRB2015 Reclassification Principal Qualifiers ,439,158,281,35.99,0,0.0,38
+profiles,WRB2015 Reclassification Supplementary Qualifiers,439,35,404,7.97,0,0.0,6
+profiles,WRB Classification by S Nambambi,439,14,425,3.19,0,0.0,12
+profiles,Degree Square,439,422,17,96.13,422,96.13,5
+profiles,Quarter Degree Square,439,422,17,96.13,0,0.0,47
+profiles,Farm No ,439,420,19,95.67,0,0.0,143
+profiles,Farm Name ,439,410,29,93.39,2,0.46,135
+profiles,Location,439,253,186,57.63,2,0.46,81
+profiles,"Diagnostic Horizon / 
+Property / Material",439,2,437,0.46,0,0.0,1
+profiles,Present Weather Code,439,0,439,0.0,0,0.0,0
+profiles,Present Weather Desc,439,0,439,0.0,0,0.0,0
+profiles,Past Weather Code,439,0,439,0.0,0,0.0,0
+profiles,Past Weather Desc,439,0,439,0.0,0,0.0,0
+profiles,"Soil Temperature Regime
+Code",439,414,25,94.31,0,0.0,1
+profiles,Soil Temperature Regime Desc,439,414,25,94.31,0,0.0,1
+profiles,"Soil Moisture Regime 
+Code",439,0,439,0.0,0,0.0,0
+profiles,"Soil Moisture Regime 
+Desc",439,0,439,0.0,0,0.0,0
+profiles,Slope Gradient Class ,439,223,216,50.8,161,36.67,15
+profiles,Slope Form Vert,439,70,369,15.95,0,0.0,3
+profiles,Slope Form Hor,439,70,369,15.95,0,0.0,3
+profiles,"Slope Gradient 
+Measured %",439,215,224,48.97,75,17.08,25
+profiles,Slope Gradient Desc,439,222,217,50.57,0,0.0,15
+profiles,"Gradient % (for landform) 
+from SRTM",439,422,17,96.13,0,0.0,3
+profiles,Slope % SRTM,439,422,17,96.13,422,96.13,23
+profiles,Relief m/km,439,0,439,0.0,0,0.0,0
+profiles,Drainage density,439,0,439,0.0,0,0.0,0
+profiles,Present Land Use Code,439,172,267,39.18,0,0.0,5
+profiles,Present land Use Desc,439,189,250,43.05,0,0.0,8
+profiles,Past Land Use Code,439,0,439,0.0,0,0.0,0
+profiles,Past Land Use Desc,439,0,439,0.0,0,0.0,0
+profiles,Grazer Type,439,51,388,11.62,0,0.0,5
+profiles,Human Influence Code,439,12,427,2.73,0,0.0,2
+profiles,Human Influence Desc,439,12,427,2.73,0,0.0,3
+profiles,Rock Outcrops Abundance/Cover Code,439,101,338,23.01,0,0.0,4
+profiles,Rock Outcrops Cover %,439,97,342,22.1,87,19.82,3
+profiles,Rock Outcrops Cover Desc,439,101,338,23.01,0,0.0,4
+profiles,Rock Outcrops - m between,439,0,439,0.0,0,0.0,0
+profiles,Rock Outcrops Type,439,14,425,3.19,0,0.0,6
+profiles,Coarse Surface Fragments Cover Code,439,128,311,29.16,0,0.0,5
+profiles,Coarse Surface Fragments Cover %,439,128,311,29.16,85,19.36,5
+profiles,Coarse Surface Fragments Cover Desc,439,128,311,29.16,0,0.0,5
+profiles,Coarse Surface Fragments Size Code,439,12,427,2.73,0,0.0,3
+profiles,Coarse Surface Fragments Size cm,439,12,427,2.73,0,0.0,3
+profiles,Coarse Surface Fragments Size Desc,439,12,427,2.73,0,0.0,3
+profiles,Surface Coarse Surface Fragments Type,439,40,399,9.11,0,0.0,10
+profiles,Erosion Type Code,439,116,323,26.42,0,0.0,10
+profiles,Erosion Type,439,116,323,26.42,0,0.0,10
+profiles,Erosion Area Affected Code,439,35,404,7.97,35,7.97,5
+profiles,Erosion Area Affected %,439,35,404,7.97,6,1.37,5
+profiles,Erosion Degree Code,439,106,333,24.15,0,0.0,6
+profiles,Erosion Degree Desc,439,106,333,24.15,0,0.0,6
+profiles,Erosion Status Code,439,0,439,0.0,0,0.0,0
+profiles,Erosion Status Desc,439,0,439,0.0,0,0.0,0
+profiles,Surface Sealing Thickness Code,439,97,342,22.1,0,0.0,4
+profiles,Surface Sealing Thickness mm,439,97,342,22.1,12,2.73,4
+profiles,Surface Sealing Thickness Desc,439,97,342,22.1,0,0.0,4
+profiles,Surface Sealing Hardness Code,439,85,354,19.36,0,0.0,2
+profiles,Surface Sealing Hardness Desc,439,85,354,19.36,0,0.0,2
+profiles,Surface Cracks Width cm,439,98,341,22.32,96,21.87,3
+profiles,Surface Cracks Width Code,439,96,343,21.87,0,0.0,3
+profiles,Distance Between Surface Cracks  (m),439,1,438,0.23,0,0.0,1
+profiles,Salt (Surface Salinity),439,75,364,17.08,0,0.0,2
+profiles,Bleached Sand Code,439,0,439,0.0,0,0.0,0
+profiles,Bleached Sand %,439,0,439,0.0,0,0.0,0
+profiles,Bleached Sand Desc,439,0,439,0.0,0,0.0,0
+profiles,Flooded >2 weeks/a,439,73,366,16.63,0,0.0,2
+profiles,Major Landform Code (2nd level) ,439,191,248,43.51,0,0.0,6
+profiles,Major Landform Desc,439,191,248,43.51,0,0.0,6
+profiles,Minor Landform desc,439,118,321,26.88,0,0.0,14
+profiles,Position code,439,95,344,21.64,0,0.0,6
+profiles,Position Desc,439,93,346,21.18,0,0.0,8
+profiles,Vegetation,439,173,266,39.41,0,0.0,8
+profiles,Land Cover,439,175,264,39.86,0,0.0,12
+profiles,Parent Material,439,48,391,10.93,0,0.0,4
+profiles,Lithology,439,35,404,7.97,0,0.0,6
+profiles,Drainage Desc,439,154,285,35.08,0,0.0,7
+profiles,Drainage Code,439,154,285,35.08,0,0.0,7
+profiles,Geology,439,0,439,0.0,0,0.0,0
+profiles,Effective Depth,439,144,295,32.8,55,12.53,60
+profiles,Depth Class,439,144,295,32.8,0,0.0,5
+profiles,Biological activity,439,0,439,0.0,0,0.0,0
+profiles,Notes,439,107,332,24.37,0,0.0,107
+profiles,DISTANCE_FROM_OKAHANDJA_KM,439,439,0,100.0,439,100.0,438
+lab_horizons,PRID,1172,1172,0,100.0,0,0.0,438
+lab_horizons,HONU,1172,1172,0,100.0,1172,100.0,10
+lab_horizons,Dataset,1172,1172,0,100.0,0,0.0,14
+lab_horizons,Latitude,1172,1172,0,100.0,1172,100.0,418
+lab_horizons,Longitude,1172,1172,0,100.0,1172,100.0,429
+lab_horizons,Laboratory,1172,303,869,25.85,0,0.0,3
+lab_horizons,Soil Lab ID,1172,303,869,25.85,272,23.21,288
+lab_horizons,Representative Profile,1172,0,1172,0.0,0,0.0,0
+lab_horizons,Hor thickness cm [contains >],1172,937,235,79.95,921,78.58,101
+lab_horizons,Upper Depth cm [contains >],1172,1046,126,89.25,1045,89.16,100
+lab_horizons,Lower Depth cm [contains >],1172,1024,148,87.37,924,78.84,176
+lab_horizons,Hor thickness cm ,1172,937,235,79.95,921,78.58,101
+lab_horizons,Upper Depth cm ,1172,1046,126,89.25,1045,89.16,100
+lab_horizons,Lower Depth cm ,1172,1024,148,87.37,1024,87.37,107
+lab_horizons,Horizon Code Short ,1172,670,502,57.17,0,0.0,5
+lab_horizons,Dominant Sand Grade Code,1172,24,1148,2.05,0,0.0,4
+lab_horizons,Dominant Sand Grade Desc,1172,24,1148,2.05,0,0.0,4
+lab_horizons,"Sand %
+< 53 µm 
+(SDTO)",1172,541,631,46.16,541,46.16,283
+lab_horizons,"Silt % 
+[2-53µm]
+(STPC)",1172,291,881,24.83,291,24.83,188
+lab_horizons,"Clay % 
+[< 2 µm] 
+(CLPC)",1172,291,881,24.83,291,24.83,171
+lab_horizons,Silt + Clay %,1172,541,631,46.16,541,46.16,292
+lab_horizons,"Texture  Code 
+(PSCL)",1172,291,881,24.83,0,0.0,6
+lab_horizons,Texture  Desc,1172,291,881,24.83,0,0.0,9
+lab_horizons,Bulk Density kg/dm3,1172,203,969,17.32,203,17.32,47
+lab_horizons,pH CaCl2 (PHCA) [2 soil:5 CaCl2 suspension],1172,254,918,21.67,254,21.67,93
+lab_horizons,pH water (PHAQ),1172,270,902,23.04,270,23.04,193
+lab_horizons,pH water other lab,1172,0,1172,0.0,0,0.0,0
+lab_horizons,pH KCl (PHKC),1172,0,1172,0.0,0,0.0,0
+lab_horizons,Electrical Conductivity µS/cm [2 soil:5 water suspension] (EL25),1172,473,699,40.36,473,40.36,148
+lab_horizons,Electrical Conductivity dS/m [2 soil:5 water suspension] (EL25),1172,473,699,40.36,473,40.36,148
+lab_horizons,Electrical Conductivity µS/cm [Saturated Paste Extract] (ELCO),1172,25,1147,2.13,25,2.13,25
+lab_horizons,Electrical Conductivity dS/m [Saturated Paste Extract] (ELCO),1172,25,1147,2.13,25,2.13,25
+lab_horizons,"Ca % [Exchangeable & Soluble; Mehlich #3, ICP-AES]",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"Mg % [Exchangeable & Soluble; Mehlich #3, ICP-AES]",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"K % [Exchangeable & Soluble; Mehlich #3, ICP-AES]",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"Na % [Exchangeable & Soluble; Mehlich #3, ICP-AES]",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"Ca mg/kg [Extractable; 1M NH4acetate, AAS] (SOCA)",1172,223,949,19.03,223,19.03,186
+lab_horizons,"Mg mg/kg [Extractable; 1M NH4acetate, AAS] (SOMG)",1172,220,952,18.77,220,18.77,131
+lab_horizons,"K mg/kg [Extractable; 1M NH4acetate, AAS] (SOLK)",1172,220,952,18.77,220,18.77,144
+lab_horizons,"Na mg/kg [Extractable; 1M NH4acetate, AAS] (SONA)",1172,218,954,18.6,218,18.6,104
+lab_horizons,Cl mg/kg [Extractable] (SOCL),1172,25,1147,2.13,25,2.13,25
+lab_horizons,Chloride % [Extractable],1172,25,1147,2.13,25,2.13,25
+lab_horizons,SSO4 ppm,1172,25,1147,2.13,25,2.13,25
+lab_horizons,Sulfate %,1172,25,1147,2.13,25,2.13,25
+lab_horizons,Soluble carbonate meq/l (SCO3),1172,4,1168,0.34,4,0.34,3
+lab_horizons,"Total Carbonate Equivalent g/kg
+(TCEQ)",1172,17,1155,1.45,17,1.45,5
+lab_horizons,Carbonate Estimate  %,1172,285,887,24.32,269,22.95,5
+lab_horizons,"Exchangeable Calcium\
+cmol(+)/kg 
+(EXCA)",1172,66,1106,5.63,66,5.63,60
+lab_horizons,"Exchangeable Magnesium
+cmol(+)/kg 
+(EXMG)",1172,66,1106,5.63,66,5.63,55
+lab_horizons,"Exchangeable Potassium
+cmol(+)/kg 
+(EXCK)",1172,65,1107,5.55,65,5.55,55
+lab_horizons,"Exchangeable Sodium
+cmol(+)/kg 
+(EXNA)",1172,66,1106,5.63,66,5.63,30
+lab_horizons,"CEC Effective 
+cmol(+)/kg
+[Sum of Exchangeable Bases]",1172,66,1106,5.63,66,5.63,66
+lab_horizons,"CEC Measured 
+cmol(+)/kg 
+",1172,118,1054,10.07,118,10.07,114
+lab_horizons,"Base Saturation Estimate 
+%
+[from pHwater]",1172,151,1021,12.88,100,8.53,3
+lab_horizons,"Base Saturation 
+% 
+[CECeffective/CECmeasured]",1172,66,1106,5.63,66,5.63,4
+lab_horizons,"Gypsum
+%",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"Gypsum 
+g/kg
+(GYPS)",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"Total Nitrogen  mg/kg
+(TOTN)",1172,254,918,21.67,254,21.67,105
+lab_horizons,"Total Nitrogen  g/kg
+(TOTN) Kjeldahl",1172,254,918,21.67,254,21.67,105
+lab_horizons,"Total Nitrogen %
+",1172,254,918,21.67,254,21.67,105
+lab_horizons,"Total Phosphorus mg/kg [Mehlich #3, ICP-AES]",1172,4,1168,0.34,4,0.34,4
+lab_horizons,Total P unknown method & unit,1172,0,1172,0.0,0,0.0,0
+lab_horizons,Phosphorus [Olsen] mg/kg,1172,216,956,18.43,216,18.43,116
+lab_horizons,"P2O5 mg/kg
+[Olsen; P x 2.291]",1172,216,956,18.43,216,18.43,117
+lab_horizons,Organic Carbon % LOI,1172,17,1155,1.45,17,1.45,17
+lab_horizons,Organic Carbon % WB,1172,504,668,43.0,504,43.0,187
+lab_horizons,Organic Carbon g/kg WB,1172,504,668,43.0,504,43.0,191
+lab_horizons,Organic Matter % [OC*1.74],1172,504,668,43.0,504,43.0,191
+lab_horizons,"Mn mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]",1172,4,1168,0.34,4,0.34,4
+lab_horizons,"Fe mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]",1172,4,1168,0.34,4,0.34,4
+lab_horizons,"Al mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]",1172,4,1168,0.34,4,0.34,4
+lab_horizons,Porosity Measured,1172,0,1172,0.0,0,0.0,0
+lab_horizons,"Fe_ox mg/g
+acid-oxalate extr",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"Al_ox mg/g
+acid-oxalate extr",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"Al
+mg/kg?
+",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"B
+mg/kg?
+",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"Cu
+mg/kg?
+",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"Fe
+mg/kg?
+",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"Mn
+mg/kg?
+",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"P  
+mg/kg?",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"S  
+mg/kg?
+",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"Zn
+mg/kg?
+",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"coSa
+%",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"meSa
+%",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"fiSa
+%",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"vfiSa
+%",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"coSi
+%",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"fiSi
+%",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"EC (1:5)
+mS/m",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"CaCO3
+g/kg",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"inorgC
+g/kg",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"totC
+g/kg",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"orgC
+g/kg
+CNS analyser",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"exchH
+cmol(-)/kg",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"exchAl
+cmol(-)/kg",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"BaseSat
+% 
+?",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"exchAcid
+cmol(+)/kg",1172,0,1172,0.0,0,0.0,0
+lab_horizons,totMo EPA 6010C?:2007,1172,0,1172,0.0,0,0.0,0
+lab_horizons,"totCd mg/kg
+EPA 6010C:2007",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"totPb mg/kg
+EPA 6010C:2007",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"totV mg/kg
+EPA  6020A:2007",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"totHg mg/kg
+EPA  6020A:2007",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"totCr mg/kg
+EPA 6010C:2007",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"totCo mg/kg
+EPA 6010C:2007",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"totNi mg/kg
+EPA 6010C:2007",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"totCu mg/kg
+EPA 6010C:2007",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"totZn mg/kg
+EPA 6010C:2007",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"totAs mg/kg
+EPA  6020A:2007",1172,0,1172,0.0,0,0.0,0
+lab_horizons,"totSb mg/kg
+EPA  6020A:2007",1172,0,1172,0.0,0,0.0,0
+field_horizons,PRID,1172,1172,0,100.0,0,0.0,438
+field_horizons,HONU,1172,1172,0,100.0,1172,100.0,10
+field_horizons,Dataset,1172,1172,0,100.0,0,0.0,14
+field_horizons,Latitude,1172,1172,0,100.0,1172,100.0,418
+field_horizons,Longitude,1172,1172,0,100.0,1172,100.0,429
+field_horizons,Hor thickness cm ,1172,937,235,79.95,921,78.58,101
+field_horizons,Upper Depth cm ,1172,1046,126,89.25,1045,89.16,100
+field_horizons,Lower Depth cm ,1172,1024,148,87.37,1024,87.37,107
+field_horizons,Diagnostic Horizon / Property / Material Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Diagnostic Horizon ,1172,0,1172,0.0,0,0.0,0
+field_horizons,Diagnostic Property,1172,1,1171,0.09,0,0.0,1
+field_horizons,Diagnostic Material,1172,1155,17,98.55,0,0.0,2
+field_horizons,Qualifier,1172,131,1041,11.18,0,0.0,2
+field_horizons,Horizon Code Short ,1172,670,502,57.17,0,0.0,5
+field_horizons,Horizon Code Original,1172,679,493,57.94,0,0.0,148
+field_horizons,Subordinate Horizon Code,1172,108,1064,9.22,0,0.0,11
+field_horizons,Lithology of R/C,1172,9,1163,0.77,0,0.0,4
+field_horizons,Horizon Transition Distinctness Code,1172,180,992,15.36,0,0.0,4
+field_horizons,Horizon Transition Distinctness Desc,1172,180,992,15.36,0,0.0,4
+field_horizons,Horizon Transition Distinctness cm,1172,180,992,15.36,0,0.0,4
+field_horizons,Horizon Transition Topography Code,1172,2,1170,0.17,0,0.0,1
+field_horizons,Horizon Transition Topography Desc,1172,2,1170,0.17,0,0.0,1
+field_horizons,Structure Type Code,1172,918,254,78.33,0,0.0,20
+field_horizons,Structure Type Desc,1172,918,254,78.33,0,0.0,20
+field_horizons,Structure Strength Code,1172,222,950,18.94,0,0.0,5
+field_horizons,Structure Strength Desc,1172,222,950,18.94,0,0.0,5
+field_horizons,Structure Size Code,1172,15,1157,1.28,0,0.0,3
+field_horizons,Structure Size Desc,1172,15,1157,1.28,0,0.0,3
+field_horizons,Coarse Fragments Abundance Code,1172,382,790,32.59,0,0.0,10
+field_horizons,Coarse Fragments Abundance Desc,1172,382,790,32.59,0,0.0,10
+field_horizons,Coarse Fragments Abundance %,1172,376,796,32.08,93,7.94,12
+field_horizons,Coarse Fragments Size Code,1172,108,1064,9.22,0,0.0,7
+field_horizons,Coarse Fragments Size Desc,1172,108,1064,9.22,0,0.0,7
+field_horizons,Coarse Fragments Size mm,1172,108,1064,9.22,0,0.0,7
+field_horizons,Course Fragments Shape Code,1172,3,1169,0.26,0,0.0,2
+field_horizons,Coarse Fragments Shape Desc,1172,3,1169,0.26,0,0.0,2
+field_horizons,Coarse Fragments Degree of Weathering,1172,0,1172,0.0,0,0.0,0
+field_horizons,Coarse Fragments Type,1172,3,1169,0.26,0,0.0,3
+field_horizons,Drainage Code,1172,297,875,25.34,0,0.0,7
+field_horizons,Drainage Desc,1172,297,875,25.34,0,0.0,7
+field_horizons,Field Texture Code,1172,177,995,15.1,0,0.0,10
+field_horizons,Field Texture Desc,1172,177,995,15.1,0,0.0,10
+field_horizons,Carbonate Estimate  %.1,1172,285,887,24.32,269,22.95,5
+field_horizons,Carbonate Reaction Code,1172,285,887,24.32,0,0.0,5
+field_horizons,Carbonate Reaction Desc,1172,285,887,24.32,0,0.0,5
+field_horizons,Secondary Carbonates Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Secondary Carbonates Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,"Munsell_col_moist
+",1172,398,774,33.96,0,0.0,60
+field_horizons,Hue_moist,1172,398,774,33.96,0,0.0,4
+field_horizons,Value_moist,1172,398,774,33.96,398,33.96,7
+field_horizons,Chroma_moist,1172,398,774,33.96,398,33.96,7
+field_horizons,Colour Moist Desc [Munsell],1172,387,785,33.02,0,0.0,29
+field_horizons,Munsell_col_dry,1172,40,1132,3.41,0,0.0,10
+field_horizons,Hue_dry,1172,40,1132,3.41,0,0.0,4
+field_horizons,Value_dry,1172,40,1132,3.41,40,3.41,3
+field_horizons,Chroma_dry,1172,40,1132,3.41,40,3.41,3
+field_horizons,"Colour Dry Desc 
+[Munsell]",1172,40,1132,3.41,0,0.0,5
+field_horizons,Mottling Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Vertic Properties,1172,0,1172,0.0,0,0.0,0
+field_horizons,properties for classification ,1172,43,1129,3.67,0,0.0,2
+field_horizons,CLAF,1172,26,1146,2.22,0,0.0,9
+field_horizons,LOWER LEVEL UNITS,1172,43,1129,3.67,0,0.0,7
+field_horizons,REFERENCE GROUP,1172,26,1146,2.22,0,0.0,6
+field_horizons,CLAV,1172,661,511,56.4,0,0.0,1
+field_horizons,ALT PRID,1172,17,1155,1.45,0,0.0,17
+field_horizons,Consistence Dry Code,1172,8,1164,0.68,0,0.0,3
+field_horizons,Consistence Dry Desc,1172,8,1164,0.68,0,0.0,3
+field_horizons,Consistence Moist Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Consistence Moist Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Consistence Wet - Stickiness Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Consistence Wet - Stickiness  Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Consistence Wet - Plasticity Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Consistence Wet - Plasticity Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Porosity Class Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Porosity Class Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Porosity Class %,1172,0,1172,0.0,0,0.0,0
+field_horizons,Voids Type Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Voids Type Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Voids Size Class,1172,0,1172,0.0,0,0.0,0
+field_horizons,Voids Size Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Voids Size mm,1172,0,1172,0.0,0,0.0,0
+field_horizons,Voids Abundance Class,1172,0,1172,0.0,0,0.0,0
+field_horizons,Voids Abundance Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Voids Abundance Number,1172,0,1172,0.0,0,0.0,0
+field_horizons,Coatings Nature Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Coatings Nature Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Coatings Form Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Coatings Form Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Coatings Location Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Coatings Location Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Cementation /  Compaction Nature Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Cementation / Compaction Nature Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Cementation /  Compaction Continuity Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Cementation / Compaction Continuity Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Cementation /  Compaction Fabric Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Cementation / Compaction Fabric Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Mineral Concentrations Nature Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Mineral Concentrations Nature Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Mineral Concentrations Abundance Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Mineral Concentrations Abundance Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Mineral Concentrations Abundance %,1172,0,1172,0.0,0,0.0,0
+field_horizons,Mineral Concentrations Size Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Mineral Concentrations Size Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Mineral Concentrations Shape Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Mineral Concentrations Shape Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Mineral Concentrations Hardness Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Mineral Concentrations Hardness Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Roots Abundance Code,1172,2,1170,0.17,0,0.0,1
+field_horizons,Roots Abundance Desc,1172,2,1170,0.17,0,0.0,1
+field_horizons,Roots Abundance No,1172,2,1170,0.17,0,0.0,1
+field_horizons,Roots Diameter Code,1172,2,1170,0.17,0,0.0,1
+field_horizons,Roots Diameter Desc,1172,2,1170,0.17,0,0.0,1
+field_horizons,Roots Diameter mm,1172,2,1170,0.17,0,0.0,1
+field_horizons,Biological Features Code,1172,0,1172,0.0,0,0.0,0
+field_horizons,Biological Features Desc,1172,0,1172,0.0,0,0.0,0
+field_horizons,Notes,1172,1,1171,0.09,0,0.0,1

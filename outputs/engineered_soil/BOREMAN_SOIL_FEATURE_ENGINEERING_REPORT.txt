@@ -1,0 +1,38 @@
+BOREMAN - SOIL FEATURE ENGINEERING REPORT
+=================================================================
+Input soil profiles: 439
+Input laboratory horizons: 1,172
+Input field horizons: 1,172
+Combined matched horizons: 1,172
+Engineered profile records: 439
+Numeric features identified: 23
+
+DEPTH HANDLING
+-----------------------------------------------------------------
+Only exact numeric depth values were parsed.
+Censored values such as >60 were not treated as exact depths.
+Topsoil: horizon midpoint <= 30 cm.
+Subsoil: horizon midpoint >30 and <=100 cm.
+Deep soil: horizon midpoint >100 cm.
+Unresolved depth intervals remain labelled DEPTH_UNRESOLVED.
+
+GROUNDWATER LINK
+-----------------------------------------------------------------
+Created from BOREMAN_BOREHOLE_NEAREST_SOIL.csv. Matched 2,279 of 2,279 rows.
+
+SCIENTIFIC LIMITATIONS
+-----------------------------------------------------------------
+Soil pH and soil EC are not groundwater pH and groundwater EC.
+Profile means are unweighted descriptive summaries.
+Nearest soil profiles are spatial proxies, not borehole samples.
+No missing measurements were imputed.
+No groundwater prediction model was trained.
+Original input files were not modified.
+
+OUTPUT FILES
+-----------------------------------------------------------------
+01_BOREMAN_ENGINEERED_HORIZON_FEATURES.csv
+02_BOREMAN_ENGINEERED_PROFILE_FEATURES.csv
+03_BOREMAN_DEPTH_RESOLVED_FEATURES.csv
+04_BOREMAN_GROUNDWATER_SOIL_FEATURE_LINK.csv (if created)
+05_ENGINEERED_FEATURE_COVERAGE.csv

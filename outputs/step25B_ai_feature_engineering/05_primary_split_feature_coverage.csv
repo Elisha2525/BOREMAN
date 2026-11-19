@@ -1,0 +1,4 @@
+proposed_temporal_split,record_count,first_date,last_date,percentage
+TEST,2505,2026-10-17,2026-10-29,14.5192
+TRAIN,11948,2026-10-04,2026-10-14,69.2517
+VALIDATION,2800,2026-10-15,2026-10-16,16.2291

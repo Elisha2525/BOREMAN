@@ -1,0 +1,77 @@
+PRID,HONU,Dataset,Latitude,Longitude,Laboratory,Soil Lab ID,Representative Profile,Hor thickness cm [contains >],Upper Depth cm [contains >],Lower Depth cm [contains >],Hor thickness cm ,Upper Depth cm ,Lower Depth cm ,Horizon Code Short ,Dominant Sand Grade Code,Dominant Sand Grade Desc,"Sand %
+< 53 µm 
+(SDTO)","Silt % 
+[2-53µm]
+(STPC)","Clay % 
+[< 2 µm] 
+(CLPC)",Silt + Clay %,"Texture  Code 
+(PSCL)",Texture  Desc,Bulk Density kg/dm3,pH CaCl2 (PHCA) [2 soil:5 CaCl2 suspension],pH water (PHAQ),pH water other lab,pH KCl (PHKC),Electrical Conductivity µS/cm [2 soil:5 water suspension] (EL25),Electrical Conductivity dS/m [2 soil:5 water suspension] (EL25),Electrical Conductivity µS/cm [Saturated Paste Extract] (ELCO),Electrical Conductivity dS/m [Saturated Paste Extract] (ELCO),"Ca % [Exchangeable & Soluble; Mehlich #3, ICP-AES]","Mg % [Exchangeable & Soluble; Mehlich #3, ICP-AES]","K % [Exchangeable & Soluble; Mehlich #3, ICP-AES]","Na % [Exchangeable & Soluble; Mehlich #3, ICP-AES]","Ca mg/kg [Extractable; 1M NH4acetate, AAS] (SOCA)","Mg mg/kg [Extractable; 1M NH4acetate, AAS] (SOMG)","K mg/kg [Extractable; 1M NH4acetate, AAS] (SOLK)","Na mg/kg [Extractable; 1M NH4acetate, AAS] (SONA)",Cl mg/kg [Extractable] (SOCL),Chloride % [Extractable],SSO4 ppm,Sulfate %,Soluble carbonate meq/l (SCO3),"Total Carbonate Equivalent g/kg
+(TCEQ)",Carbonate Estimate  %,"Exchangeable Calcium\
+cmol(+)/kg 
+(EXCA)","Exchangeable Magnesium
+cmol(+)/kg 
+(EXMG)","Exchangeable Potassium
+cmol(+)/kg 
+(EXCK)","Exchangeable Sodium
+cmol(+)/kg 
+(EXNA)","CEC Effective 
+cmol(+)/kg
+[Sum of Exchangeable Bases]","CEC Measured 
+cmol(+)/kg 
+","Base Saturation Estimate 
+%
+[from pHwater]","Base Saturation 
+% 
+[CECeffective/CECmeasured]","Gypsum
+%","Gypsum 
+g/kg
+(GYPS)","Total Nitrogen  mg/kg
+(TOTN)","Total Nitrogen  g/kg
+(TOTN) Kjeldahl","Total Nitrogen %
+","Total Phosphorus mg/kg [Mehlich #3, ICP-AES]",Total P unknown method & unit,Phosphorus [Olsen] mg/kg,"P2O5 mg/kg
+[Olsen; P x 2.291]",Organic Carbon % LOI,Organic Carbon % WB,Organic Carbon g/kg WB,Organic Matter % [OC*1.74],"Mn mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]","Fe mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]","Al mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]",Porosity Measured,"Fe_ox mg/g
+acid-oxalate extr","Al_ox mg/g
+acid-oxalate extr","Al
+mg/kg?
+","B
+mg/kg?
+","Cu
+mg/kg?
+","Fe
+mg/kg?
+","Mn
+mg/kg?
+","P  
+mg/kg?","S  
+mg/kg?
+","Zn
+mg/kg?
+","coSa
+%","meSa
+%","fiSa
+%","vfiSa
+%","coSi
+%","fiSi
+%","EC (1:5)
+mS/m","CaCO3
+g/kg","inorgC
+g/kg","totC
+g/kg","orgC
+g/kg
+CNS analyser","exchH
+cmol(-)/kg","exchAl
+cmol(-)/kg","BaseSat
+% 
+?","exchAcid
+cmol(+)/kg",totMo EPA 6010C?:2007,"totCd mg/kg
+EPA 6010C:2007","totPb mg/kg
+EPA 6010C:2007","totV mg/kg
+EPA  6020A:2007","totHg mg/kg
+EPA  6020A:2007","totCr mg/kg
+EPA 6010C:2007","totCo mg/kg
+EPA 6010C:2007","totNi mg/kg
+EPA 6010C:2007","totCu mg/kg
+EPA 6010C:2007","totZn mg/kg
+EPA 6010C:2007","totAs mg/kg
+EPA  6020A:2007","totSb mg/kg
+EPA  6020A:2007",_PRID_KEY,_HONU_KEY,_PAIR_KEY

@@ -1,0 +1,422 @@
+﻿file_type,column_position,column_name,normalized_name
+profiles,0,PRID,prid
+profiles,1,Dataset,dataset
+profiles,2,PRID Let,prid let
+profiles,3,PRID Dig,prid dig
+profiles,4,ALT PRID,alt prid
+profiles,5,"Date 
+(YYYY-MM-DD)",date (yyyy-mm-dd)
+profiles,6,"Date 
+(DD-Mon-YY)",date (dd-mon-yy)
+profiles,7,"Date 
+(DD/MM/YYYY)",date (dd/mm/yyyy)
+profiles,8,Year,year
+profiles,9,Month,month
+profiles,10,Day,day
+profiles,11,Coordinate Reference System,coordinate reference system
+profiles,12,Latitude,latitude
+profiles,13,Longitude,longitude
+profiles,14,"Elevation m 
+GPS",elevation m gps
+profiles,15,"Elevation m
+SRTM",elevation m srtm
+profiles,16,Country ID,country id
+profiles,17,Data Origin,data origin
+profiles,18,Surveyor(s),surveyor(s)
+profiles,19,Status,status
+profiles,20,Profile Classification Original,profile classification original
+profiles,21,Profile Classification Original Code ,profile classification original code
+profiles,22,Classification System,classification system
+profiles,23,WRB2015 Reclassification RSG ,wrb2015 reclassification rsg
+profiles,24,WRB2015 Reclassification Principal Qualifiers ,wrb2015 reclassification principal qualifiers
+profiles,25,WRB2015 Reclassification Supplementary Qualifiers,wrb2015 reclassification supplementary qualifiers
+profiles,26,WRB Classification by S Nambambi,wrb classification by s nambambi
+profiles,27,Degree Square,degree square
+profiles,28,Quarter Degree Square,quarter degree square
+profiles,29,Farm No ,farm no
+profiles,30,Farm Name ,farm name
+profiles,31,Location,location
+profiles,32,"Diagnostic Horizon / 
+Property / Material",diagnostic horizon / property / material
+profiles,33,Present Weather Code,present weather code
+profiles,34,Present Weather Desc,present weather desc
+profiles,35,Past Weather Code,past weather code
+profiles,36,Past Weather Desc,past weather desc
+profiles,37,"Soil Temperature Regime
+Code",soil temperature regime code
+profiles,38,Soil Temperature Regime Desc,soil temperature regime desc
+profiles,39,"Soil Moisture Regime 
+Code",soil moisture regime code
+profiles,40,"Soil Moisture Regime 
+Desc",soil moisture regime desc
+profiles,41,Slope Gradient Class ,slope gradient class
+profiles,42,Slope Form Vert,slope form vert
+profiles,43,Slope Form Hor,slope form hor
+profiles,44,"Slope Gradient 
+Measured %",slope gradient measured %
+profiles,45,Slope Gradient Desc,slope gradient desc
+profiles,46,"Gradient % (for landform) 
+from SRTM",gradient % (for landform) from srtm
+profiles,47,Slope % SRTM,slope % srtm
+profiles,48,Relief m/km,relief m/km
+profiles,49,Drainage density,drainage density
+profiles,50,Present Land Use Code,present land use code
+profiles,51,Present land Use Desc,present land use desc
+profiles,52,Past Land Use Code,past land use code
+profiles,53,Past Land Use Desc,past land use desc
+profiles,54,Grazer Type,grazer type
+profiles,55,Human Influence Code,human influence code
+profiles,56,Human Influence Desc,human influence desc
+profiles,57,Rock Outcrops Abundance/Cover Code,rock outcrops abundance/cover code
+profiles,58,Rock Outcrops Cover %,rock outcrops cover %
+profiles,59,Rock Outcrops Cover Desc,rock outcrops cover desc
+profiles,60,Rock Outcrops - m between,rock outcrops - m between
+profiles,61,Rock Outcrops Type,rock outcrops type
+profiles,62,Coarse Surface Fragments Cover Code,coarse surface fragments cover code
+profiles,63,Coarse Surface Fragments Cover %,coarse surface fragments cover %
+profiles,64,Coarse Surface Fragments Cover Desc,coarse surface fragments cover desc
+profiles,65,Coarse Surface Fragments Size Code,coarse surface fragments size code
+profiles,66,Coarse Surface Fragments Size cm,coarse surface fragments size cm
+profiles,67,Coarse Surface Fragments Size Desc,coarse surface fragments size desc
+profiles,68,Surface Coarse Surface Fragments Type,surface coarse surface fragments type
+profiles,69,Erosion Type Code,erosion type code
+profiles,70,Erosion Type,erosion type
+profiles,71,Erosion Area Affected Code,erosion area affected code
+profiles,72,Erosion Area Affected %,erosion area affected %
+profiles,73,Erosion Degree Code,erosion degree code
+profiles,74,Erosion Degree Desc,erosion degree desc
+profiles,75,Erosion Status Code,erosion status code
+profiles,76,Erosion Status Desc,erosion status desc
+profiles,77,Surface Sealing Thickness Code,surface sealing thickness code
+profiles,78,Surface Sealing Thickness mm,surface sealing thickness mm
+profiles,79,Surface Sealing Thickness Desc,surface sealing thickness desc
+profiles,80,Surface Sealing Hardness Code,surface sealing hardness code
+profiles,81,Surface Sealing Hardness Desc,surface sealing hardness desc
+profiles,82,Surface Cracks Width cm,surface cracks width cm
+profiles,83,Surface Cracks Width Code,surface cracks width code
+profiles,84,Distance Between Surface Cracks  (m),distance between surface cracks (m)
+profiles,85,Salt (Surface Salinity),salt (surface salinity)
+profiles,86,Bleached Sand Code,bleached sand code
+profiles,87,Bleached Sand %,bleached sand %
+profiles,88,Bleached Sand Desc,bleached sand desc
+profiles,89,Flooded >2 weeks/a,flooded >2 weeks/a
+profiles,90,Major Landform Code (2nd level) ,major landform code (2nd level)
+profiles,91,Major Landform Desc,major landform desc
+profiles,92,Minor Landform desc,minor landform desc
+profiles,93,Position code,position code
+profiles,94,Position Desc,position desc
+profiles,95,Vegetation,vegetation
+profiles,96,Land Cover,land cover
+profiles,97,Parent Material,parent material
+profiles,98,Lithology,lithology
+profiles,99,Drainage Desc,drainage desc
+profiles,100,Drainage Code,drainage code
+profiles,101,Geology,geology
+profiles,102,Effective Depth,effective depth
+profiles,103,Depth Class,depth class
+profiles,104,Biological activity,biological activity
+profiles,105,Notes,notes
+profiles,106,DISTANCE_FROM_OKAHANDJA_KM,distance_from_okahandja_km
+lab_horizons,0,PRID,prid
+lab_horizons,1,HONU,honu
+lab_horizons,2,Dataset,dataset
+lab_horizons,3,Latitude,latitude
+lab_horizons,4,Longitude,longitude
+lab_horizons,5,Laboratory,laboratory
+lab_horizons,6,Soil Lab ID,soil lab id
+lab_horizons,7,Representative Profile,representative profile
+lab_horizons,8,Hor thickness cm [contains >],hor thickness cm [contains >]
+lab_horizons,9,Upper Depth cm [contains >],upper depth cm [contains >]
+lab_horizons,10,Lower Depth cm [contains >],lower depth cm [contains >]
+lab_horizons,11,Hor thickness cm ,hor thickness cm
+lab_horizons,12,Upper Depth cm ,upper depth cm
+lab_horizons,13,Lower Depth cm ,lower depth cm
+lab_horizons,14,Horizon Code Short ,horizon code short
+lab_horizons,15,Dominant Sand Grade Code,dominant sand grade code
+lab_horizons,16,Dominant Sand Grade Desc,dominant sand grade desc
+lab_horizons,17,"Sand %
+< 53 µm 
+(SDTO)",sand % < 53 µm (sdto)
+lab_horizons,18,"Silt % 
+[2-53µm]
+(STPC)",silt % [2-53µm] (stpc)
+lab_horizons,19,"Clay % 
+[< 2 µm] 
+(CLPC)",clay % [< 2 µm] (clpc)
+lab_horizons,20,Silt + Clay %,silt + clay %
+lab_horizons,21,"Texture  Code 
+(PSCL)",texture code (pscl)
+lab_horizons,22,Texture  Desc,texture desc
+lab_horizons,23,Bulk Density kg/dm3,bulk density kg/dm3
+lab_horizons,24,pH CaCl2 (PHCA) [2 soil:5 CaCl2 suspension],ph cacl2 (phca) [2 soil:5 cacl2 suspension]
+lab_horizons,25,pH water (PHAQ),ph water (phaq)
+lab_horizons,26,pH water other lab,ph water other lab
+lab_horizons,27,pH KCl (PHKC),ph kcl (phkc)
+lab_horizons,28,Electrical Conductivity µS/cm [2 soil:5 water suspension] (EL25),electrical conductivity µs/cm [2 soil:5 water suspension] (el25)
+lab_horizons,29,Electrical Conductivity dS/m [2 soil:5 water suspension] (EL25),electrical conductivity ds/m [2 soil:5 water suspension] (el25)
+lab_horizons,30,Electrical Conductivity µS/cm [Saturated Paste Extract] (ELCO),electrical conductivity µs/cm [saturated paste extract] (elco)
+lab_horizons,31,Electrical Conductivity dS/m [Saturated Paste Extract] (ELCO),electrical conductivity ds/m [saturated paste extract] (elco)
+lab_horizons,32,"Ca % [Exchangeable & Soluble; Mehlich #3, ICP-AES]","ca % [exchangeable & soluble; mehlich #3, icp-aes]"
+lab_horizons,33,"Mg % [Exchangeable & Soluble; Mehlich #3, ICP-AES]","mg % [exchangeable & soluble; mehlich #3, icp-aes]"
+lab_horizons,34,"K % [Exchangeable & Soluble; Mehlich #3, ICP-AES]","k % [exchangeable & soluble; mehlich #3, icp-aes]"
+lab_horizons,35,"Na % [Exchangeable & Soluble; Mehlich #3, ICP-AES]","na % [exchangeable & soluble; mehlich #3, icp-aes]"
+lab_horizons,36,"Ca mg/kg [Extractable; 1M NH4acetate, AAS] (SOCA)","ca mg/kg [extractable; 1m nh4acetate, aas] (soca)"
+lab_horizons,37,"Mg mg/kg [Extractable; 1M NH4acetate, AAS] (SOMG)","mg mg/kg [extractable; 1m nh4acetate, aas] (somg)"
+lab_horizons,38,"K mg/kg [Extractable; 1M NH4acetate, AAS] (SOLK)","k mg/kg [extractable; 1m nh4acetate, aas] (solk)"
+lab_horizons,39,"Na mg/kg [Extractable; 1M NH4acetate, AAS] (SONA)","na mg/kg [extractable; 1m nh4acetate, aas] (sona)"
+lab_horizons,40,Cl mg/kg [Extractable] (SOCL),cl mg/kg [extractable] (socl)
+lab_horizons,41,Chloride % [Extractable],chloride % [extractable]
+lab_horizons,42,SSO4 ppm,sso4 ppm
+lab_horizons,43,Sulfate %,sulfate %
+lab_horizons,44,Soluble carbonate meq/l (SCO3),soluble carbonate meq/l (sco3)
+lab_horizons,45,"Total Carbonate Equivalent g/kg
+(TCEQ)",total carbonate equivalent g/kg (tceq)
+lab_horizons,46,Carbonate Estimate  %,carbonate estimate %
+lab_horizons,47,"Exchangeable Calcium\
+cmol(+)/kg 
+(EXCA)",exchangeable calcium\ cmol(+)/kg (exca)
+lab_horizons,48,"Exchangeable Magnesium
+cmol(+)/kg 
+(EXMG)",exchangeable magnesium cmol(+)/kg (exmg)
+lab_horizons,49,"Exchangeable Potassium
+cmol(+)/kg 
+(EXCK)",exchangeable potassium cmol(+)/kg (exck)
+lab_horizons,50,"Exchangeable Sodium
+cmol(+)/kg 
+(EXNA)",exchangeable sodium cmol(+)/kg (exna)
+lab_horizons,51,"CEC Effective 
+cmol(+)/kg
+[Sum of Exchangeable Bases]",cec effective cmol(+)/kg [sum of exchangeable bases]
+lab_horizons,52,"CEC Measured 
+cmol(+)/kg 
+",cec measured cmol(+)/kg
+lab_horizons,53,"Base Saturation Estimate 
+%
+[from pHwater]",base saturation estimate % [from phwater]
+lab_horizons,54,"Base Saturation 
+% 
+[CECeffective/CECmeasured]",base saturation % [ceceffective/cecmeasured]
+lab_horizons,55,"Gypsum
+%",gypsum %
+lab_horizons,56,"Gypsum 
+g/kg
+(GYPS)",gypsum g/kg (gyps)
+lab_horizons,57,"Total Nitrogen  mg/kg
+(TOTN)",total nitrogen mg/kg (totn)
+lab_horizons,58,"Total Nitrogen  g/kg
+(TOTN) Kjeldahl",total nitrogen g/kg (totn) kjeldahl
+lab_horizons,59,"Total Nitrogen %
+",total nitrogen %
+lab_horizons,60,"Total Phosphorus mg/kg [Mehlich #3, ICP-AES]","total phosphorus mg/kg [mehlich #3, icp-aes]"
+lab_horizons,61,Total P unknown method & unit,total p unknown method & unit
+lab_horizons,62,Phosphorus [Olsen] mg/kg,phosphorus [olsen] mg/kg
+lab_horizons,63,"P2O5 mg/kg
+[Olsen; P x 2.291]",p2o5 mg/kg [olsen; p x 2.291]
+lab_horizons,64,Organic Carbon % LOI,organic carbon % loi
+lab_horizons,65,Organic Carbon % WB,organic carbon % wb
+lab_horizons,66,Organic Carbon g/kg WB,organic carbon g/kg wb
+lab_horizons,67,Organic Matter % [OC*1.74],organic matter % [oc*1.74]
+lab_horizons,68,"Mn mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]","mn mg/kg [exchangeable & soluble; mehlich #3, icp-aes]"
+lab_horizons,69,"Fe mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]","fe mg/kg [exchangeable & soluble; mehlich #3, icp-aes]"
+lab_horizons,70,"Al mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]","al mg/kg [exchangeable & soluble; mehlich #3, icp-aes]"
+lab_horizons,71,Porosity Measured,porosity measured
+lab_horizons,72,"Fe_ox mg/g
+acid-oxalate extr",fe_ox mg/g acid-oxalate extr
+lab_horizons,73,"Al_ox mg/g
+acid-oxalate extr",al_ox mg/g acid-oxalate extr
+lab_horizons,74,"Al
+mg/kg?
+",al mg/kg?
+lab_horizons,75,"B
+mg/kg?
+",b mg/kg?
+lab_horizons,76,"Cu
+mg/kg?
+",cu mg/kg?
+lab_horizons,77,"Fe
+mg/kg?
+",fe mg/kg?
+lab_horizons,78,"Mn
+mg/kg?
+",mn mg/kg?
+lab_horizons,79,"P  
+mg/kg?",p mg/kg?
+lab_horizons,80,"S  
+mg/kg?
+",s mg/kg?
+lab_horizons,81,"Zn
+mg/kg?
+",zn mg/kg?
+lab_horizons,82,"coSa
+%",cosa %
+lab_horizons,83,"meSa
+%",mesa %
+lab_horizons,84,"fiSa
+%",fisa %
+lab_horizons,85,"vfiSa
+%",vfisa %
+lab_horizons,86,"coSi
+%",cosi %
+lab_horizons,87,"fiSi
+%",fisi %
+lab_horizons,88,"EC (1:5)
+mS/m",ec (1:5) ms/m
+lab_horizons,89,"CaCO3
+g/kg",caco3 g/kg
+lab_horizons,90,"inorgC
+g/kg",inorgc g/kg
+lab_horizons,91,"totC
+g/kg",totc g/kg
+lab_horizons,92,"orgC
+g/kg
+CNS analyser",orgc g/kg cns analyser
+lab_horizons,93,"exchH
+cmol(-)/kg",exchh cmol(-)/kg
+lab_horizons,94,"exchAl
+cmol(-)/kg",exchal cmol(-)/kg
+lab_horizons,95,"BaseSat
+% 
+?",basesat % ?
+lab_horizons,96,"exchAcid
+cmol(+)/kg",exchacid cmol(+)/kg
+lab_horizons,97,totMo EPA 6010C?:2007,totmo epa 6010c?:2007
+lab_horizons,98,"totCd mg/kg
+EPA 6010C:2007",totcd mg/kg epa 6010c:2007
+lab_horizons,99,"totPb mg/kg
+EPA 6010C:2007",totpb mg/kg epa 6010c:2007
+lab_horizons,100,"totV mg/kg
+EPA  6020A:2007",totv mg/kg epa 6020a:2007
+lab_horizons,101,"totHg mg/kg
+EPA  6020A:2007",tothg mg/kg epa 6020a:2007
+lab_horizons,102,"totCr mg/kg
+EPA 6010C:2007",totcr mg/kg epa 6010c:2007
+lab_horizons,103,"totCo mg/kg
+EPA 6010C:2007",totco mg/kg epa 6010c:2007
+lab_horizons,104,"totNi mg/kg
+EPA 6010C:2007",totni mg/kg epa 6010c:2007
+lab_horizons,105,"totCu mg/kg
+EPA 6010C:2007",totcu mg/kg epa 6010c:2007
+lab_horizons,106,"totZn mg/kg
+EPA 6010C:2007",totzn mg/kg epa 6010c:2007
+lab_horizons,107,"totAs mg/kg
+EPA  6020A:2007",totas mg/kg epa 6020a:2007
+lab_horizons,108,"totSb mg/kg
+EPA  6020A:2007",totsb mg/kg epa 6020a:2007
+field_horizons,0,PRID,prid
+field_horizons,1,HONU,honu
+field_horizons,2,Dataset,dataset
+field_horizons,3,Latitude,latitude
+field_horizons,4,Longitude,longitude
+field_horizons,5,Hor thickness cm ,hor thickness cm
+field_horizons,6,Upper Depth cm ,upper depth cm
+field_horizons,7,Lower Depth cm ,lower depth cm
+field_horizons,8,Diagnostic Horizon / Property / Material Code,diagnostic horizon / property / material code
+field_horizons,9,Diagnostic Horizon ,diagnostic horizon
+field_horizons,10,Diagnostic Property,diagnostic property
+field_horizons,11,Diagnostic Material,diagnostic material
+field_horizons,12,Qualifier,qualifier
+field_horizons,13,Horizon Code Short ,horizon code short
+field_horizons,14,Horizon Code Original,horizon code original
+field_horizons,15,Subordinate Horizon Code,subordinate horizon code
+field_horizons,16,Lithology of R/C,lithology of r/c
+field_horizons,17,Horizon Transition Distinctness Code,horizon transition distinctness code
+field_horizons,18,Horizon Transition Distinctness Desc,horizon transition distinctness desc
+field_horizons,19,Horizon Transition Distinctness cm,horizon transition distinctness cm
+field_horizons,20,Horizon Transition Topography Code,horizon transition topography code
+field_horizons,21,Horizon Transition Topography Desc,horizon transition topography desc
+field_horizons,22,Structure Type Code,structure type code
+field_horizons,23,Structure Type Desc,structure type desc
+field_horizons,24,Structure Strength Code,structure strength code
+field_horizons,25,Structure Strength Desc,structure strength desc
+field_horizons,26,Structure Size Code,structure size code
+field_horizons,27,Structure Size Desc,structure size desc
+field_horizons,28,Coarse Fragments Abundance Code,coarse fragments abundance code
+field_horizons,29,Coarse Fragments Abundance Desc,coarse fragments abundance desc
+field_horizons,30,Coarse Fragments Abundance %,coarse fragments abundance %
+field_horizons,31,Coarse Fragments Size Code,coarse fragments size code
+field_horizons,32,Coarse Fragments Size Desc,coarse fragments size desc
+field_horizons,33,Coarse Fragments Size mm,coarse fragments size mm
+field_horizons,34,Course Fragments Shape Code,course fragments shape code
+field_horizons,35,Coarse Fragments Shape Desc,coarse fragments shape desc
+field_horizons,36,Coarse Fragments Degree of Weathering,coarse fragments degree of weathering
+field_horizons,37,Coarse Fragments Type,coarse fragments type
+field_horizons,38,Drainage Code,drainage code
+field_horizons,39,Drainage Desc,drainage desc
+field_horizons,40,Field Texture Code,field texture code
+field_horizons,41,Field Texture Desc,field texture desc
+field_horizons,42,Carbonate Estimate  %.1,carbonate estimate %.1
+field_horizons,43,Carbonate Reaction Code,carbonate reaction code
+field_horizons,44,Carbonate Reaction Desc,carbonate reaction desc
+field_horizons,45,Secondary Carbonates Code,secondary carbonates code
+field_horizons,46,Secondary Carbonates Desc,secondary carbonates desc
+field_horizons,47,"Munsell_col_moist
+",munsell_col_moist
+field_horizons,48,Hue_moist,hue_moist
+field_horizons,49,Value_moist,value_moist
+field_horizons,50,Chroma_moist,chroma_moist
+field_horizons,51,Colour Moist Desc [Munsell],colour moist desc [munsell]
+field_horizons,52,Munsell_col_dry,munsell_col_dry
+field_horizons,53,Hue_dry,hue_dry
+field_horizons,54,Value_dry,value_dry
+field_horizons,55,Chroma_dry,chroma_dry
+field_horizons,56,"Colour Dry Desc 
+[Munsell]",colour dry desc [munsell]
+field_horizons,57,Mottling Desc,mottling desc
+field_horizons,58,Vertic Properties,vertic properties
+field_horizons,59,properties for classification ,properties for classification
+field_horizons,60,CLAF,claf
+field_horizons,61,LOWER LEVEL UNITS,lower level units
+field_horizons,62,REFERENCE GROUP,reference group
+field_horizons,63,CLAV,clav
+field_horizons,64,ALT PRID,alt prid
+field_horizons,65,Consistence Dry Code,consistence dry code
+field_horizons,66,Consistence Dry Desc,consistence dry desc
+field_horizons,67,Consistence Moist Code,consistence moist code
+field_horizons,68,Consistence Moist Desc,consistence moist desc
+field_horizons,69,Consistence Wet - Stickiness Code,consistence wet - stickiness code
+field_horizons,70,Consistence Wet - Stickiness  Desc,consistence wet - stickiness desc
+field_horizons,71,Consistence Wet - Plasticity Code,consistence wet - plasticity code
+field_horizons,72,Consistence Wet - Plasticity Desc,consistence wet - plasticity desc
+field_horizons,73,Porosity Class Code,porosity class code
+field_horizons,74,Porosity Class Desc,porosity class desc
+field_horizons,75,Porosity Class %,porosity class %
+field_horizons,76,Voids Type Code,voids type code
+field_horizons,77,Voids Type Desc,voids type desc
+field_horizons,78,Voids Size Class,voids size class
+field_horizons,79,Voids Size Desc,voids size desc
+field_horizons,80,Voids Size mm,voids size mm
+field_horizons,81,Voids Abundance Class,voids abundance class
+field_horizons,82,Voids Abundance Desc,voids abundance desc
+field_horizons,83,Voids Abundance Number,voids abundance number
+field_horizons,84,Coatings Nature Code,coatings nature code
+field_horizons,85,Coatings Nature Desc,coatings nature desc
+field_horizons,86,Coatings Form Code,coatings form code
+field_horizons,87,Coatings Form Desc,coatings form desc
+field_horizons,88,Coatings Location Code,coatings location code
+field_horizons,89,Coatings Location Desc,coatings location desc
+field_horizons,90,Cementation /  Compaction Nature Code,cementation / compaction nature code
+field_horizons,91,Cementation / Compaction Nature Desc,cementation / compaction nature desc
+field_horizons,92,Cementation /  Compaction Continuity Code,cementation / compaction continuity code
+field_horizons,93,Cementation / Compaction Continuity Desc,cementation / compaction continuity desc
+field_horizons,94,Cementation /  Compaction Fabric Code,cementation / compaction fabric code
+field_horizons,95,Cementation / Compaction Fabric Desc,cementation / compaction fabric desc
+field_horizons,96,Mineral Concentrations Nature Code,mineral concentrations nature code
+field_horizons,97,Mineral Concentrations Nature Desc,mineral concentrations nature desc
+field_horizons,98,Mineral Concentrations Abundance Code,mineral concentrations abundance code
+field_horizons,99,Mineral Concentrations Abundance Desc,mineral concentrations abundance desc
+field_horizons,100,Mineral Concentrations Abundance %,mineral concentrations abundance %
+field_horizons,101,Mineral Concentrations Size Code,mineral concentrations size code
+field_horizons,102,Mineral Concentrations Size Desc,mineral concentrations size desc
+field_horizons,103,Mineral Concentrations Shape Code,mineral concentrations shape code
+field_horizons,104,Mineral Concentrations Shape Desc,mineral concentrations shape desc
+field_horizons,105,Mineral Concentrations Hardness Code,mineral concentrations hardness code
+field_horizons,106,Mineral Concentrations Hardness Desc,mineral concentrations hardness desc
+field_horizons,107,Roots Abundance Code,roots abundance code
+field_horizons,108,Roots Abundance Desc,roots abundance desc
+field_horizons,109,Roots Abundance No,roots abundance no
+field_horizons,110,Roots Diameter Code,roots diameter code
+field_horizons,111,Roots Diameter Desc,roots diameter desc
+field_horizons,112,Roots Diameter mm,roots diameter mm
+field_horizons,113,Biological Features Code,biological features code
+field_horizons,114,Biological Features Desc,biological features desc
+field_horizons,115,Notes,notes

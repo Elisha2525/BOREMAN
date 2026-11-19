@@ -1,0 +1,5 @@
+parameter,total_records,numeric_values,missing_values,censored_values,unparsed_values,negative_values,minimum,maximum,mean,median
+TOTAL_DISS,2279,2279,0,0,0,0,0.0,14033.0,911.6795455642825,655.0
+SULPHATE_A,2279,2279,0,0,0,0,0.0,7015.0,152.27196138657305,42.0
+FLUORIDE_A,2279,2279,0,0,0,3,-1.0,15.0,0.8848222904782801,0.6
+NITRATE_AS,2279,1962,312,5,0,22,-1.0,400.0,13.0622375127421,4.2

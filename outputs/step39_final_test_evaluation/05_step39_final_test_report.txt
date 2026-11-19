@@ -1,0 +1,47 @@
+BOREMAN STEP 39 - FINAL UNTOUCHED TEST EVALUATION
+==============================================================================
+Supervised input rows read: 62891
+TRAIN supervised rows: 42951
+VALIDATION supervised rows: 10472
+TEST supervised rows: 9468
+Training rows after target-time purge: 53423
+TRAIN dates verified: 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-11, 2026-10-12, 2026-10-13, 2026-10-14
+VALIDATION dates verified: 2026-10-15, 2026-10-16
+Observed TEST origin dates (sparse supervised coverage): 2026-10-17, 2026-10-18, 2026-10-24
+
+PROTOCOL
+- Candidate model per target/horizon was frozen using Step 38 VALIDATION minimum MAE.
+- Ridge alpha values are carried forward from Step 38 inner-TRAIN selection.
+- Final candidate Ridge models are refit on TRAIN + VALIDATION rows only.
+- Training rows with target timestamps at or after the first TEST origin are purged.
+- Imputation and standardisation are fitted on pre-TEST fitting data only.
+- TEST is evaluated once; no feature, alpha or model selection is performed using TEST results.
+- TEST supervised origin dates may be sparse because only valid future target pairs are represented.
+- Persistence is evaluated as the frozen baseline where selected.
+
+FROZEN CANDIDATES
+- tds, 5 min: FULL_SENSOR_HISTORY
+- tds, 15 min: FULL_SENSOR_HISTORY
+- tds, 30 min: FULL_SENSOR_HISTORY
+- tds, 60 min: PERSISTENCE
+- humidity, 5 min: FULL_SENSOR_HISTORY
+- humidity, 15 min: FULL_SENSOR_HISTORY
+- humidity, 30 min: TARGET_HISTORY_ONLY
+- humidity, 60 min: PERSISTENCE
+- Temperature, 5 min: FULL_SENSOR_HISTORY
+- Temperature, 15 min: FULL_SENSOR_HISTORY
+- Temperature, 30 min: TARGET_HISTORY_ONLY
+- Temperature, 60 min: TARGET_HISTORY_ONLY
+
+INTERPRETATION
+- Lower MAE/RMSE is better; higher R-squared is better.
+- Test metrics estimate performance on this held-out time period, not universal future performance.
+- Do not tune or replace models based on these TEST results and then report the same TEST metrics as unbiased.
+- Sensor forecasts are not water-safety classifications or laboratory validation.
+
+OUTPUTS
+- 01_final_test_metrics.csv
+- 02_final_test_predictions.csv
+- 03_frozen_model_configurations.csv
+- 04_final_test_sample_coverage.csv
+- 05_step39_final_test_report.txt

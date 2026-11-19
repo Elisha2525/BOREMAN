@@ -1,0 +1,43 @@
+BOREMAN STEP 28 - FORECASTING ERROR ANALYSIS REPORT
+====================================================================
+Prediction rows analysed: 59,820
+Targets: ['Temperature', 'humidity', 'tds']
+Horizons: [5, 15, 30, 60]
+Splits: ['TEST', 'VALIDATION']
+
+METHOD
+- Reuses Step 27 predictions; no model retraining.
+- Error summaries include MAE, RMSE, median absolute error and 90th percentile absolute error.
+- Time-of-day uses Namibia local origin timestamps.
+- DAY is fixed 06:00-18:00; NIGHT is 18:00-06:00, not astronomical daylight.
+- Observed-change bands are within-group quartiles of absolute change from the persistence prediction.
+
+TEST-SET MAE COMPARISON
+Comparisons (horizon x target): 12
+Persistence better: 12
+Random Forest better: 0
+
+5 min | Temperature | n=2451 | Persistence MAE=0.198568 | RandomForest MAE=0.903482 | RF MAE change=355.00% | better=Persistence
+5 min | humidity | n=2451 | Persistence MAE=0.803317 | RandomForest MAE=2.666878 | RF MAE change=231.98% | better=Persistence
+5 min | tds | n=2451 | Persistence MAE=1.577809 | RandomForest MAE=9.885225 | RF MAE change=526.52% | better=Persistence
+15 min | Temperature | n=2414 | Persistence MAE=0.474196 | RandomForest MAE=1.152095 | RF MAE change=142.96% | better=Persistence
+15 min | humidity | n=2414 | Persistence MAE=1.707394 | RandomForest MAE=3.773350 | RF MAE change=121.00% | better=Persistence
+15 min | tds | n=2414 | Persistence MAE=3.324031 | RandomForest MAE=11.785432 | RF MAE change=254.55% | better=Persistence
+30 min | Temperature | n=2359 | Persistence MAE=0.826049 | RandomForest MAE=1.592787 | RF MAE change=92.82% | better=Persistence
+30 min | humidity | n=2359 | Persistence MAE=2.797541 | RandomForest MAE=5.302417 | RF MAE change=89.54% | better=Persistence
+30 min | tds | n=2359 | Persistence MAE=5.443540 | RandomForest MAE=13.694339 | RF MAE change=151.57% | better=Persistence
+60 min | Temperature | n=2244 | Persistence MAE=1.355971 | RandomForest MAE=1.641470 | RF MAE change=21.05% | better=Persistence
+60 min | humidity | n=2244 | Persistence MAE=4.040637 | RandomForest MAE=6.720867 | RF MAE change=66.33% | better=Persistence
+60 min | tds | n=2244 | Persistence MAE=7.931172 | RandomForest MAE=20.964502 | RF MAE change=164.33% | better=Persistence
+
+INTERPRETATION LIMITATIONS
+- Error patterns describe this dataset and holdout period; they do not prove causal effects.
+- Hourly and day/night groups can have different sample counts.
+- Quartile change bands are descriptive and are not operational thresholds.
+- A large error is not automatically a sensor fault or water-quality event.
+- Forecasting sensor readings does not establish water safety.
+- Results are an initial chronological holdout evaluation, not external validation.
+
+SOURCE PRESERVATION
+- Step 27 inputs and outputs were read only.
+- No original observations were deleted, imputed, or overwritten.

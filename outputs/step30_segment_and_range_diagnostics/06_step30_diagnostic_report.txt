@@ -1,0 +1,55 @@
+BOREMAN STEP 30 - SEGMENT, SAMPLING-INTERVAL AND RANGE DIAGNOSTICS
+============================================================================
+Step 25B source rows read: 51,437
+Primary chronological-split records: 17,253
+Step 27 supervised rows: 62,891
+Step 27 prediction rows: 59,820
+
+SEGMENT SUMMARY
+Feature-segment groups within split: 82
+Segments with duration <= 5 minutes: 25
+
+SAMPLING INTERVAL
+TEST | n=2503 | median=1.0002 min | mean=7.0467 min | p99=3.0097 min | max=4382.9897 min | >5min=8 | >60min=6
+TRAIN | n=11925 | median=1.0007 min | mean=1.2632 min | p99=3.0046 min | max=812.9728 min | >5min=38 | >60min=6
+VALIDATION | n=2792 | median=1.0003 min | mean=1.0286 min | p99=2.0162 min | max=5.0129 min | >5min=1 | >60min=0
+
+TEST FORECAST ERROR BY ORIGIN SAMPLING INTERVAL
+5 min | Temperature | lowest RF MAE band=<=1.5 min | RF MAE=0.89041 | persistence MAE=0.19210
+5 min | humidity | lowest RF MAE band=1.5-2 min | RF MAE=2.56689 | persistence MAE=1.15303
+5 min | tds | lowest RF MAE band=<=1.5 min | RF MAE=9.64808 | persistence MAE=1.53820
+15 min | Temperature | lowest RF MAE band=<=1.5 min | RF MAE=1.13860 | persistence MAE=0.46345
+15 min | humidity | lowest RF MAE band=1.5-2 min | RF MAE=3.38055 | persistence MAE=1.87303
+15 min | tds | lowest RF MAE band=<=1.5 min | RF MAE=11.53699 | persistence MAE=3.24833
+30 min | Temperature | lowest RF MAE band=1.5-2 min | RF MAE=1.55628 | persistence MAE=0.92531
+30 min | humidity | lowest RF MAE band=2-5 min | RF MAE=3.84537 | persistence MAE=4.07226
+30 min | tds | lowest RF MAE band=<=1.5 min | RF MAE=13.47644 | persistence MAE=5.39490
+60 min | Temperature | lowest RF MAE band=2-5 min | RF MAE=1.62227 | persistence MAE=1.91940
+60 min | humidity | lowest RF MAE band=2-5 min | RF MAE=2.68366 | persistence MAE=5.35800
+60 min | tds | lowest RF MAE band=<=1.5 min | RF MAE=20.73767 | persistence MAE=7.83732
+
+TRAINING-RANGE AUDIT
+5 min | tds | TRAIN range=388.86000 to 573.14000 | RF predictions outside=0/2451 (0.00%) | actual targets outside=178/2451 (7.26%)
+5 min | humidity | TRAIN range=16.43000 to 80.13000 | RF predictions outside=0/2451 (0.00%) | actual targets outside=0/2451 (0.00%)
+5 min | Temperature | TRAIN range=11.37000 to 39.74000 | RF predictions outside=0/2451 (0.00%) | actual targets outside=0/2451 (0.00%)
+15 min | tds | TRAIN range=388.86000 to 573.14000 | RF predictions outside=0/2414 (0.00%) | actual targets outside=170/2414 (7.04%)
+15 min | humidity | TRAIN range=16.38000 to 80.13000 | RF predictions outside=0/2414 (0.00%) | actual targets outside=0/2414 (0.00%)
+15 min | Temperature | TRAIN range=11.37000 to 39.74000 | RF predictions outside=0/2414 (0.00%) | actual targets outside=0/2414 (0.00%)
+30 min | tds | TRAIN range=388.86000 to 572.61000 | RF predictions outside=0/2359 (0.00%) | actual targets outside=159/2359 (6.74%)
+30 min | humidity | TRAIN range=16.38000 to 80.13000 | RF predictions outside=0/2359 (0.00%) | actual targets outside=0/2359 (0.00%)
+30 min | Temperature | TRAIN range=11.37000 to 39.74000 | RF predictions outside=0/2359 (0.00%) | actual targets outside=0/2359 (0.00%)
+60 min | tds | TRAIN range=388.86000 to 572.61000 | RF predictions outside=0/2244 (0.00%) | actual targets outside=132/2244 (5.88%)
+60 min | humidity | TRAIN range=16.38000 to 80.13000 | RF predictions outside=0/2244 (0.00%) | actual targets outside=0/2244 (0.00%)
+60 min | Temperature | TRAIN range=11.37000 to 39.73000 | RF predictions outside=0/2244 (0.00%) | actual targets outside=0/2244 (0.00%)
+
+INTERPRETATION LIMITATIONS
+- A range exceedance is a statistical comparison, not proof of physical invalidity.
+- Feature-segment IDs are reset/control identifiers, not predictive features.
+- Segment age is measured from the earliest timestamp in each split/segment group.
+- Interval bands are descriptive; small groups may have unstable error estimates.
+- The test set is one chronological holdout, not external validation.
+- Forecasting sensor readings does not establish water safety.
+
+SOURCE PRESERVATION
+- Step 25B and Step 27 inputs were read only.
+- No model retraining, imputation, source-row deletion or prior-output modification occurred.

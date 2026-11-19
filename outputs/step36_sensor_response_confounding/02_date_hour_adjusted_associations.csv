@@ -1,0 +1,3 @@
+relationship,records,raw_pearson_all_train,date_and_hour_adjusted_residual_correlation,adjustment
+TDS_vs_temperature,11937,-0.5455835819210033,-0.6312858228117615,Removed date and hour-of-day group means
+TDS_vs_humidity,11937,0.4389875257598471,0.516160626275474,Removed date and hour-of-day group means

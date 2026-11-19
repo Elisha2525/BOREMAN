@@ -1,0 +1,43 @@
+BOREMAN STEP 22 - ENVIRONMENTAL PATTERN ANALYSIS
+==========================================================
+Input file: outputs\step21_temporal_stability\08_all_candidates_with_temporal_flags.csv
+Output directory: outputs\step22_environmental_pattern_analysis
+Input records: 51,437
+Output record-view records: 51,437
+Unique source records: 51,437
+Namibia local date range: 2026-10-02 to 2026-11-07
+Plateau-review records: 30,430
+Non-plateau candidate records: 21,007
+IQR review records: 4,285
+Abrupt-change review records: 1,205
+Duplicate-timestamp review records: 2
+
+TIME GROUPING
+Daytime: 06:00 inclusive to 18:00 exclusive, Namibia local clock.
+Nighttime: 18:00 inclusive to 06:00 exclusive, Namibia local clock.
+This is a fixed clock-time grouping, not astronomical daylight.
+
+METHOD LIMITATIONS
+- Descriptive statistics only; no deletion or imputation.
+- Plateau-review records remain included and separately labelled.
+- IQR and abrupt-change flags are review indicators, not confirmed faults.
+- Pearson correlation describes linear association, not causation.
+- Unequal sampling intervals mean record counts are not time-weighted.
+- No interpolation across gaps and no claim of continuous coverage.
+
+PRESERVATION CHECKS
+PASS: all source records preserved.
+PASS: source_row_number remains unique.
+PASS: all timestamps parsed and grouped in Africa/Windhoek time.
+PASS: no sensor values deleted or imputed.
+
+OUTPUT FILES
+- 01_daily_environmental_summary.csv
+- 02_hourly_environmental_summary.csv
+- 03_day_night_comparison.csv
+- 04_plateau_vs_non_plateau_summary.csv
+- 05_daily_plateau_comparison.csv
+- 06_day_night_plateau_comparison.csv
+- 07_sensor_correlation_comparison.csv
+- 08_records_with_environmental_groups.csv
+- 09_daily_quality_flag_counts.csv

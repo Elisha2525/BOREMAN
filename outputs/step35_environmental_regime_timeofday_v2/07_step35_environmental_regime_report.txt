@@ -1,0 +1,37 @@
+BOREMAN STEP 35 V2 - ENVIRONMENTAL REGIME AND TIME-OF-DAY INVESTIGATION
+==============================================================================
+Input rows read: 51437
+Rows matching TRAIN + PRIMARY before timestamp/dedup checks: 11937
+Unique primary TRAIN observations after deduplication: 11937
+Duplicate source rows removed for analysis only: 0
+Distinct primary TRAIN dates: 11
+
+EXACT STEP 32 FOLD VALIDATION WINDOWS
+- FOLD_1: 2026-10-09, 2026-10-10
+- FOLD_2: 2026-10-11, 2026-10-12
+- FOLD_3: 2026-10-13, 2026-10-14
+
+METHOD
+- Explicit filter: proposed_temporal_split == TRAIN.
+- Explicit filter: modelling_readiness_group contains PRIMARY.
+- Exact Step 32 validation dates are hard-coded and checked against the 11-date TRAIN window.
+- Canonical timestamp_namibia converted to Africa/Windhoek.
+- DAY is fixed Namibia clock time 06:00-18:00; NIGHT is 18:00-06:00.
+- One source observation counted once; no repeated forecast horizons.
+- Record-weighted summaries; no interpolation, imputation or model training.
+- Original source data is not modified.
+
+LIMITATIONS
+- Day/night windows are fixed clock periods, not astronomical sunrise/sunset.
+- Results are descriptive, not causal; flags and readings do not establish sensor faults.
+- Unequal sampling can affect record-weighted summaries.
+- Sensor readings alone cannot establish water safety.
+
+OUTPUTS
+- 01_daily_regime_summary.csv
+- 02_hourly_regime_summary.csv
+- 03_day_night_comparison_by_fold.csv
+- 04_correlations_by_fold_and_timeband.csv
+- 05_sensor_variability_by_fold_and_timeband.csv
+- 06_fold_time_coverage.csv
+- 07_step35_environmental_regime_report.txt

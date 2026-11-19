@@ -1,0 +1,134 @@
+[
+    {
+        "target":  "tds",
+        "horizon_minutes":  5,
+        "frozen_model":  "FULL_SENSOR_HISTORY",
+        "alpha":  0.1,
+        "fit_samples":  14247,
+        "test_samples":  2451,
+        "mae":  1.7163186417642389,
+        "rmse":  2.3649047827193876,
+        "r2":  0.98546951487796053
+    },
+    {
+        "target":  "humidity",
+        "horizon_minutes":  5,
+        "frozen_model":  "FULL_SENSOR_HISTORY",
+        "alpha":  0.1,
+        "fit_samples":  14247,
+        "test_samples":  2451,
+        "mae":  0.75965863276076018,
+        "rmse":  1.1614009288586247,
+        "r2":  0.99269211543576341
+    },
+    {
+        "target":  "Temperature",
+        "horizon_minutes":  5,
+        "frozen_model":  "FULL_SENSOR_HISTORY",
+        "alpha":  0.1,
+        "fit_samples":  14247,
+        "test_samples":  2451,
+        "mae":  0.1771213446553738,
+        "rmse":  0.29115229105529356,
+        "r2":  0.99560972012236582
+    },
+    {
+        "target":  "tds",
+        "horizon_minutes":  15,
+        "frozen_model":  "FULL_SENSOR_HISTORY",
+        "alpha":  10,
+        "fit_samples":  13821,
+        "test_samples":  2414,
+        "mae":  3.9262018903026319,
+        "rmse":  5.2869771026616945,
+        "r2":  0.92590987967127725
+    },
+    {
+        "target":  "humidity",
+        "horizon_minutes":  15,
+        "frozen_model":  "FULL_SENSOR_HISTORY",
+        "alpha":  0.1,
+        "fit_samples":  13821,
+        "test_samples":  2414,
+        "mae":  1.5840389108181987,
+        "rmse":  2.3020786821785797,
+        "r2":  0.97114876626034863
+    },
+    {
+        "target":  "Temperature",
+        "horizon_minutes":  15,
+        "frozen_model":  "FULL_SENSOR_HISTORY",
+        "alpha":  0.1,
+        "fit_samples":  13821,
+        "test_samples":  2414,
+        "mae":  0.445142328708077,
+        "rmse":  0.68377410283584583,
+        "r2":  0.97560298849577276
+    },
+    {
+        "target":  "tds",
+        "horizon_minutes":  30,
+        "frozen_model":  "FULL_SENSOR_HISTORY",
+        "alpha":  1,
+        "fit_samples":  13214,
+        "test_samples":  2359,
+        "mae":  6.81661491739417,
+        "rmse":  8.8704771457814058,
+        "r2":  0.78436964081398541
+    },
+    {
+        "target":  "humidity",
+        "horizon_minutes":  30,
+        "frozen_model":  "TARGET_HISTORY_ONLY",
+        "alpha":  1,
+        "fit_samples":  13214,
+        "test_samples":  2359,
+        "mae":  2.6163003524697528,
+        "rmse":  3.5460690713732341,
+        "r2":  0.93068931456714465
+    },
+    {
+        "target":  "Temperature",
+        "horizon_minutes":  30,
+        "frozen_model":  "TARGET_HISTORY_ONLY",
+        "alpha":  0.1,
+        "fit_samples":  13214,
+        "test_samples":  2359,
+        "mae":  0.77014164626246773,
+        "rmse":  1.131852746579538,
+        "r2":  0.93232577448969778
+    },
+    {
+        "target":  "tds",
+        "horizon_minutes":  60,
+        "frozen_model":  "PERSISTENCE",
+        "alpha":  null,
+        "fit_samples":  12141,
+        "test_samples":  2244,
+        "mae":  7.9311720142602509,
+        "rmse":  10.455938531730311,
+        "r2":  0.68492051594303538
+    },
+    {
+        "target":  "humidity",
+        "horizon_minutes":  60,
+        "frozen_model":  "PERSISTENCE",
+        "alpha":  null,
+        "fit_samples":  12141,
+        "test_samples":  2244,
+        "mae":  4.04063725490196,
+        "rmse":  5.1431311122842445,
+        "r2":  0.85075405624743738
+    },
+    {
+        "target":  "Temperature",
+        "horizon_minutes":  60,
+        "frozen_model":  "TARGET_HISTORY_ONLY",
+        "alpha":  0.1,
+        "fit_samples":  12141,
+        "test_samples":  2244,
+        "mae":  1.1636980122921332,
+        "rmse":  1.6336798749031129,
+        "r2":  0.85897997632863654
+    }
+]

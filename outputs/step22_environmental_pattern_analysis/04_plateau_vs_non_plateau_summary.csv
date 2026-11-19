@@ -1,0 +1,3 @@
+analysis_group,tds_count,tds_mean,tds_median,tds_std,tds_min,tds_max,humidity_count,humidity_mean,humidity_median,humidity_std,humidity_min,humidity_max,Temperature_count,Temperature_mean,Temperature_median,Temperature_std,Temperature_min,Temperature_max
+NON_PLATEAU_CANDIDATE,21007,454.5483619745799,466.67,89.58336727348657,0.0,737.85,21007,48.59819631551388,43.91,21.22022341795553,16.38,94.55,21007,24.328498119674396,24.0,6.23420219913357,9.88,40.83
+PLATEAU_REVIEW,30430,389.3524673020046,396.83,78.48643912391225,0.0,716.89,30430,44.82590305619454,46.73,13.556526384570791,20.09,93.92,30430,22.73616562602695,22.01,4.765584257544819,14.4,32.64

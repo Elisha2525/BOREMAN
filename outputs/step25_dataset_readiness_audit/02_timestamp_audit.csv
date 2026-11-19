@@ -1,0 +1,7 @@
+column,parseable_count,unparseable_count,earliest_utc,latest_utc,unique_timestamps,duplicate_timestamp_rows
+Timestamp,51391,46,2026-10-03 00:13:19.403000+00:00,2026-11-07 18:33:47.172000+00:00,51390,48
+timestamp_original,51391,46,2026-10-03 00:13:19.403000+00:00,2026-11-07 18:33:47.172000+00:00,51390,48
+timestamp_ist,51437,0,2026-10-02 18:43:19.403000+00:00,2026-11-07 13:03:47.172000+00:00,51436,2
+timestamp_namibia,51437,0,2026-10-02 18:43:19.403000+00:00,2026-11-07 13:03:47.172000+00:00,51436,2
+flag_invalid_timestamp,0,51437,,,0,51437
+flag_duplicate_timestamp_review,0,51437,,,0,51437

@@ -1,0 +1,119 @@
+COLUMN,TOTAL_HORIZON_ROWS,NON_MISSING_VALUES,MISSING_OR_BLANK_VALUES,COVERAGE_PERCENT
+PRID,1172,1172,0,100.0
+HONU,1172,1172,0,100.0
+Dataset,1172,1172,0,100.0
+Latitude,1172,1172,0,100.0
+Longitude,1172,1172,0,100.0
+Diagnostic Material,1172,1155,17,98.55
+Upper Depth cm ,1172,1046,126,89.25
+Lower Depth cm ,1172,1024,148,87.37
+Hor thickness cm ,1172,937,235,79.95
+Structure Type Desc,1172,918,254,78.33
+Structure Type Code,1172,918,254,78.33
+Horizon Code Original,1172,679,493,57.94
+Horizon Code Short ,1172,670,502,57.17
+CLAV,1172,661,511,56.4
+Hue_moist,1172,398,774,33.96
+Value_moist,1172,398,774,33.96
+Chroma_moist,1172,398,774,33.96
+"Munsell_col_moist
+",1172,398,774,33.96
+Colour Moist Desc [Munsell],1172,387,785,33.02
+Coarse Fragments Abundance Desc,1172,382,790,32.59
+Coarse Fragments Abundance Code,1172,382,790,32.59
+Coarse Fragments Abundance %,1172,376,796,32.08
+Drainage Code,1172,297,875,25.34
+Drainage Desc,1172,297,875,25.34
+Carbonate Reaction Desc,1172,285,887,24.32
+Carbonate Reaction Code,1172,285,887,24.32
+Carbonate Estimate  %.1,1172,285,887,24.32
+Structure Strength Code,1172,222,950,18.94
+Structure Strength Desc,1172,222,950,18.94
+Horizon Transition Distinctness Desc,1172,180,992,15.36
+Horizon Transition Distinctness Code,1172,180,992,15.36
+Horizon Transition Distinctness cm,1172,180,992,15.36
+Field Texture Desc,1172,177,995,15.1
+Field Texture Code,1172,177,995,15.1
+Qualifier,1172,131,1041,11.18
+Subordinate Horizon Code,1172,108,1064,9.22
+Coarse Fragments Size mm,1172,108,1064,9.22
+Coarse Fragments Size Desc,1172,108,1064,9.22
+Coarse Fragments Size Code,1172,108,1064,9.22
+properties for classification ,1172,43,1129,3.67
+LOWER LEVEL UNITS,1172,43,1129,3.67
+Munsell_col_dry,1172,40,1132,3.41
+"Colour Dry Desc 
+[Munsell]",1172,40,1132,3.41
+Chroma_dry,1172,40,1132,3.41
+Hue_dry,1172,40,1132,3.41
+Value_dry,1172,40,1132,3.41
+REFERENCE GROUP,1172,26,1146,2.22
+CLAF,1172,26,1146,2.22
+ALT PRID,1172,17,1155,1.45
+Structure Size Code,1172,15,1157,1.28
+Structure Size Desc,1172,15,1157,1.28
+Lithology of R/C,1172,9,1163,0.77
+Consistence Dry Desc,1172,8,1164,0.68
+Consistence Dry Code,1172,8,1164,0.68
+Coarse Fragments Type,1172,3,1169,0.26
+Coarse Fragments Shape Desc,1172,3,1169,0.26
+Course Fragments Shape Code,1172,3,1169,0.26
+Roots Abundance Desc,1172,2,1170,0.17
+Horizon Transition Topography Desc,1172,2,1170,0.17
+Horizon Transition Topography Code,1172,2,1170,0.17
+Roots Diameter Desc,1172,2,1170,0.17
+Roots Diameter Code,1172,2,1170,0.17
+Roots Abundance Code,1172,2,1170,0.17
+Roots Diameter mm,1172,2,1170,0.17
+Roots Abundance No,1172,2,1170,0.17
+Diagnostic Property,1172,1,1171,0.09
+Notes,1172,1,1171,0.09
+Diagnostic Horizon / Property / Material Code,1172,0,1172,0.0
+Secondary Carbonates Code,1172,0,1172,0.0
+Secondary Carbonates Desc,1172,0,1172,0.0
+Coarse Fragments Degree of Weathering,1172,0,1172,0.0
+Diagnostic Horizon ,1172,0,1172,0.0
+Consistence Moist Desc,1172,0,1172,0.0
+Porosity Class Code,1172,0,1172,0.0
+Porosity Class Desc,1172,0,1172,0.0
+Porosity Class %,1172,0,1172,0.0
+Voids Type Code,1172,0,1172,0.0
+Consistence Wet - Stickiness Code,1172,0,1172,0.0
+Consistence Wet - Stickiness  Desc,1172,0,1172,0.0
+Consistence Wet - Plasticity Code,1172,0,1172,0.0
+Consistence Wet - Plasticity Desc,1172,0,1172,0.0
+Mottling Desc,1172,0,1172,0.0
+Vertic Properties,1172,0,1172,0.0
+Consistence Moist Code,1172,0,1172,0.0
+Voids Abundance Number,1172,0,1172,0.0
+Voids Abundance Desc,1172,0,1172,0.0
+Voids Abundance Class,1172,0,1172,0.0
+Voids Size mm,1172,0,1172,0.0
+Voids Size Desc,1172,0,1172,0.0
+Voids Size Class,1172,0,1172,0.0
+Voids Type Desc,1172,0,1172,0.0
+Coatings Nature Code,1172,0,1172,0.0
+Cementation /  Compaction Continuity Code,1172,0,1172,0.0
+Coatings Nature Desc,1172,0,1172,0.0
+Coatings Form Code,1172,0,1172,0.0
+Coatings Form Desc,1172,0,1172,0.0
+Coatings Location Code,1172,0,1172,0.0
+Coatings Location Desc,1172,0,1172,0.0
+Cementation /  Compaction Nature Code,1172,0,1172,0.0
+Cementation / Compaction Nature Desc,1172,0,1172,0.0
+Mineral Concentrations Abundance Desc,1172,0,1172,0.0
+Mineral Concentrations Abundance Code,1172,0,1172,0.0
+Mineral Concentrations Nature Desc,1172,0,1172,0.0
+Mineral Concentrations Nature Code,1172,0,1172,0.0
+Cementation / Compaction Fabric Desc,1172,0,1172,0.0
+Cementation /  Compaction Fabric Code,1172,0,1172,0.0
+Cementation / Compaction Continuity Desc,1172,0,1172,0.0
+Mineral Concentrations Abundance %,1172,0,1172,0.0
+Mineral Concentrations Hardness Desc,1172,0,1172,0.0
+Mineral Concentrations Hardness Code,1172,0,1172,0.0
+Mineral Concentrations Shape Desc,1172,0,1172,0.0
+Mineral Concentrations Shape Code,1172,0,1172,0.0
+Mineral Concentrations Size Code,1172,0,1172,0.0
+Mineral Concentrations Size Desc,1172,0,1172,0.0
+Biological Features Code,1172,0,1172,0.0
+Biological Features Desc,1172,0,1172,0.0

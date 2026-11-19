@@ -1,0 +1,145 @@
+COLUMN,TOTAL_HORIZON_ROWS,NON_MISSING_RAW_VALUES,NUMERIC_VALUES,MISSING_OR_BLANK_VALUES,NUMERIC_COVERAGE_PERCENT
+Hor thickness cm [contains >],1172,937,921,235,78.58
+Hor thickness cm ,1172,937,921,235,78.58
+Silt + Clay %,1172,541,541,631,46.16
+"Sand %
+< 53 µm 
+(SDTO)",1172,541,541,631,46.16
+Organic Carbon g/kg WB,1172,504,504,668,43.0
+Organic Carbon % WB,1172,504,504,668,43.0
+Electrical Conductivity dS/m [2 soil:5 water suspension] (EL25),1172,473,473,699,40.36
+Electrical Conductivity µS/cm [2 soil:5 water suspension] (EL25),1172,473,473,699,40.36
+"Silt % 
+[2-53µm]
+(STPC)",1172,291,291,881,24.83
+"Clay % 
+[< 2 µm] 
+(CLPC)",1172,291,291,881,24.83
+pH water (PHAQ),1172,270,270,902,23.04
+Carbonate Estimate  %,1172,285,269,887,22.95
+"Total Nitrogen  mg/kg
+(TOTN)",1172,254,254,918,21.67
+pH CaCl2 (PHCA) [2 soil:5 CaCl2 suspension],1172,254,254,918,21.67
+"Total Nitrogen  g/kg
+(TOTN) Kjeldahl",1172,254,254,918,21.67
+"Total Nitrogen %
+",1172,254,254,918,21.67
+"Ca mg/kg [Extractable; 1M NH4acetate, AAS] (SOCA)",1172,223,223,949,19.03
+"K mg/kg [Extractable; 1M NH4acetate, AAS] (SOLK)",1172,220,220,952,18.77
+"Mg mg/kg [Extractable; 1M NH4acetate, AAS] (SOMG)",1172,220,220,952,18.77
+"Na mg/kg [Extractable; 1M NH4acetate, AAS] (SONA)",1172,218,218,954,18.6
+"P2O5 mg/kg
+[Olsen; P x 2.291]",1172,216,216,956,18.43
+Phosphorus [Olsen] mg/kg,1172,216,216,956,18.43
+Bulk Density kg/dm3,1172,203,203,969,17.32
+"CEC Measured 
+cmol(+)/kg 
+",1172,118,118,1054,10.07
+"CEC Effective 
+cmol(+)/kg
+[Sum of Exchangeable Bases]",1172,66,66,1106,5.63
+"Exchangeable Sodium
+cmol(+)/kg 
+(EXNA)",1172,66,66,1106,5.63
+"Base Saturation 
+% 
+[CECeffective/CECmeasured]",1172,66,66,1106,5.63
+"Exchangeable Calcium\
+cmol(+)/kg 
+(EXCA)",1172,66,66,1106,5.63
+"Exchangeable Magnesium
+cmol(+)/kg 
+(EXMG)",1172,66,66,1106,5.63
+"Exchangeable Potassium
+cmol(+)/kg 
+(EXCK)",1172,65,65,1107,5.55
+Cl mg/kg [Extractable] (SOCL),1172,25,25,1147,2.13
+Electrical Conductivity dS/m [Saturated Paste Extract] (ELCO),1172,25,25,1147,2.13
+Electrical Conductivity µS/cm [Saturated Paste Extract] (ELCO),1172,25,25,1147,2.13
+SSO4 ppm,1172,25,25,1147,2.13
+"Total Carbonate Equivalent g/kg
+(TCEQ)",1172,17,17,1155,1.45
+Organic Carbon % LOI,1172,17,17,1155,1.45
+"Al mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]",1172,4,4,1168,0.34
+Soluble carbonate meq/l (SCO3),1172,4,4,1168,0.34
+"Mn mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]",1172,4,4,1168,0.34
+"Total Phosphorus mg/kg [Mehlich #3, ICP-AES]",1172,4,4,1168,0.34
+"Fe mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]",1172,4,4,1168,0.34
+pH KCl (PHKC),1172,0,0,1172,0.0
+Texture  Desc,1172,291,0,881,0.0
+Dominant Sand Grade Code,1172,24,0,1148,0.0
+Dominant Sand Grade Desc,1172,24,0,1148,0.0
+"Texture  Code 
+(PSCL)",1172,291,0,881,0.0
+"Na % [Exchangeable & Soluble; Mehlich #3, ICP-AES]",1172,0,0,1172,0.0
+"K % [Exchangeable & Soluble; Mehlich #3, ICP-AES]",1172,0,0,1172,0.0
+Total P unknown method & unit,1172,0,0,1172,0.0
+"Gypsum 
+g/kg
+(GYPS)",1172,0,0,1172,0.0
+"Ca % [Exchangeable & Soluble; Mehlich #3, ICP-AES]",1172,0,0,1172,0.0
+"Mg % [Exchangeable & Soluble; Mehlich #3, ICP-AES]",1172,0,0,1172,0.0
+"Fe_ox mg/g
+acid-oxalate extr",1172,0,0,1172,0.0
+"Al_ox mg/g
+acid-oxalate extr",1172,0,0,1172,0.0
+"Al
+mg/kg?
+",1172,0,0,1172,0.0
+"B
+mg/kg?
+",1172,0,0,1172,0.0
+"Cu
+mg/kg?
+",1172,0,0,1172,0.0
+"Fe
+mg/kg?
+",1172,0,0,1172,0.0
+"Mn
+mg/kg?
+",1172,0,0,1172,0.0
+"P  
+mg/kg?",1172,0,0,1172,0.0
+"S  
+mg/kg?
+",1172,0,0,1172,0.0
+"Zn
+mg/kg?
+",1172,0,0,1172,0.0
+"CaCO3
+g/kg",1172,0,0,1172,0.0
+"inorgC
+g/kg",1172,0,0,1172,0.0
+"totC
+g/kg",1172,0,0,1172,0.0
+"orgC
+g/kg
+CNS analyser",1172,0,0,1172,0.0
+"exchH
+cmol(-)/kg",1172,0,0,1172,0.0
+"exchAl
+cmol(-)/kg",1172,0,0,1172,0.0
+"exchAcid
+cmol(+)/kg",1172,0,0,1172,0.0
+"totCd mg/kg
+EPA 6010C:2007",1172,0,0,1172,0.0
+"totPb mg/kg
+EPA 6010C:2007",1172,0,0,1172,0.0
+"totV mg/kg
+EPA  6020A:2007",1172,0,0,1172,0.0
+"totHg mg/kg
+EPA  6020A:2007",1172,0,0,1172,0.0
+"totCr mg/kg
+EPA 6010C:2007",1172,0,0,1172,0.0
+"totCo mg/kg
+EPA 6010C:2007",1172,0,0,1172,0.0
+"totNi mg/kg
+EPA 6010C:2007",1172,0,0,1172,0.0
+"totCu mg/kg
+EPA 6010C:2007",1172,0,0,1172,0.0
+"totZn mg/kg
+EPA 6010C:2007",1172,0,0,1172,0.0
+"totAs mg/kg
+EPA  6020A:2007",1172,0,0,1172,0.0
+"totSb mg/kg
+EPA  6020A:2007",1172,0,0,1172,0.0

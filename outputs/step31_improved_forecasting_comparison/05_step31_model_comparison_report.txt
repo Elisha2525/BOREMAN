@@ -1,0 +1,39 @@
+BOREMAN STEP 31 - IMPROVED FORECASTING MODEL COMPARISON
+====================================================================
+Supervised rows read: 62,891
+New model prediction rows: 119,640
+Metrics rows including Step 27 benchmarks: 96
+Forecast horizons: [5, 15, 30, 60]
+Targets: ['tds', 'humidity', 'Temperature']
+
+MODELS
+- Persistence and Random Forest are imported from Step 27 predictions.
+- LinearDrift = origin sensor value + latest rate per minute * requested horizon.
+- Ridge uses standardized engineered features and median imputation fitted on TRAIN only.
+- Ridge alpha is selected from [0.1, 1, 10, 100] using VALIDATION MAE.
+- Ridge is refitted on TRAIN only; TEST is not used for selection.
+- No source observations are deleted or modified.
+
+IMPORTANT INTERPRETATION
+- TEST metrics are final holdout comparisons; do not choose models by TEST results.
+- Compare models primarily using VALIDATION, then report TEST once.
+- Linear drift can extrapolate and may produce unrealistic values; inspect predictions.
+- This is forecasting sensor readings, not determining water safety.
+- The test period is one chronological holdout, not external validation.
+
+VALIDATION MAE LEADERS BY HORIZON AND TARGET
+5 min | Temperature | lowest validation MAE: Ridge (0.193720)
+5 min | humidity | lowest validation MAE: Ridge (0.508088)
+5 min | tds | lowest validation MAE: Ridge (1.871367)
+15 min | Temperature | lowest validation MAE: Ridge (0.415931)
+15 min | humidity | lowest validation MAE: Ridge (0.993211)
+15 min | tds | lowest validation MAE: Ridge (3.655699)
+30 min | Temperature | lowest validation MAE: Ridge (0.678134)
+30 min | humidity | lowest validation MAE: Persistence (1.613897)
+30 min | tds | lowest validation MAE: Ridge (5.602667)
+60 min | Temperature | lowest validation MAE: Ridge (1.165998)
+60 min | humidity | lowest validation MAE: Persistence (2.748842)
+60 min | tds | lowest validation MAE: Persistence (8.965692)
+
+TEST RESULTS ARE PROVIDED IN 01_MODEL_COMPARISON_METRICS.CSV.
+Do not select the final model based on test performance.

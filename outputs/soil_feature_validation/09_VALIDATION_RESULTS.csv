@@ -1,0 +1,18 @@
+﻿check,status,details
+Horizon dataset: duplicate column names,PASS,No duplicate column labels detected.
+Profile dataset: duplicate column names,PASS,No duplicate column labels detected.
+Depth dataset: duplicate column names,PASS,No duplicate column labels detected.
+Horizon key: PRID_LAB,PASS,Column exists.
+Horizon key: HONU_LAB,PASS,Column exists.
+Profile PRID uniqueness,PASS,Duplicate PRID rows: 0
+Source mapping: sand_percent,PASS,Expected source identifier found.
+Source mapping: silt_percent,PASS,Expected source identifier found.
+Source mapping: clay_percent,PASS,Expected source identifier found.
+Source mapping: silt_clay_percent,PASS,Expected source identifier found.
+Basic unusual-value screening,PASS,"0 values flagged for review. Flags are screening indicators, not proof of errors."
+EC unit consistency: 2 soil:5 water,PASS,473 of 473 paired values agree within tolerance.
+EC unit consistency: saturated paste,PASS,25 of 25 paired values agree within tolerance.
+Silt plus clay consistency,PASS,291 of 291 paired horizons agree within one percentage point.
+Sand particle-size definition,REVIEW,Source label includes '<53 µm'. Confirm the dataset definition before treating this as conventional sand or applying sand+silt+clay closure.
+Depth interval consistency,REVIEW,3 depth records flagged.
+Groundwater-to-soil PRID matching,PASS,"2,279 of 2,279 rows reference an engineered soil profile."

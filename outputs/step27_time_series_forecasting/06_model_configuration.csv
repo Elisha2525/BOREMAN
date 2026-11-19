@@ -1,0 +1,17 @@
+﻿setting,value
+algorithm,RandomForestRegressor
+model_strategy,One multi-output model per forecast horizon
+baseline,Persistence: future value equals current value
+training_split,TRAIN only
+validation_split,VALIDATION; evaluation only
+test_split,TEST; held-out evaluation
+horizons_minutes,"5, 15, 30, 60"
+targets,"tds, humidity, Temperature"
+target_matching_tolerance_seconds,90
+n_estimators,100
+max_depth,16
+min_samples_leaf,5
+max_features,0.8
+random_state,42
+missing_value_policy,No imputation; incomplete samples excluded
+segment_policy,Future target must remain in same feature segment and split

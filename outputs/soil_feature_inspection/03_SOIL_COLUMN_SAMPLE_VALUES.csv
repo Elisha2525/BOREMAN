@@ -1,0 +1,422 @@
+﻿file_type,column_name,example_values
+profiles,PRID,AMP-NA-0045 | AMP-NA-0046 | AMP-NA-0074 | AMP-NA-0075 | AO-0001
+profiles,Dataset,AMP-NA | AO | BIOTA | JAN | KH
+profiles,PRID Let,AMP-NA | AO | BIOTA-OkamOvi | BIOTA-Otjiamongombe | BIOTA-Toggekry
+profiles,PRID Dig,0045 | 0046 | 0074 | 0075 | 0001
+profiles,ALT PRID,NA045 | NA046 | NA074 | NA075 | Kh 1 (Kr 001)
+profiles,"Date 
+(YYYY-MM-DD)",2000-10 | 2005-01-18 00:00:00 | 2005-01-19 00:00:00 | 2005-01-20 00:00:00 | 2005-01-21 00:00:00
+profiles,"Date 
+(DD-Mon-YY)",2005-01-18 | 2005-01-19 | 2005-01-20 | 2005-01-21 | 2005-01-25
+profiles,"Date 
+(DD/MM/YYYY)",2005-01-18 00:00:00 | 2005-01-19 00:00:00 | 2005-01-20 00:00:00 | 2005-01-21 00:00:00 | 2005-01-25 00:00:00
+profiles,Year,2000.0 | 2005.0 | 2016.0 | 2015.0 | 2018.0
+profiles,Month,10.0 | 1.0 | 5.0 | 6.0 | 4.0
+profiles,Day,18.0 | 19.0 | 20.0 | 21.0 | 25.0
+profiles,Coordinate Reference System,"Geographic, WGS84 | Geographic, Schwarzeck"
+profiles,Latitude,-22.101 | -22.4701 | -22.5392 | -22.3749 | -22.740833333333335
+profiles,Longitude,16.367 | 16.678 | 17.2051 | 17.6611 | 17.059722222222224
+profiles,"Elevation m 
+GPS",1891 | 1935 | 1975 | 1905 | 1902
+profiles,"Elevation m
+SRTM",1355.0 | 1764.0 | 1929.0 | 1672.0 | 1879.0
+profiles,Country ID,
+profiles,Data Origin,"Africa Microbiome Project | MAWF-AEZ Auas-Oanob | BIOTA Southern Africa | MAWF-AEZ | J Kempf, Uni Würzburg"
+profiles,Surveyor(s),Cowen | Kutuahupira & Mouton | Petersen | AEZ team | Kempf
+profiles,Status,topsoil sampling | profile pit | topsoil | limited site & profile info | topsoil & subsoil sampling
+profiles,Profile Classification Original,Endoskeletic Arenic Regosol (Hypereutric) | Eutric Endoleptic Cambisol | Arenic Endoleptic Regosol (Episkeletic Eutric) | Endoskeletic Arenic Regosol (Eutric) | Arenic Endoleptic Regosol (Episkeletic Hypereutric)
+profiles,Profile Classification Original Code ,skn ar RG je | ar len RG skp eu | skn ar RG eu | ar len RG skp je | ca len RG skp je
+profiles,Classification System,WRB-98 | FAO-2006
+profiles,WRB2015 Reclassification RSG ,Regosol | Cambisol | Calcisol | Leptosol | Luvisol
+profiles,WRB2015 Reclassification Principal Qualifiers ,Endoskeletic Arenic | Eutric Endoleptic | Arenic Endoleptic | Calcaric Endoleptic | Episkeletic Arenic
+profiles,WRB2015 Reclassification Supplementary Qualifiers,Eutric | Episkeletic Eutric | Calcaric Eutric | Hypercalcic | Dystric
+profiles,WRB Classification by S Nambambi,Dystric Leptic Regosol | Eutric Lithic Leptosol | Eutric Fluvic Cambisol | Eutric Cambisol | Rhodic Eutric Skeletic Cambisol
+profiles,Degree Square,2216.0 | 2217.0 | 2116.0 | 2117.0 | 2215.0
+profiles,Quarter Degree Square,2216AB | 2216BC | 2217CA | 2217BC | 2216DD
+profiles,Farm No ,FMH/00018 | FMK/00335 | FMK/00066/00REM | FMK/00487 | FMK/00030/00009
+profiles,Farm Name ,Onjossa | Kaliber | Hoffnung | Gross Bodenhausen | Krumhuk
+profiles,Location,Krumhuk | Lichtenstein West | Haris | Gross Haigamas | Claratal
+profiles,"Diagnostic Horizon / 
+Property / Material",vertic (cracks)
+profiles,Present Weather Code,
+profiles,Present Weather Desc,
+profiles,Past Weather Code,
+profiles,Past Weather Desc,
+profiles,"Soil Temperature Regime
+Code",HT
+profiles,Soil Temperature Regime Desc,hyperthermic
+profiles,"Soil Moisture Regime 
+Code",
+profiles,"Soil Moisture Regime 
+Desc",
+profiles,Slope Gradient Class ,06 | 05 | 03 - 04 | 05 - 06 | 04 - 05
+profiles,Slope Form Vert,straight | concave | convex
+profiles,Slope Form Hor,straight | convex | concave
+profiles,"Slope Gradient 
+Measured %",5 - 10 | 2 - 5 | 0.5 - 2 | 5 | 2
+profiles,Slope Gradient Desc,sloping | gently sloping | nearly level to very gently sloping | gently sloping to sloping | very gently sloping to gently sloping
+profiles,"Gradient % (for landform) 
+from SRTM",< 10 | 10 - 30 | > 30
+profiles,Slope % SRTM,2.0 | 4.0 | 6.0 | 1.0 | 13.0
+profiles,Relief m/km,
+profiles,Drainage density,
+profiles,Present Land Use Code,HE3 | HE | S | AA4 | HE2
+profiles,Present land Use Desc,extensive grazing; ranching | extensive grazing | settlement | annual field cropping; rainfed | extensive grazing; semi-nomadism
+profiles,Past Land Use Code,
+profiles,Past Land Use Desc,
+profiles,Grazer Type,"wildlife | cattle, wildlife | cattle | none | cattle, sheep"
+profiles,Human Influence Code,VE | VU
+profiles,Human Influence Desc,vegetation strongly disturbed; mechanical /bulldozing | vegetation disturbed (not specified) | vegetation strongly disturbed
+profiles,Rock Outcrops Abundance/Cover Code,F | N | Y | M
+profiles,Rock Outcrops Cover %,2 - 5 | 0 | 15 - 40
+profiles,Rock Outcrops Cover Desc,few | none | yes; unspecified | many
+profiles,Rock Outcrops - m between,
+profiles,Rock Outcrops Type,schist | schist & quartz | quartzite | sandstone | sandstone & schist
+profiles,Coarse Surface Fragments Cover Code,M | F | N | A | C
+profiles,Coarse Surface Fragments Cover %,15 - 40 | 2 - 5 | 0 | 40 - 80 | 5 - 15
+profiles,Coarse Surface Fragments Cover Desc,many | few | none | abundant | common
+profiles,Coarse Surface Fragments Size Code,M - C | F - C | S
+profiles,Coarse Surface Fragments Size cm,0.6 - 6 | 0.2 - 6 | 6 - 20
+profiles,Coarse Surface Fragments Size Desc,medium to coarse gravel | gravel | stones
+profiles,Surface Coarse Surface Fragments Type,"quartzite | schist, quartz | schist, quartz, gneiss, calcrete | sandstone | schist"
+profiles,Erosion Type Code,N | WG | WS; WR | WS | WR
+profiles,Erosion Type,none | gully | sheet; rill | sheet | rill
+profiles,Erosion Area Affected Code,0.0 | 1.0 | 2.0 | 5.0 | 3.0
+profiles,Erosion Area Affected %,0 | 0 - 5 | 5 - 10 | > 50 | 10 - 25
+profiles,Erosion Degree Code,N | V | M - V; S - M | S | M
+profiles,Erosion Degree Desc,none | severe | moderate to severe; slight to moderate | slight | moderate
+profiles,Erosion Status Code,
+profiles,Erosion Status Desc,
+profiles,Surface Sealing Thickness Code,N | M | F | C
+profiles,Surface Sealing Thickness mm,0 | 2 - 5 | < 2 | 5 - 20
+profiles,Surface Sealing Thickness Desc,none | medium | thin | thick
+profiles,Surface Sealing Hardness Code,S | H
+profiles,Surface Sealing Hardness Desc,slightly hard | hard
+profiles,Surface Cracks Width cm,0 | 1 - 2 | < 1
+profiles,Surface Cracks Width Code,N | M | F
+profiles,Distance Between Surface Cracks  (m),< 0.2
+profiles,Salt (Surface Salinity),none | yes
+profiles,Bleached Sand Code,
+profiles,Bleached Sand %,
+profiles,Bleached Sand Desc,
+profiles,Flooded >2 weeks/a,no | yes
+profiles,Major Landform Code (2nd level) ,SH | LV | LP | LL | LD
+profiles,Major Landform Desc,sloping; medium-gradient hill | level; valley | level; plain | level; plateau | level; depression
+profiles,Minor Landform desc,ridge | channel | valley floor | dissected plain | dissected plain with watercourse crossing it
+profiles,Position code,CR | BO | LO | IN | HI
+profiles,Position Desc,crest | bottom | low | mid | flat
+profiles,Vegetation,grass | xeromorphic shrubs | riverine woodland | savanna | grass dominated savanna
+profiles,Land Cover,closed to open (> 15 %) grassland | dry shrubland | mixed savanna | open savanna | savanna
+profiles,Parent Material,alluvial deposits | colluvial deposits | weathered in situ | aeolian deposits
+profiles,Lithology,schist (micaceous) | quartzite | schist; quartzite | schist | sandstone
+profiles,Drainage Desc,moderate | well | poor | very poor | moderate to well
+profiles,Drainage Code,M | W | P | VP | M - W
+profiles,Geology,
+profiles,Effective Depth,30 | 120 | > 120 | > 130 | 80
+profiles,Depth Class,very shallow | deep | moderately deep | shallow | very deep
+profiles,Biological activity,
+profiles,Notes,OkamOvi 1ha-plot 04; undulating to rolling | OkamOvi 1ha-plot 07; gentle to rolling | OkamOvi 1ha-plot 13 | OkamOvi 1ha-plot 14; undulating to rolling | OkamOvi 1ha-plot 24; gentle to rolling
+profiles,DISTANCE_FROM_OKAHANDJA_KM,58.563433259118526 | 59.91980921166795 | 68.75430235395687 | 88.04171742439793 | 85.81222082824414
+lab_horizons,PRID,AMP-NA-0045 | AMP-NA-0046 | AMP-NA-0074 | AMP-NA-0075 | AO-0001
+lab_horizons,HONU,1 | 2 | 3 | 4 | 5
+lab_horizons,Dataset,AMP-NA | AO | BIOTA | JAN | KH
+lab_horizons,Latitude,-22.101 | -22.4701 | -22.5392 | -22.3749 | -22.74083333333333
+lab_horizons,Longitude,16.367 | 16.678 | 17.2051 | 17.6611 | 17.05972222222222
+lab_horizons,Laboratory,AMP | NA1 | UHH
+lab_horizons,Soil Lab ID,145 | 146 | 174 | 175 | 20578
+lab_horizons,Representative Profile,
+lab_horizons,Hor thickness cm [contains >],20 | 29 | 35 | 25 | >60
+lab_horizons,Upper Depth cm [contains >],0 | 35 | 60 | 12 | 39
+lab_horizons,Lower Depth cm [contains >],20 | 29 | 35 | 60 | >120
+lab_horizons,Hor thickness cm ,20 | 29 | 35 | 25 | >60
+lab_horizons,Upper Depth cm ,0 | 35 | 60 | 12 | 39
+lab_horizons,Lower Depth cm ,20.0 | 29.0 | 35.0 | 60.0 | 120.0
+lab_horizons,Horizon Code Short ,A | B | C | R | R(/C)
+lab_horizons,Dominant Sand Grade Code,MC | M | C | F
+lab_horizons,Dominant Sand Grade Desc,medium & coarse | medium | coarse | fine
+lab_horizons,"Sand %
+< 53 µm 
+(SDTO)",83.47852666972338 | 80.63900694537469 | 90.62866067942207 | 84.74779823859087 | 78.6
+lab_horizons,"Silt % 
+[2-53µm]
+(STPC)",8.477521175704041 | 11.24249546378947 | 0.0 | 3.242594075260214 | 14.8
+lab_horizons,"Clay % 
+[< 2 µm] 
+(CLPC)",8.04395215457258 | 8.118497590835842 | 9.0 | 12.00960768614891 | 6.6
+lab_horizons,Silt + Clay %,16.52147333027662 | 19.36099305462531 | 9.0 | 15.252201761409124 | 21.4
+lab_horizons,"Texture  Code 
+(PSCL)",LS | S | SL | SCL | L
+lab_horizons,Texture  Desc,loamy sand | sand | sandy loam | sandy clay loam | loam
+lab_horizons,Bulk Density kg/dm3,1.64 | 1.5 | 1.47 | 1.45 | 1.57
+lab_horizons,pH CaCl2 (PHCA) [2 soil:5 CaCl2 suspension],6.93 | 6.49 | 5.76 | 6.85 | 6.1
+lab_horizons,pH water (PHAQ),6.76 | 7.15 | 6.63 | 6.96 | 6.18
+lab_horizons,pH water other lab,
+lab_horizons,pH KCl (PHKC),
+lab_horizons,Electrical Conductivity µS/cm [2 soil:5 water suspension] (EL25),29.0 | 26.0 | 178.0 | 232.0 | 75.0
+lab_horizons,Electrical Conductivity dS/m [2 soil:5 water suspension] (EL25),0.029 | 0.026 | 0.178 | 0.232 | 0.075
+lab_horizons,Electrical Conductivity µS/cm [Saturated Paste Extract] (ELCO),319.0 | 73.9 | 446.0 | 445.0 | 263.0
+lab_horizons,Electrical Conductivity dS/m [Saturated Paste Extract] (ELCO),0.319 | 0.07390000000000001 | 0.446 | 0.445 | 0.263
+lab_horizons,"Ca % [Exchangeable & Soluble; Mehlich #3, ICP-AES]",
+lab_horizons,"Mg % [Exchangeable & Soluble; Mehlich #3, ICP-AES]",
+lab_horizons,"K % [Exchangeable & Soluble; Mehlich #3, ICP-AES]",
+lab_horizons,"Na % [Exchangeable & Soluble; Mehlich #3, ICP-AES]",
+lab_horizons,"Ca mg/kg [Extractable; 1M NH4acetate, AAS] (SOCA)",500.69 | 654.53 | 180.26 | 675.44 | 344.0
+lab_horizons,"Mg mg/kg [Extractable; 1M NH4acetate, AAS] (SOMG)",79.74 | 88.41 | 39.2 | 72.85 | 86.0
+lab_horizons,"K mg/kg [Extractable; 1M NH4acetate, AAS] (SOLK)",64.31 | 220.73 | 58.14 | 96.31 | 125.0
+lab_horizons,"Na mg/kg [Extractable; 1M NH4acetate, AAS] (SONA)",18.75 | 20.02 | 21.39 | 26.6 | 10.0
+lab_horizons,Cl mg/kg [Extractable] (SOCL),9.87 | 5.54 | 74.04 | 10.9 | 8.42
+lab_horizons,Chloride % [Extractable],0.000987 | 0.000554 | 0.007404000000000001 | 0.00109 | 0.000842
+lab_horizons,SSO4 ppm,9.05 | 6.85 | 8.05 | 22.78 | 9.54
+lab_horizons,Sulfate %,0.0009050000000000001 | 0.000685 | 0.000805 | 0.002278 | 0.0009539999999999999
+lab_horizons,Soluble carbonate meq/l (SCO3),1.0 | 17.5 | 30.0
+lab_horizons,"Total Carbonate Equivalent g/kg
+(TCEQ)",10.0 | 175.0 | 300.0 | 34.7 | 60.0
+lab_horizons,Carbonate Estimate  %,0 | 0 - 2 | 10 - 25 | > 25 | 2 - 10
+lab_horizons,"Exchangeable Calcium\
+cmol(+)/kg 
+(EXCA)",4.82 | 5.42 | 11.55 | 6.55 | 11.01
+lab_horizons,"Exchangeable Magnesium
+cmol(+)/kg 
+(EXMG)",0.93 | 1.1 | 2.4 | 1.28 | 2.08
+lab_horizons,"Exchangeable Potassium
+cmol(+)/kg 
+(EXCK)",0.67 | 0.36 | 0.47 | 1.26 | 0.69
+lab_horizons,"Exchangeable Sodium
+cmol(+)/kg 
+(EXNA)",0.02 | 0.06 | 0.28 | 0.12 | 0.05
+lab_horizons,"CEC Effective 
+cmol(+)/kg
+[Sum of Exchangeable Bases]",6.44 | 6.94 | 14.48 | 8.11 | 14.47
+lab_horizons,"CEC Measured 
+cmol(+)/kg 
+",3.34 | 4.77 | 6.69 | 3.64 | 5.93
+lab_horizons,"Base Saturation Estimate 
+%
+[from pHwater]",80 - 90 | 100 | 90 - 100
+lab_horizons,"Base Saturation 
+% 
+[CECeffective/CECmeasured]",100.0 | 98.56887298747765 | 98.45238095238096 | 99.27710843373492
+lab_horizons,"Gypsum
+%",
+lab_horizons,"Gypsum 
+g/kg
+(GYPS)",
+lab_horizons,"Total Nitrogen  mg/kg
+(TOTN)",400.0 | 900.0 | 600.0 | 500.0 | 480.0
+lab_horizons,"Total Nitrogen  g/kg
+(TOTN) Kjeldahl",0.4 | 0.8999999999999999 | 0.6 | 0.5 | 0.48
+lab_horizons,"Total Nitrogen %
+",0.04 | 0.09 | 0.06 | 0.05 | 0.048
+lab_horizons,"Total Phosphorus mg/kg [Mehlich #3, ICP-AES]",103.9426785476792 | 87.6375749500333 | 18.005399820006 | 18.45524126455907
+lab_horizons,Total P unknown method & unit,
+lab_horizons,Phosphorus [Olsen] mg/kg,2.0 | 2.7 | 1.8 | 5.5 | 6.32
+lab_horizons,"P2O5 mg/kg
+[Olsen; P x 2.291]",4.583 | 6.187050000000001 | 4.124700000000001 | 12.60325 | 14.48228
+lab_horizons,Organic Carbon % LOI,0.615 | 0.514 | 0.444 | 0.412 | 0.422
+lab_horizons,Organic Carbon % WB,0.32 | 0.78 | 0.55 | 0.48 | 0.9396000000000001
+lab_horizons,Organic Carbon g/kg WB,3.2 | 7.800000000000001 | 5.5 | 4.8 | 9.396
+lab_horizons,Organic Matter % [OC*1.74],0.5568 | 1.3572 | 0.9570000000000001 | 0.8351999999999999 | 1.634904
+lab_horizons,"Mn mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]",52.1157733741189 | 72.8892071952032 | 37.02656578114063 | 90.1375707154742
+lab_horizons,"Fe mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]",74.84040430908365 | 65.33644237175217 | 61.71794273524215 | 48.19966722129784
+lab_horizons,"Al mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]",306.1681739593031 | 323.0284477015323 | 314.6333122229259 | 258.3132778702163
+lab_horizons,Porosity Measured,
+lab_horizons,"Fe_ox mg/g
+acid-oxalate extr",
+lab_horizons,"Al_ox mg/g
+acid-oxalate extr",
+lab_horizons,"Al
+mg/kg?
+",
+lab_horizons,"B
+mg/kg?
+",
+lab_horizons,"Cu
+mg/kg?
+",
+lab_horizons,"Fe
+mg/kg?
+",
+lab_horizons,"Mn
+mg/kg?
+",
+lab_horizons,"P  
+mg/kg?",
+lab_horizons,"S  
+mg/kg?
+",
+lab_horizons,"Zn
+mg/kg?
+",
+lab_horizons,"coSa
+%",
+lab_horizons,"meSa
+%",
+lab_horizons,"fiSa
+%",
+lab_horizons,"vfiSa
+%",
+lab_horizons,"coSi
+%",
+lab_horizons,"fiSi
+%",
+lab_horizons,"EC (1:5)
+mS/m",
+lab_horizons,"CaCO3
+g/kg",
+lab_horizons,"inorgC
+g/kg",
+lab_horizons,"totC
+g/kg",
+lab_horizons,"orgC
+g/kg
+CNS analyser",
+lab_horizons,"exchH
+cmol(-)/kg",
+lab_horizons,"exchAl
+cmol(-)/kg",
+lab_horizons,"BaseSat
+% 
+?",
+lab_horizons,"exchAcid
+cmol(+)/kg",
+lab_horizons,totMo EPA 6010C?:2007,
+lab_horizons,"totCd mg/kg
+EPA 6010C:2007",
+lab_horizons,"totPb mg/kg
+EPA 6010C:2007",
+lab_horizons,"totV mg/kg
+EPA  6020A:2007",
+lab_horizons,"totHg mg/kg
+EPA  6020A:2007",
+lab_horizons,"totCr mg/kg
+EPA 6010C:2007",
+lab_horizons,"totCo mg/kg
+EPA 6010C:2007",
+lab_horizons,"totNi mg/kg
+EPA 6010C:2007",
+lab_horizons,"totCu mg/kg
+EPA 6010C:2007",
+lab_horizons,"totZn mg/kg
+EPA 6010C:2007",
+lab_horizons,"totAs mg/kg
+EPA  6020A:2007",
+lab_horizons,"totSb mg/kg
+EPA  6020A:2007",
+field_horizons,PRID,AMP-NA-0045 | AMP-NA-0046 | AMP-NA-0074 | AMP-NA-0075 | AO-0001
+field_horizons,HONU,1 | 2 | 3 | 4 | 5
+field_horizons,Dataset,AMP-NA | AO | BIOTA | JAN | KH
+field_horizons,Latitude,-22.101 | -22.4701 | -22.5392 | -22.3749 | -22.74083333333333
+field_horizons,Longitude,16.367 | 16.678 | 17.2051 | 17.6611 | 17.05972222222222
+field_horizons,Hor thickness cm ,20 | 29 | 35 | 25 | >60
+field_horizons,Upper Depth cm ,0 | 35 | 60 | 12 | 39
+field_horizons,Lower Depth cm ,20.0 | 29.0 | 35.0 | 60.0 | 120.0
+field_horizons,Diagnostic Horizon / Property / Material Code,
+field_horizons,Diagnostic Horizon ,
+field_horizons,Diagnostic Property,Lithic discontinuity
+field_horizons,Diagnostic Material,Mineral | Lithic discontinuity; Mineral
+field_horizons,Qualifier,Ochric | Petrocalcic
+field_horizons,Horizon Code Short ,A | B | C | R | R(/C)
+field_horizons,Horizon Code Original,A | Bw1 | Bw2 | C | R
+field_horizons,Subordinate Horizon Code,kc | v? | w | km | wkmc
+field_horizons,Lithology of R/C,sandstone | mica schist | granite | calcrete
+field_horizons,Horizon Transition Distinctness Code,C | G | A | D
+field_horizons,Horizon Transition Distinctness Desc,clear | gradual | abrupt | diffuse
+field_horizons,Horizon Transition Distinctness cm,2 - 5 | 5 - 15 | 0 - 2 | > 15
+field_horizons,Horizon Transition Topography Code,I
+field_horizons,Horizon Transition Topography Desc,irregular; pockets more deep than wide
+field_horizons,Structure Type Code,PR | SB | N | PL | MA
+field_horizons,Structure Type Desc,prismatic | subangular blocky | none | platy | massive
+field_horizons,Structure Strength Code,VWE | ST | WE | MO | WE - MO
+field_horizons,Structure Strength Desc,very weak | strong | weak | moderate | weak to moderate
+field_horizons,Structure Size Code,CO | ME | FI
+field_horizons,Structure Size Desc,coarse | medium | fine
+field_horizons,Coarse Fragments Abundance Code,M | A | F | C | N
+field_horizons,Coarse Fragments Abundance Desc,many | abundant | few | common | none
+field_horizons,Coarse Fragments Abundance %,15 - 40 | 40 - 80 | 2 - 5 | 5 - 15 | 0
+field_horizons,Coarse Fragments Size Code,MC | C | F | FM | FMC
+field_horizons,Coarse Fragments Size Desc,medium & coarse gravel | coarse gravel | fine gravel | fine & medium gravel | fine & medium & coarse gravel
+field_horizons,Coarse Fragments Size mm,6 - 60 | 20 - 60 | 2 - 6 | 2 - 20 | 2 - 60
+field_horizons,Course Fragments Shape Code,S | I
+field_horizons,Coarse Fragments Shape Desc,subrounded | irregular
+field_horizons,Coarse Fragments Degree of Weathering,
+field_horizons,Coarse Fragments Type,quartzite | quartz; schist | quartz
+field_horizons,Drainage Code,M | W | P | V | M - W
+field_horizons,Drainage Desc,moderately well drained | well drained | poorly drained | very poorly drained | moderately to well drained
+field_horizons,Field Texture Code,SiC | SiL | CL | SL | SCL
+field_horizons,Field Texture Desc,silty clay | silt loam | clay loam | sandy loam | sandy clay loam
+field_horizons,Carbonate Estimate  %.1,0 | 0 - 2 | 10 - 25 | > 25 | 2 - 10
+field_horizons,Carbonate Reaction Code,N | SL | ST | EX | MO
+field_horizons,Carbonate Reaction Desc,non-calcareous | slightly calcareous | strongly calcareous | extremely calcareous | moderately calcareous
+field_horizons,Secondary Carbonates Code,
+field_horizons,Secondary Carbonates Desc,
+field_horizons,"Munsell_col_moist
+",7.5YR4/3 | 7.5YR3/4 | 7.5YR3/3 | 10YR3/3 | 10YR4/3
+field_horizons,Hue_moist,7.5YR | 10YR | 5YR | 2.5YR
+field_horizons,Value_moist,4.0 | 3.0 | 5.0 | 6.0 | 2.5
+field_horizons,Chroma_moist,3.0 | 4.0 | 2.0 | 1.0 | 6.0
+field_horizons,Colour Moist Desc [Munsell],brown | dark brown | dark reddish brown | dark grayish brown | dark gray
+field_horizons,Munsell_col_dry,10YR5/4 | 7.5YR4/3 | 2.5YR5/3 | 2.5YR6/3 | 10YR5/3
+field_horizons,Hue_dry,10YR | 7.5YR | 2.5YR | 5YR
+field_horizons,Value_dry,5.0 | 4.0 | 6.0
+field_horizons,Chroma_dry,4.0 | 3.0 | 2.0
+field_horizons,"Colour Dry Desc 
+[Munsell]",yellowish brown | brown | reddish brown | light reddish brown | dark grayish brown
+field_horizons,Mottling Desc,
+field_horizons,Vertic Properties,
+field_horizons,properties for classification ,chromic | (chromic)
+field_horizons,CLAF,Leptic Skeletic Regosol | LEPTIC REGOSOL | CHROMIC CAMBISOL | HAPLIC REGOSOL | CHROMIC LUVISOL
+field_horizons,LOWER LEVEL UNITS,Leptic Skeletic | LEPTIC | CHROMIC | HAPLIC | Skeletic
+field_horizons,REFERENCE GROUP,Regosol | REGOSOL | CAMBISOL | LUVISOL | Leptosol
+field_horizons,CLAV,WRB-98
+field_horizons,ALT PRID,T1 KrumhukControlSOC & BD | T1 KrumhukThinnedSOC & BD | T2 KrumhukThinnedSOC | T2 KrumhukControlSOC | T2 Agagia control SOC & BD
+field_horizons,Consistence Dry Code,EHA | SO | SHA
+field_horizons,Consistence Dry Desc,extremely hard | soft | sightly hard
+field_horizons,Consistence Moist Code,
+field_horizons,Consistence Moist Desc,
+field_horizons,Consistence Wet - Stickiness Code,
+field_horizons,Consistence Wet - Stickiness  Desc,
+field_horizons,Consistence Wet - Plasticity Code,
+field_horizons,Consistence Wet - Plasticity Desc,
+field_horizons,Porosity Class Code,
+field_horizons,Porosity Class Desc,
+field_horizons,Porosity Class %,
+field_horizons,Voids Type Code,
+field_horizons,Voids Type Desc,
+field_horizons,Voids Size Class,
+field_horizons,Voids Size Desc,
+field_horizons,Voids Size mm,
+field_horizons,Voids Abundance Class,
+field_horizons,Voids Abundance Desc,
+field_horizons,Voids Abundance Number,
+field_horizons,Coatings Nature Code,
+field_horizons,Coatings Nature Desc,
+field_horizons,Coatings Form Code,
+field_horizons,Coatings Form Desc,
+field_horizons,Coatings Location Code,
+field_horizons,Coatings Location Desc,
+field_horizons,Cementation /  Compaction Nature Code,
+field_horizons,Cementation / Compaction Nature Desc,
+field_horizons,Cementation /  Compaction Continuity Code,
+field_horizons,Cementation / Compaction Continuity Desc,
+field_horizons,Cementation /  Compaction Fabric Code,
+field_horizons,Cementation / Compaction Fabric Desc,
+field_horizons,Mineral Concentrations Nature Code,
+field_horizons,Mineral Concentrations Nature Desc,
+field_horizons,Mineral Concentrations Abundance Code,
+field_horizons,Mineral Concentrations Abundance Desc,
+field_horizons,Mineral Concentrations Abundance %,
+field_horizons,Mineral Concentrations Size Code,
+field_horizons,Mineral Concentrations Size Desc,
+field_horizons,Mineral Concentrations Shape Code,
+field_horizons,Mineral Concentrations Shape Desc,
+field_horizons,Mineral Concentrations Hardness Code,
+field_horizons,Mineral Concentrations Hardness Desc,
+field_horizons,Roots Abundance Code,F
+field_horizons,Roots Abundance Desc,few
+field_horizons,Roots Abundance No,20 - 50
+field_horizons,Roots Diameter Code,F
+field_horizons,Roots Diameter Desc,fine
+field_horizons,Roots Diameter mm,0.5 - 2
+field_horizons,Biological Features Code,
+field_horizons,Biological Features Desc,
+field_horizons,Notes,massive + single grain lenses or bands

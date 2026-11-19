@@ -1,0 +1,93 @@
+BOREMAN STEP 27 - TIME-SERIES FORECASTING REPORT
+====================================================================
+Source records read: 51,437
+Primary-candidate records: 17,253
+Supervised forecast samples: 62,891
+Prediction rows: 59,820
+Forecast horizons: [5, 15, 30, 60]
+Forecast targets: ['tds', 'humidity', 'Temperature']
+Target matching tolerance: +/- 90 seconds
+Number of input features: 32
+
+MODELS
+- Persistence baseline: future value equals current sensor reading.
+- Random Forest: one multi-output model per horizon.
+- Each Random Forest forecasts TDS, humidity and Temperature together.
+- Models are fitted using TRAIN samples only.
+- VALIDATION and TEST are evaluated separately.
+
+TEMPORAL SAFEGUARDS
+- Future targets remain within the same feature segment.
+- Future targets remain within the same chronological split.
+- Target timestamps are strictly later than origin timestamps.
+- Future targets must be within the configured matching tolerance.
+- No missing values are imputed.
+
+SCIENTIFIC LIMITATIONS
+- Forecasting sensor readings does not establish water safety.
+- Sampling is not perfectly uniform.
+- Target horizons use the nearest eligible future reading within tolerance.
+- Test performance is an initial holdout evaluation, not external validation.
+- Compare Random Forest results against the persistence baseline.
+- Negative R2 values are possible and indicate performance worse than the test-set mean baseline.
+
+METRIC DEFINITIONS
+- MAE: mean absolute error, in the target sensor's units.
+- RMSE: root mean squared error, in the target sensor's units.
+- R2: coefficient of determination.
+
+RESULTS
+5 min | tds | VALIDATION | RandomForest | n=2741 | MAE=3.407556 | RMSE=4.567088 | R2=0.964984
+5 min | tds | VALIDATION | Persistence | n=2741 | MAE=1.890361 | RMSE=2.713898 | R2=0.987635
+5 min | humidity | VALIDATION | RandomForest | n=2741 | MAE=1.531214 | RMSE=1.977996 | R2=0.917457
+5 min | humidity | VALIDATION | Persistence | n=2741 | MAE=0.519186 | RMSE=0.742841 | R2=0.988358
+5 min | Temperature | VALIDATION | RandomForest | n=2741 | MAE=2.062898 | RMSE=2.798341 | R2=0.810966
+5 min | Temperature | VALIDATION | Persistence | n=2741 | MAE=0.226549 | RMSE=0.331631 | R2=0.997345
+5 min | tds | TEST | RandomForest | n=2451 | MAE=9.885225 | RMSE=14.517964 | R2=0.452399
+5 min | tds | TEST | Persistence | n=2451 | MAE=1.577809 | RMSE=2.299151 | R2=0.986266
+5 min | humidity | TEST | RandomForest | n=2451 | MAE=2.666878 | RMSE=3.375905 | R2=0.938254
+5 min | humidity | TEST | Persistence | n=2451 | MAE=0.803317 | RMSE=1.208928 | R2=0.992082
+5 min | Temperature | TEST | RandomForest | n=2451 | MAE=0.903482 | RMSE=1.227993 | R2=0.921901
+5 min | Temperature | TEST | Persistence | n=2451 | MAE=0.198568 | RMSE=0.317911 | R2=0.994766
+15 min | tds | VALIDATION | RandomForest | n=2689 | MAE=6.476218 | RMSE=8.446936 | R2=0.881108
+15 min | tds | VALIDATION | Persistence | n=2689 | MAE=3.728550 | RMSE=5.272378 | R2=0.953680
+15 min | humidity | VALIDATION | RandomForest | n=2689 | MAE=2.107039 | RMSE=2.766433 | R2=0.838081
+15 min | humidity | VALIDATION | Persistence | n=2689 | MAE=0.996062 | RMSE=1.333722 | R2=0.962365
+15 min | Temperature | VALIDATION | RandomForest | n=2689 | MAE=1.919332 | RMSE=2.340506 | R2=0.867191
+15 min | Temperature | VALIDATION | Persistence | n=2689 | MAE=0.533927 | RMSE=0.735128 | R2=0.986898
+15 min | tds | TEST | RandomForest | n=2414 | MAE=11.785432 | RMSE=16.053476 | R2=0.316901
+15 min | tds | TEST | Persistence | n=2414 | MAE=3.324031 | RMSE=4.861459 | R2=0.937356
+15 min | humidity | TEST | RandomForest | n=2414 | MAE=3.773350 | RMSE=4.709162 | R2=0.879271
+15 min | humidity | TEST | Persistence | n=2414 | MAE=1.707394 | RMSE=2.445973 | R2=0.967429
+15 min | Temperature | TEST | RandomForest | n=2414 | MAE=1.152095 | RMSE=1.577229 | R2=0.870192
+15 min | Temperature | TEST | Persistence | n=2414 | MAE=0.474196 | RMSE=0.734836 | R2=0.971823
+30 min | tds | VALIDATION | RandomForest | n=2607 | MAE=9.863038 | RMSE=12.499723 | R2=0.740852
+30 min | tds | VALIDATION | Persistence | n=2607 | MAE=5.666812 | RMSE=7.716985 | R2=0.901226
+30 min | humidity | VALIDATION | RandomForest | n=2607 | MAE=3.811734 | RMSE=5.205506 | R2=0.418214
+30 min | humidity | VALIDATION | Persistence | n=2607 | MAE=1.613897 | RMSE=2.127752 | R2=0.902797
+30 min | Temperature | VALIDATION | RandomForest | n=2607 | MAE=2.102819 | RMSE=2.495846 | R2=0.846415
+30 min | Temperature | VALIDATION | Persistence | n=2607 | MAE=0.933690 | RMSE=1.227771 | R2=0.962834
+30 min | tds | TEST | RandomForest | n=2359 | MAE=13.694339 | RMSE=17.490566 | R2=0.161653
+30 min | tds | TEST | Persistence | n=2359 | MAE=5.443540 | RMSE=7.697849 | R2=0.837612
+30 min | humidity | TEST | RandomForest | n=2359 | MAE=5.302417 | RMSE=6.721660 | R2=0.750966
+30 min | humidity | TEST | Persistence | n=2359 | MAE=2.797541 | RMSE=3.792517 | R2=0.920721
+30 min | Temperature | TEST | RandomForest | n=2359 | MAE=1.592787 | RMSE=1.953859 | R2=0.798335
+30 min | Temperature | TEST | Persistence | n=2359 | MAE=0.826049 | RMSE=1.240730 | R2=0.918680
+60 min | tds | VALIDATION | RandomForest | n=2435 | MAE=15.207432 | RMSE=18.500307 | R2=0.427839
+60 min | tds | VALIDATION | Persistence | n=2435 | MAE=8.965692 | RMSE=11.962795 | R2=0.760764
+60 min | humidity | VALIDATION | RandomForest | n=2435 | MAE=5.428955 | RMSE=7.349636 | R2=-0.226471
+60 min | humidity | VALIDATION | Persistence | n=2435 | MAE=2.748842 | RMSE=3.563713 | R2=0.711643
+60 min | Temperature | VALIDATION | RandomForest | n=2435 | MAE=2.392295 | RMSE=2.834909 | R2=0.788957
+60 min | Temperature | VALIDATION | Persistence | n=2435 | MAE=1.694821 | RMSE=2.153155 | R2=0.878257
+60 min | tds | TEST | RandomForest | n=2244 | MAE=20.964502 | RMSE=25.589280 | R2=-0.887166
+60 min | tds | TEST | Persistence | n=2244 | MAE=7.931172 | RMSE=10.455939 | R2=0.684921
+60 min | humidity | TEST | RandomForest | n=2244 | MAE=6.720867 | RMSE=8.592540 | R2=0.583428
+60 min | humidity | TEST | Persistence | n=2244 | MAE=4.040637 | RMSE=5.143131 | R2=0.850754
+60 min | Temperature | TEST | RandomForest | n=2244 | MAE=1.641470 | RMSE=2.005395 | R2=0.787506
+60 min | Temperature | TEST | Persistence | n=2244 | MAE=1.355971 | RMSE=1.917472 | R2=0.805730
+
+SOURCE PRESERVATION
+Source records read: 51,437
+Original Step 25B input file was not modified.
+Only eligible future pairs are included in the supervised modelling dataset.
+No source observations were deleted from the original dataset.

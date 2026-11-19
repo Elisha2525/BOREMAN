@@ -1,0 +1,36 @@
+======================================================================
+BOREMAN SOIL COORDINATE STANDARDISATION REPORT
+======================================================================
+Generated: 2026-11-04 00:41:00.606421
+
+INPUT COUNTS
+----------------------------------------------------------------------
+Total profiles: 439
+
+TRANSFORMATION STATUS
+----------------------------------------------------------------------
+WGS84_UNCHANGED: 313
+SCHWARZECK_TO_WGS84: 122
+UNVERIFIED_CRS_NOT_TRANSFORMED: 4
+
+SPATIAL VALIDATION
+----------------------------------------------------------------------
+Verified WGS84 profiles: 435
+Verified profiles within 100 km: 435
+Unknown CRS profiles: 4
+Valid WGS84 coordinate pairs: 435
+Within approximate Namibia range: 435
+
+IMPORTANT LIMITATIONS
+----------------------------------------------------------------------
+- Original coordinates are preserved.
+- Schwarzeck geographic coordinates were transformed using EPSG:4293.
+- WGS84 coordinates were retained without transformation.
+- Unknown CRS records were not transformed.
+- Unknown CRS records are excluded from verified spatial results.
+- The 100 km filter is recalculated using normalised coordinates.
+- Review the CRS metadata and transformation accuracy before modelling.
+
+OUTPUT FOLDER
+C:\Users\mayan\OneDrive\Documents\water-quality-dashboard\water-quality-dashboard\outputs\soil_wgs84
+======================================================================

@@ -1,0 +1,49 @@
+BOREMAN – STEP 15 EXPLORATORY DATA ANALYSIS (EDA)
+Dataset rows: 2,279
+Dataset columns: 88
+Unique nearest soil profiles: 268
+
+TARGET STATISTICS
+               target              parameter  total_records  valid_numeric  missing_or_unusable  coverage_percent       mean  median    std_dev  minimum    q1      q3  maximum  skewness
+GW_TOTAL_DISS_NUMERIC Total dissolved solids           2279           2279                    0            100.00 911.679546   655.0 884.515913      0.0 450.5 1007.75  14033.0  4.047736
+GW_SULPHATE_A_NUMERIC               Sulphate           2279           2279                    0            100.00 152.271961    42.0 340.463475      0.0  14.0  129.00   7015.0  6.849553
+GW_FLUORIDE_A_NUMERIC               Fluoride           2279           2276                    3             99.87   0.887307     0.6   1.006202      0.0   0.4    1.00     15.0  4.900927
+GW_NITRATE_AS_NUMERIC                Nitrate           2279           1940                  339             85.13  13.211964     4.5  28.033686      0.0   1.0   12.50    400.0  5.858688
+
+IQR OUTLIER SCREENING
+               target              parameter  lower_iqr_fence  upper_iqr_fence  flagged_records  flagged_percent_of_valid
+GW_TOTAL_DISS_NUMERIC Total dissolved solids         -385.375         1843.625              233                     10.22
+GW_SULPHATE_A_NUMERIC               Sulphate         -158.500          301.500              292                     12.81
+GW_FLUORIDE_A_NUMERIC               Fluoride           -0.500            1.900              155                      6.81
+GW_NITRATE_AS_NUMERIC                Nitrate          -16.250           29.750              235                     12.11
+
+SOIL FEATURE COVERAGE
+               soil_feature  available_groundwater_rows  missing_groundwater_rows  coverage_percent  unique_soil_profiles_with_measurement  mean_source_measurements_per_profile
+        organic_carbon_mean                         736                      1543             32.29                                    106                              0.655112
+     silt_clay_percent_mean                         686                      1593             30.10                                    115                              0.620886
+          sand_percent_mean                         686                      1593             30.10                                    115                              0.620886
+          clay_percent_mean                         674                      1605             29.57                                    108                              0.605090
+          silt_percent_mean                         674                      1605             29.57                                    108                              0.605090
+              ph_water_mean                         664                      1615             29.14                                    105                              0.594120
+ ec_2soil5_water_us_cm_mean                         643                      1636             28.21                                    109                              0.530496
+  ec_2soil5_water_ds_m_mean                         643                      1636             28.21                                    109                              0.530496
+          bulk_density_mean                         517                      1762             22.69                                     84                              0.362440
+      phosphorus_olsen_mean                         376                      1903             16.50                                     85                              0.275998
+          cec_measured_mean                         193                      2086              8.47                                     52                              0.149188
+         cec_effective_mean                          74                      2205              3.25                                     23                              0.068890
+exchangeable_magnesium_mean                          74                      2205              3.25                                     23                              0.068890
+exchangeable_potassium_mean                          74                      2205              3.25                                     23                              0.068451
+  exchangeable_calcium_mean                          74                      2205              3.25                                     23                              0.068890
+   exchangeable_sodium_mean                          74                      2205              3.25                                     23                              0.068890
+  carbonate_equivalent_mean                          29                      2250              1.27                                      8                              0.014480
+              chloride_mean                          19                      2260              0.83                                      7                              0.018429
+
+LIMITATIONS
+- IQR flags are review indicators, not proof of erroneous measurements; no values were deleted.
+- Correlation is descriptive, not causal.
+- Soil features are nearest-profile proxies, not direct borehole measurements.
+- Reused soil profiles require grouped/spatial validation to prevent leakage.
+- Confirm groundwater measurement units from Atlas metadata before interpreting thresholds.
+- Missing values were not imputed.
+- Soil pH and EC are not groundwater pH and EC.
+- EDA does not establish model suitability or predictive performance.

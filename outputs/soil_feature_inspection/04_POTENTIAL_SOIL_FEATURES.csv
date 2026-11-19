@@ -1,0 +1,124 @@
+﻿file_type,column_name,total_rows,nonblank_count,missing_or_blank_count,nonblank_percentage,numeric_parse_count,numeric_parse_percentage_of_all_rows,unique_nonblank_values,matched_feature_keywords
+profiles,WRB2015 Reclassification RSG ,439,187,252,42.6,0,0.0,7,ec
+profiles,WRB2015 Reclassification Principal Qualifiers ,439,158,281,35.99,0,0.0,38,ec
+profiles,WRB2015 Reclassification Supplementary Qualifiers,439,35,404,7.97,0,0.0,6,ec
+profiles,Drainage density,439,0,439,0.0,0,0.0,0,drainage
+profiles,Erosion Area Affected Code,439,35,404,7.97,35,7.97,5,ec
+profiles,Erosion Area Affected %,439,35,404,7.97,6,1.37,5,ec
+profiles,Surface Sealing Thickness Code,439,97,342,22.1,0,0.0,4,thickness
+profiles,Surface Sealing Thickness mm,439,97,342,22.1,12,2.73,4,thickness
+profiles,Surface Sealing Thickness Desc,439,97,342,22.1,0,0.0,4,thickness
+profiles,Bleached Sand Code,439,0,439,0.0,0,0.0,0,sand
+profiles,Bleached Sand %,439,0,439,0.0,0,0.0,0,sand
+profiles,Bleached Sand Desc,439,0,439,0.0,0,0.0,0,sand
+profiles,Parent Material,439,48,391,10.93,0,0.0,4,parent material
+profiles,Lithology,439,35,404,7.97,0,0.0,6,lithology
+profiles,Drainage Desc,439,154,285,35.08,0,0.0,7,drainage
+profiles,Drainage Code,439,154,285,35.08,0,0.0,7,drainage
+profiles,Geology,439,0,439,0.0,0,0.0,0,geology
+profiles,Effective Depth,439,144,295,32.8,55,12.53,60,"depth, ec"
+profiles,Depth Class,439,144,295,32.8,0,0.0,5,depth
+lab_horizons,Hor thickness cm [contains >],1172,937,235,79.95,921,78.58,101,thickness
+lab_horizons,Upper Depth cm [contains >],1172,1046,126,89.25,1045,89.16,100,depth
+lab_horizons,Lower Depth cm [contains >],1172,1024,148,87.37,924,78.84,176,depth
+lab_horizons,Hor thickness cm ,1172,937,235,79.95,921,78.58,101,thickness
+lab_horizons,Upper Depth cm ,1172,1046,126,89.25,1045,89.16,100,depth
+lab_horizons,Lower Depth cm ,1172,1024,148,87.37,1024,87.37,107,depth
+lab_horizons,Dominant Sand Grade Code,1172,24,1148,2.05,0,0.0,4,sand
+lab_horizons,Dominant Sand Grade Desc,1172,24,1148,2.05,0,0.0,4,sand
+lab_horizons,"Sand %
+< 53 µm 
+(SDTO)",1172,541,631,46.16,541,46.16,283,sand
+lab_horizons,"Silt % 
+[2-53µm]
+(STPC)",1172,291,881,24.83,291,24.83,188,silt
+lab_horizons,"Clay % 
+[< 2 µm] 
+(CLPC)",1172,291,881,24.83,291,24.83,171,clay
+lab_horizons,Silt + Clay %,1172,541,631,46.16,541,46.16,292,"silt, clay"
+lab_horizons,"Texture  Code 
+(PSCL)",1172,291,881,24.83,0,0.0,6,texture
+lab_horizons,Texture  Desc,1172,291,881,24.83,0,0.0,9,texture
+lab_horizons,Bulk Density kg/dm3,1172,203,969,17.32,203,17.32,47,bulk density
+lab_horizons,pH CaCl2 (PHCA) [2 soil:5 CaCl2 suspension],1172,254,918,21.67,254,21.67,93,ph
+lab_horizons,pH water (PHAQ),1172,270,902,23.04,270,23.04,193,ph
+lab_horizons,pH water other lab,1172,0,1172,0.0,0,0.0,0,ph
+lab_horizons,pH KCl (PHKC),1172,0,1172,0.0,0,0.0,0,ph
+lab_horizons,Electrical Conductivity µS/cm [2 soil:5 water suspension] (EL25),1172,473,699,40.36,473,40.36,148,ec
+lab_horizons,Electrical Conductivity dS/m [2 soil:5 water suspension] (EL25),1172,473,699,40.36,473,40.36,148,ec
+lab_horizons,Electrical Conductivity µS/cm [Saturated Paste Extract] (ELCO),1172,25,1147,2.13,25,2.13,25,ec
+lab_horizons,Electrical Conductivity dS/m [Saturated Paste Extract] (ELCO),1172,25,1147,2.13,25,2.13,25,ec
+lab_horizons,Chloride % [Extractable],1172,25,1147,2.13,25,2.13,25,chloride
+lab_horizons,Sulfate %,1172,25,1147,2.13,25,2.13,25,sulfate
+lab_horizons,Soluble carbonate meq/l (SCO3),1172,4,1168,0.34,4,0.34,3,"carbon, carbonate"
+lab_horizons,"Total Carbonate Equivalent g/kg
+(TCEQ)",1172,17,1155,1.45,17,1.45,5,"carbon, carbonate"
+lab_horizons,Carbonate Estimate  %,1172,285,887,24.32,269,22.95,5,"carbon, carbonate"
+lab_horizons,"Exchangeable Calcium\
+cmol(+)/kg 
+(EXCA)",1172,66,1106,5.63,66,5.63,60,calcium
+lab_horizons,"Exchangeable Magnesium
+cmol(+)/kg 
+(EXMG)",1172,66,1106,5.63,66,5.63,55,magnesium
+lab_horizons,"Exchangeable Potassium
+cmol(+)/kg 
+(EXCK)",1172,65,1107,5.55,65,5.55,55,potassium
+lab_horizons,"Exchangeable Sodium
+cmol(+)/kg 
+(EXNA)",1172,66,1106,5.63,66,5.63,30,sodium
+lab_horizons,"CEC Effective 
+cmol(+)/kg
+[Sum of Exchangeable Bases]",1172,66,1106,5.63,66,5.63,66,"ec, cec"
+lab_horizons,"CEC Measured 
+cmol(+)/kg 
+",1172,118,1054,10.07,118,10.07,114,"ec, cec"
+lab_horizons,"Base Saturation Estimate 
+%
+[from pHwater]",1172,151,1021,12.88,100,8.53,3,ph
+lab_horizons,"Base Saturation 
+% 
+[CECeffective/CECmeasured]",1172,66,1106,5.63,66,5.63,4,"ec, cec"
+lab_horizons,"Total Nitrogen  mg/kg
+(TOTN)",1172,254,918,21.67,254,21.67,105,nitrogen
+lab_horizons,"Total Nitrogen  g/kg
+(TOTN) Kjeldahl",1172,254,918,21.67,254,21.67,105,nitrogen
+lab_horizons,"Total Nitrogen %
+",1172,254,918,21.67,254,21.67,105,nitrogen
+lab_horizons,"Total Phosphorus mg/kg [Mehlich #3, ICP-AES]",1172,4,1168,0.34,4,0.34,4,ph
+lab_horizons,Phosphorus [Olsen] mg/kg,1172,216,956,18.43,216,18.43,116,ph
+lab_horizons,Organic Carbon % LOI,1172,17,1155,1.45,17,1.45,17,"organic carbon, carbon"
+lab_horizons,Organic Carbon % WB,1172,504,668,43.0,504,43.0,187,"organic carbon, carbon"
+lab_horizons,Organic Carbon g/kg WB,1172,504,668,43.0,504,43.0,191,"organic carbon, carbon"
+lab_horizons,Porosity Measured,1172,0,1172,0.0,0,0.0,0,porosity
+lab_horizons,"EC (1:5)
+mS/m",1172,0,1172,0.0,0,0.0,0,ec
+field_horizons,Hor thickness cm ,1172,937,235,79.95,921,78.58,101,thickness
+field_horizons,Upper Depth cm ,1172,1046,126,89.25,1045,89.16,100,depth
+field_horizons,Lower Depth cm ,1172,1024,148,87.37,1024,87.37,107,depth
+field_horizons,Lithology of R/C,1172,9,1163,0.77,0,0.0,4,lithology
+field_horizons,Horizon Transition Topography Code,1172,2,1170,0.17,0,0.0,1,ph
+field_horizons,Horizon Transition Topography Desc,1172,2,1170,0.17,0,0.0,1,ph
+field_horizons,Structure Type Code,1172,918,254,78.33,0,0.0,20,structure
+field_horizons,Structure Type Desc,1172,918,254,78.33,0,0.0,20,structure
+field_horizons,Structure Strength Code,1172,222,950,18.94,0,0.0,5,structure
+field_horizons,Structure Strength Desc,1172,222,950,18.94,0,0.0,5,structure
+field_horizons,Structure Size Code,1172,15,1157,1.28,0,0.0,3,structure
+field_horizons,Structure Size Desc,1172,15,1157,1.28,0,0.0,3,structure
+field_horizons,Drainage Code,1172,297,875,25.34,0,0.0,7,drainage
+field_horizons,Drainage Desc,1172,297,875,25.34,0,0.0,7,drainage
+field_horizons,Field Texture Code,1172,177,995,15.1,0,0.0,10,texture
+field_horizons,Field Texture Desc,1172,177,995,15.1,0,0.0,10,texture
+field_horizons,Carbonate Estimate  %.1,1172,285,887,24.32,269,22.95,5,"carbon, carbonate"
+field_horizons,Carbonate Reaction Code,1172,285,887,24.32,0,0.0,5,"carbon, carbonate"
+field_horizons,Carbonate Reaction Desc,1172,285,887,24.32,0,0.0,5,"carbon, carbonate"
+field_horizons,Secondary Carbonates Code,1172,0,1172,0.0,0,0.0,0,"ec, carbon, carbonate"
+field_horizons,Secondary Carbonates Desc,1172,0,1172,0.0,0,0.0,0,"ec, carbon, carbonate"
+field_horizons,Porosity Class Code,1172,0,1172,0.0,0,0.0,0,porosity
+field_horizons,Porosity Class Desc,1172,0,1172,0.0,0,0.0,0,porosity
+field_horizons,Porosity Class %,1172,0,1172,0.0,0,0.0,0,porosity
+field_horizons,Roots Abundance Code,1172,2,1170,0.17,0,0.0,1,roots
+field_horizons,Roots Abundance Desc,1172,2,1170,0.17,0,0.0,1,roots
+field_horizons,Roots Abundance No,1172,2,1170,0.17,0,0.0,1,roots
+field_horizons,Roots Diameter Code,1172,2,1170,0.17,0,0.0,1,roots
+field_horizons,Roots Diameter Desc,1172,2,1170,0.17,0,0.0,1,roots
+field_horizons,Roots Diameter mm,1172,2,1170,0.17,0,0.0,1,roots

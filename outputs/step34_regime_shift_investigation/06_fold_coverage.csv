@@ -1,0 +1,4 @@
+fold,start_date,end_date,unique_origin_records,supervised_rows_across_horizons,unique_target_records,horizons_present
+FOLD_1,2026-10-09,2026-10-10,2567,9401,2601,"5,15,30,60"
+FOLD_2,2026-10-11,2026-10-12,2007,7613,1998,"5,15,30,60"
+FOLD_3,2026-10-13,2026-10-14,1900,7058,1891,"5,15,30,60"

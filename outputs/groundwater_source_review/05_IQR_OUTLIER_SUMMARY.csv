@@ -1,0 +1,5 @@
+parameter,valid_records,q1,median,q3,lower_fence,upper_fence,flagged_records,flagged_percent
+TDS,2279,450.5,655.0,1007.75,-385.375,1843.625,233,10.22
+Sulphate,2279,14.0,42.0,129.0,-158.5,301.5,292,12.81
+Fluoride,2276,0.4,0.6,1.0,-0.4999999999999999,1.9,155,6.81
+Nitrate,1940,1.0,4.5,12.5,-16.25,29.75,235,12.11

@@ -1,0 +1,122 @@
+[
+    {
+        "target":  "Temperature",
+        "horizon_minutes":  5,
+        "test_samples":  2451,
+        "selected_model_mae":  0.1771213446553738,
+        "persistence_mae":  0.19856793145654836,
+        "selected_model_rmse":  0.29115229105529356,
+        "persistence_rmse":  0.31791105966994154,
+        "observed_test_origin_dates":  3
+    },
+    {
+        "target":  "Temperature",
+        "horizon_minutes":  15,
+        "test_samples":  2414,
+        "selected_model_mae":  0.445142328708077,
+        "persistence_mae":  0.47419635459817733,
+        "selected_model_rmse":  0.68377410283584583,
+        "persistence_rmse":  0.73483629657712979,
+        "observed_test_origin_dates":  3
+    },
+    {
+        "target":  "Temperature",
+        "horizon_minutes":  30,
+        "test_samples":  2359,
+        "selected_model_mae":  0.77014164626246773,
+        "persistence_mae":  0.82604917337855022,
+        "selected_model_rmse":  1.131852746579538,
+        "persistence_rmse":  1.2407295061789978,
+        "observed_test_origin_dates":  3
+    },
+    {
+        "target":  "Temperature",
+        "horizon_minutes":  60,
+        "test_samples":  2244,
+        "selected_model_mae":  1.1636980122921334,
+        "persistence_mae":  1.3559714795008913,
+        "selected_model_rmse":  1.6336798749031129,
+        "persistence_rmse":  1.9174724571388031,
+        "observed_test_origin_dates":  3
+    },
+    {
+        "target":  "humidity",
+        "horizon_minutes":  5,
+        "test_samples":  2451,
+        "selected_model_mae":  0.75965863276076007,
+        "persistence_mae":  0.80331701346389239,
+        "selected_model_rmse":  1.1614009288586247,
+        "persistence_rmse":  1.2089282473083103,
+        "observed_test_origin_dates":  3
+    },
+    {
+        "target":  "humidity",
+        "horizon_minutes":  15,
+        "test_samples":  2414,
+        "selected_model_mae":  1.5840389108181989,
+        "persistence_mae":  1.7073943661971829,
+        "selected_model_rmse":  2.3020786821785797,
+        "persistence_rmse":  2.4459727396102191,
+        "observed_test_origin_dates":  3
+    },
+    {
+        "target":  "humidity",
+        "horizon_minutes":  30,
+        "test_samples":  2359,
+        "selected_model_mae":  2.6163003524697523,
+        "persistence_mae":  2.7975413310724884,
+        "selected_model_rmse":  3.5460690713732341,
+        "persistence_rmse":  3.7925168281076145,
+        "observed_test_origin_dates":  3
+    },
+    {
+        "target":  "humidity",
+        "horizon_minutes":  60,
+        "test_samples":  2244,
+        "selected_model_mae":  4.0406372549019611,
+        "persistence_mae":  4.0406372549019611,
+        "selected_model_rmse":  5.1431311122842445,
+        "persistence_rmse":  5.1431311122842445,
+        "observed_test_origin_dates":  3
+    },
+    {
+        "target":  "tds",
+        "horizon_minutes":  5,
+        "test_samples":  2451,
+        "selected_model_mae":  1.7163186417642389,
+        "persistence_mae":  1.5778090575275394,
+        "selected_model_rmse":  2.3649047827193876,
+        "persistence_rmse":  2.2991511480613851,
+        "observed_test_origin_dates":  3
+    },
+    {
+        "target":  "tds",
+        "horizon_minutes":  15,
+        "test_samples":  2414,
+        "selected_model_mae":  3.9262018903026328,
+        "persistence_mae":  3.3240306545153269,
+        "selected_model_rmse":  5.2869771026616945,
+        "persistence_rmse":  4.861459292642305,
+        "observed_test_origin_dates":  3
+    },
+    {
+        "target":  "tds",
+        "horizon_minutes":  30,
+        "test_samples":  2359,
+        "selected_model_mae":  6.81661491739417,
+        "persistence_mae":  5.4435396354387446,
+        "selected_model_rmse":  8.8704771457814058,
+        "persistence_rmse":  7.697848746794719,
+        "observed_test_origin_dates":  3
+    },
+    {
+        "target":  "tds",
+        "horizon_minutes":  60,
+        "test_samples":  2244,
+        "selected_model_mae":  7.9311720142602509,
+        "persistence_mae":  7.9311720142602509,
+        "selected_model_rmse":  10.455938531730311,
+        "persistence_rmse":  10.455938531730311,
+        "observed_test_origin_dates":  3
+    }
+]

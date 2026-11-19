@@ -1,0 +1,537 @@
+BOREMAN SOIL DATASET INSPECTION
+=================================================================
+Workbook: C:\Users\mayan\dataset\02_NAMIBIA_SOIL\Namibia_Soil_Profile_2025.xlsx
+
+WORKSHEETS
+--------------------------------------------------
+Reg&Site: 5100 rows x 106 columns
+Hor_lab: 13427 rows x 110 columns
+Hor_field: 13427 rows x 117 columns
+Metadata: 33 rows x 12 columns
+
+
+=================================================================
+WORKSHEET: Reg&Site
+=================================================================
+
+COLUMN HEADERS:
+1. PRID
+2. Dataset
+3. PRID Let
+4. PRID Dig
+5. ALT PRID
+6. Date 
+(YYYY-MM-DD)
+7. Date 
+(DD-Mon-YY)
+8. Date 
+(DD/MM/YYYY)
+9. Year
+10. Month
+11. Day
+12. Coordinate Reference System
+13. Latitude
+14. Longitude
+15. Elevation m 
+GPS
+16. Elevation m
+SRTM
+17. Country ID
+18. Data Origin
+19. Surveyor(s)
+20. Status
+21. Profile Classification Original
+22. Profile Classification Original Code
+23. Classification System
+24. WRB2015 Reclassification RSG
+25. WRB2015 Reclassification Principal Qualifiers
+26. WRB2015 Reclassification Supplementary Qualifiers
+27. WRB Classification by S Nambambi
+28. Degree Square
+29. Quarter Degree Square
+30. Farm No
+31. Farm Name
+32. Location
+33. Diagnostic Horizon / 
+Property / Material
+34. Present Weather Code
+35. Present Weather Desc
+36. Past Weather Code
+37. Past Weather Desc
+38. Soil Temperature Regime
+Code
+39. Soil Temperature Regime Desc
+40. Soil Moisture Regime 
+Code
+41. Soil Moisture Regime 
+Desc
+42. Slope Gradient Class
+43. Slope Form Vert
+44. Slope Form Hor
+45. Slope Gradient 
+Measured %
+46. Slope Gradient Desc
+47. Gradient % (for landform) 
+from SRTM
+48. Slope % SRTM
+49. Relief m/km
+50. Drainage density
+51. Present Land Use Code
+52. Present land Use Desc
+53. Past Land Use Code
+54. Past Land Use Desc
+55. Grazer Type
+56. Human Influence Code
+57. Human Influence Desc
+58. Rock Outcrops Abundance/Cover Code
+59. Rock Outcrops Cover %
+60. Rock Outcrops Cover Desc
+61. Rock Outcrops - m between
+62. Rock Outcrops Type
+63. Coarse Surface Fragments Cover Code
+64. Coarse Surface Fragments Cover %
+65. Coarse Surface Fragments Cover Desc
+66. Coarse Surface Fragments Size Code
+67. Coarse Surface Fragments Size cm
+68. Coarse Surface Fragments Size Desc
+69. Surface Coarse Surface Fragments Type
+70. Erosion Type Code
+71. Erosion Type
+72. Erosion Area Affected Code
+73. Erosion Area Affected %
+74. Erosion Degree Code
+75. Erosion Degree Desc
+76. Erosion Status Code
+77. Erosion Status Desc
+78. Surface Sealing Thickness Code
+79. Surface Sealing Thickness mm
+80. Surface Sealing Thickness Desc
+81. Surface Sealing Hardness Code
+82. Surface Sealing Hardness Desc
+83. Surface Cracks Width cm
+84. Surface Cracks Width Code
+85. Distance Between Surface Cracks  (m)
+86. Salt (Surface Salinity)
+87. Bleached Sand Code
+88. Bleached Sand %
+89. Bleached Sand Desc
+90. Flooded >2 weeks/a
+91. Major Landform Code (2nd level)
+92. Major Landform Desc
+93. Minor Landform desc
+94. Position code
+95. Position Desc
+96. Vegetation
+97. Land Cover
+98. Parent Material
+99. Lithology
+100. Drainage Desc
+101. Drainage Code
+102. Geology
+103. Effective Depth
+104. Depth Class
+105. Biological activity
+106. Notes
+
+Possible coordinate columns: ['Date \n(YYYY-MM-DD)', 'Date \n(DD-Mon-YY)', 'Date \n(DD/MM/YYYY)', 'Year', 'Day', 'Coordinate Reference System', 'Latitude', 'Longitude', 'Country ID', 'Surveyor(s)', 'Classification System', 'WRB2015 Reclassification Supplementary Qualifiers', 'WRB Classification by S Nambambi', 'Diagnostic Horizon / \nProperty / Material', 'Drainage density', 'Grazer Type', 'Rock Outcrops Type', 'Surface Coarse Surface Fragments Type', 'Erosion Type Code', 'Erosion Type', 'Salt (Surface Salinity)', 'Lithology', 'Geology', 'Biological activity']
+Possible identifier columns: ['PRID', 'PRID Let', 'PRID Dig', 'ALT PRID', 'Country ID', 'Profile Classification Original', 'Profile Classification Original Code', 'Diagnostic Horizon / \nProperty / Material', 'Surface Cracks Width cm', 'Surface Cracks Width Code']
+
+SAMPLE RECORDS:
+
+Row 2:
+{'PRID': 'AMP-1l.S.16s', 'Dataset': 'AMP', 'PRID Let': 'AMP', 'PRID Dig': '1l.S.16s', 'ALT PRID': '1l.S.16s', 'Date \n(YYYY-MM-DD)': None, 'Date \n(DD-Mon-YY)': None, 'Date \n(DD/MM/YYYY)': None, 'Year': None, 'Month': None, 'Day': None, 'Coordinate Reference System': 'Geographic, WGS84', 'Latitude': -23.788017, 'Longitude': 15.080583, 'Elevation m \nGPS': None, 'Elevation m\nSRTM': 484, 'Country ID': 'NA', 'Data Origin': 'Africa Microbiome Project', 'Surveyor(s)': 'Cowen', 'Status': 'topsoil sampling', 'Profile Classification Original': None, 'Profile Classification Original Code': None, 'Classification System': None, 'WRB2015 Reclassification RSG': None, 'WRB2015 Reclassification Principal Qualifiers': None, 'WRB2015 Reclassification Supplementary Qualifiers': None, 'WRB Classification by S Nambambi': None, 'Degree Square': 2315, 'Quarter Degree Square': '2315CC', 'Farm No': None, 'Farm Name': '', 'Location': None, 'Diagnostic Horizon / \nProperty / Material': None, 'Present Weather Code': None, 'Present Weather Desc': None, 'Past Weather Code': None, 'Past Weather Desc': None, 'Soil Temperature Regime\nCode': 'HT', 'Soil Temperature Regime Desc': 'hyperthermic', 'Soil Moisture Regime \nCode': None, 'Soil Moisture Regime \nDesc': None, 'Slope Gradient Class': None, 'Slope Form Vert': None, 'Slope Form Hor': None, 'Slope Gradient \nMeasured %': None, 'Slope Gradient Desc': None, 'Gradient % (for landform) \nfrom SRTM': '< 10', 'Slope % SRTM': 3, 'Relief m/km': None, 'Drainage density': None, 'Present Land Use Code': None, 'Present land Use Desc': None, 'Past Land Use Code': None, 'Past Land Use Desc': None, 'Grazer Type': None, 'Human Influence Code': None, 'Human Influence Desc': None, 'Rock Outcrops Abundance/Cover Code': None, 'Rock Outcrops Cover %': None, 'Rock Outcrops Cover Desc': None, 'Rock Outcrops - m between': None, 'Rock Outcrops Type': None, 'Coarse Surface Fragments Cover Code': None, 'Coarse Surface Fragments Cover %': None, 'Coarse Surface Fragments Cover Desc': None, 'Coarse Surface Fragments Size Code': None, 'Coarse Surface Fragments Size cm': None, 'Coarse Surface Fragments Size Desc': None, 'Surface Coarse Surface Fragments Type': None, 'Erosion Type Code': None, 'Erosion Type': None, 'Erosion Area Affected Code': None, 'Erosion Area Affected %': None, 'Erosion Degree Code': None, 'Erosion Degree Desc': None, 'Erosion Status Code': None, 'Erosion Status Desc': None, 'Surface Sealing Thickness Code': None, 'Surface Sealing Thickness mm': None, 'Surface Sealing Thickness Desc': None, 'Surface Sealing Hardness Code': None, 'Surface Sealing Hardness Desc': None, 'Surface Cracks Width cm': None, 'Surface Cracks Width Code': None, 'Distance Between Surface Cracks  (m)': None, 'Salt (Surface Salinity)': None, 'Bleached Sand Code': None, 'Bleached Sand %': None, 'Bleached Sand Desc': None, 'Flooded >2 weeks/a': None, 'Major Landform Code (2nd level)': None, 'Major Landform Desc': None, 'Minor Landform desc': None, 'Position code': None, 'Position Desc': None, 'Vegetation': 'bare', 'Land Cover': ' bare areas', 'Parent Material': None, 'Lithology': None, 'Drainage Desc': None, 'Drainage Code': None, 'Geology': None, 'Effective Depth': None, 'Depth Class': None, 'Biological activity': None, 'Notes': None}
+
+Row 3:
+{'PRID': 'AMP-1S.S.16s', 'Dataset': 'AMP', 'PRID Let': 'AMP', 'PRID Dig': '1S.S.16s', 'ALT PRID': '1S.S.16s', 'Date \n(YYYY-MM-DD)': None, 'Date \n(DD-Mon-YY)': None, 'Date \n(DD/MM/YYYY)': None, 'Year': None, 'Month': None, 'Day': None, 'Coordinate Reference System': 'Geographic, WGS84', 'Latitude': -23.7852, 'Longitude': 15.0801, 'Elevation m \nGPS': None, 'Elevation m\nSRTM': 492, 'Country ID': 'NA', 'Data Origin': 'Africa Microbiome Project', 'Surveyor(s)': 'Cowen', 'Status': 'topsoil sampling', 'Profile Classification Original': None, 'Profile Classification Original Code': None, 'Classification System': None, 'WRB2015 Reclassification RSG': None, 'WRB2015 Reclassification Principal Qualifiers': None, 'WRB2015 Reclassification Supplementary Qualifiers': None, 'WRB Classification by S Nambambi': None, 'Degree Square': 2315, 'Quarter Degree Square': '2315CC', 'Farm No': None, 'Farm Name': '', 'Location': None, 'Diagnostic Horizon / \nProperty / Material': None, 'Present Weather Code': None, 'Present Weather Desc': None, 'Past Weather Code': None, 'Past Weather Desc': None, 'Soil Temperature Regime\nCode': 'HT', 'Soil Temperature Regime Desc': 'hyperthermic', 'Soil Moisture Regime \nCode': None, 'Soil Moisture Regime \nDesc': None, 'Slope Gradient Class': None, 'Slope Form Vert': None, 'Slope Form Hor': None, 'Slope Gradient \nMeasured %': None, 'Slope Gradient Desc': None, 'Gradient % (for landform) \nfrom SRTM': '< 10', 'Slope % SRTM': 4, 'Relief m/km': None, 'Drainage density': None, 'Present Land Use Code': None, 'Present land Use Desc': None, 'Past Land Use Code': None, 'Past Land Use Desc': None, 'Grazer Type': None, 'Human Influence Code': None, 'Human Influence Desc': None, 'Rock Outcrops Abundance/Cover Code': None, 'Rock Outcrops Cover %': None, 'Rock Outcrops Cover Desc': None, 'Rock Outcrops - m between': None, 'Rock Outcrops Type': None, 'Coarse Surface Fragments Cover Code': None, 'Coarse Surface Fragments Cover %': None, 'Coarse Surface Fragments Cover Desc': None, 'Coarse Surface Fragments Size Code': None, 'Coarse Surface Fragments Size cm': None, 'Coarse Surface Fragments Size Desc': None, 'Surface Coarse Surface Fragments Type': None, 'Erosion Type Code': None, 'Erosion Type': None, 'Erosion Area Affected Code': None, 'Erosion Area Affected %': None, 'Erosion Degree Code': None, 'Erosion Degree Desc': None, 'Erosion Status Code': None, 'Erosion Status Desc': None, 'Surface Sealing Thickness Code': None, 'Surface Sealing Thickness mm': None, 'Surface Sealing Thickness Desc': None, 'Surface Sealing Hardness Code': None, 'Surface Sealing Hardness Desc': None, 'Surface Cracks Width cm': None, 'Surface Cracks Width Code': None, 'Distance Between Surface Cracks  (m)': None, 'Salt (Surface Salinity)': None, 'Bleached Sand Code': None, 'Bleached Sand %': None, 'Bleached Sand Desc': None, 'Flooded >2 weeks/a': None, 'Major Landform Code (2nd level)': None, 'Major Landform Desc': None, 'Minor Landform desc': None, 'Position code': None, 'Position Desc': None, 'Vegetation': 'bare', 'Land Cover': ' bare areas', 'Parent Material': None, 'Lithology': None, 'Drainage Desc': None, 'Drainage Code': None, 'Geology': None, 'Effective Depth': None, 'Depth Class': None, 'Biological activity': None, 'Notes': None}
+
+Row 4:
+{'PRID': 'AMP-1T.S.16s', 'Dataset': 'AMP', 'PRID Let': 'AMP', 'PRID Dig': '1T.S.16s', 'ALT PRID': '1T.S.16s', 'Date \n(YYYY-MM-DD)': None, 'Date \n(DD-Mon-YY)': None, 'Date \n(DD/MM/YYYY)': None, 'Year': None, 'Month': None, 'Day': None, 'Coordinate Reference System': 'Geographic, WGS84', 'Latitude': -23.7834, 'Longitude': 15.0804, 'Elevation m \nGPS': None, 'Elevation m\nSRTM': 520, 'Country ID': 'NA', 'Data Origin': 'Africa Microbiome Project', 'Surveyor(s)': 'Cowen', 'Status': 'topsoil sampling', 'Profile Classification Original': None, 'Profile Classification Original Code': None, 'Classification System': None, 'WRB2015 Reclassification RSG': None, 'WRB2015 Reclassification Principal Qualifiers': None, 'WRB2015 Reclassification Supplementary Qualifiers': None, 'WRB Classification by S Nambambi': None, 'Degree Square': 2315, 'Quarter Degree Square': '2315CC', 'Farm No': None, 'Farm Name': '', 'Location': None, 'Diagnostic Horizon / \nProperty / Material': None, 'Present Weather Code': None, 'Present Weather Desc': None, 'Past Weather Code': None, 'Past Weather Desc': None, 'Soil Temperature Regime\nCode': 'HT', 'Soil Temperature Regime Desc': 'hyperthermic', 'Soil Moisture Regime \nCode': None, 'Soil Moisture Regime \nDesc': None, 'Slope Gradient Class': None, 'Slope Form Vert': None, 'Slope Form Hor': None, 'Slope Gradient \nMeasured %': None, 'Slope Gradient Desc': None, 'Gradient % (for landform) \nfrom SRTM': '< 10', 'Slope % SRTM': 9, 'Relief m/km': None, 'Drainage density': None, 'Present Land Use Code': None, 'Present land Use Desc': None, 'Past Land Use Code': None, 'Past Land Use Desc': None, 'Grazer Type': None, 'Human Influence Code': None, 'Human Influence Desc': None, 'Rock Outcrops Abundance/Cover Code': None, 'Rock Outcrops Cover %': None, 'Rock Outcrops Cover Desc': None, 'Rock Outcrops - m between': None, 'Rock Outcrops Type': None, 'Coarse Surface Fragments Cover Code': None, 'Coarse Surface Fragments Cover %': None, 'Coarse Surface Fragments Cover Desc': None, 'Coarse Surface Fragments Size Code': None, 'Coarse Surface Fragments Size cm': None, 'Coarse Surface Fragments Size Desc': None, 'Surface Coarse Surface Fragments Type': None, 'Erosion Type Code': None, 'Erosion Type': None, 'Erosion Area Affected Code': None, 'Erosion Area Affected %': None, 'Erosion Degree Code': None, 'Erosion Degree Desc': None, 'Erosion Status Code': None, 'Erosion Status Desc': None, 'Surface Sealing Thickness Code': None, 'Surface Sealing Thickness mm': None, 'Surface Sealing Thickness Desc': None, 'Surface Sealing Hardness Code': None, 'Surface Sealing Hardness Desc': None, 'Surface Cracks Width cm': None, 'Surface Cracks Width Code': None, 'Distance Between Surface Cracks  (m)': None, 'Salt (Surface Salinity)': None, 'Bleached Sand Code': None, 'Bleached Sand %': None, 'Bleached Sand Desc': None, 'Flooded >2 weeks/a': None, 'Major Landform Code (2nd level)': None, 'Major Landform Desc': None, 'Minor Landform desc': None, 'Position code': None, 'Position Desc': None, 'Vegetation': 'bare', 'Land Cover': ' bare areas', 'Parent Material': None, 'Lithology': None, 'Drainage Desc': None, 'Drainage Code': None, 'Geology': None, 'Effective Depth': None, 'Depth Class': None, 'Biological activity': None, 'Notes': None}
+
+Row 5:
+{'PRID': 'AMP-2l.S.16s', 'Dataset': 'AMP', 'PRID Let': 'AMP', 'PRID Dig': '2l.S.16s', 'ALT PRID': '2l.S.16s', 'Date \n(YYYY-MM-DD)': None, 'Date \n(DD-Mon-YY)': None, 'Date \n(DD/MM/YYYY)': None, 'Year': None, 'Month': None, 'Day': None, 'Coordinate Reference System': 'Geographic, WGS84', 'Latitude': -23.813233, 'Longitude': 14.9889, 'Elevation m \nGPS': None, 'Elevation m\nSRTM': 464, 'Country ID': 'NA', 'Data Origin': 'Africa Microbiome Project', 'Surveyor(s)': 'Cowen', 'Status': 'topsoil sampling', 'Profile Classification Original': None, 'Profile Classification Original Code': None, 'Classification System': None, 'WRB2015 Reclassification RSG': None, 'WRB2015 Reclassification Principal Qualifiers': None, 'WRB2015 Reclassification Supplementary Qualifiers': None, 'WRB Classification by S Nambambi': None, 'Degree Square': 2314, 'Quarter Degree Square': '2314DD', 'Farm No': None, 'Farm Name': '', 'Location': None, 'Diagnostic Horizon / \nProperty / Material': None, 'Present Weather Code': None, 'Present Weather Desc': None, 'Past Weather Code': None, 'Past Weather Desc': None, 'Soil Temperature Regime\nCode': 'HT', 'Soil Temperature Regime Desc': 'hyperthermic', 'Soil Moisture Regime \nCode': None, 'Soil Moisture Regime \nDesc': None, 'Slope Gradient Class': None, 'Slope Form Vert': None, 'Slope Form Hor': None, 'Slope Gradient \nMeasured %': None, 'Slope Gradient Desc': None, 'Gradient % (for landform) \nfrom SRTM': '< 10', 'Slope % SRTM': 5, 'Relief m/km': None, 'Drainage density': None, 'Present Land Use Code': None, 'Present land Use Desc': None, 'Past Land Use Code': None, 'Past Land Use Desc': None, 'Grazer Type': None, 'Human Influence Code': None, 'Human Influence Desc': None, 'Rock Outcrops Abundance/Cover Code': None, 'Rock Outcrops Cover %': None, 'Rock Outcrops Cover Desc': None, 'Rock Outcrops - m between': None, 'Rock Outcrops Type': None, 'Coarse Surface Fragments Cover Code': None, 'Coarse Surface Fragments Cover %': None, 'Coarse Surface Fragments Cover Desc': None, 'Coarse Surface Fragments Size Code': None, 'Coarse Surface Fragments Size cm': None, 'Coarse Surface Fragments Size Desc': None, 'Surface Coarse Surface Fragments Type': None, 'Erosion Type Code': None, 'Erosion Type': None, 'Erosion Area Affected Code': None, 'Erosion Area Affected %': None, 'Erosion Degree Code': None, 'Erosion Degree Desc': None, 'Erosion Status Code': None, 'Erosion Status Desc': None, 'Surface Sealing Thickness Code': None, 'Surface Sealing Thickness mm': None, 'Surface Sealing Thickness Desc': None, 'Surface Sealing Hardness Code': None, 'Surface Sealing Hardness Desc': None, 'Surface Cracks Width cm': None, 'Surface Cracks Width Code': None, 'Distance Between Surface Cracks  (m)': None, 'Salt (Surface Salinity)': None, 'Bleached Sand Code': None, 'Bleached Sand %': None, 'Bleached Sand Desc': None, 'Flooded >2 weeks/a': None, 'Major Landform Code (2nd level)': None, 'Major Landform Desc': None, 'Minor Landform desc': None, 'Position code': None, 'Position Desc': None, 'Vegetation': 'bare', 'Land Cover': ' bare areas', 'Parent Material': None, 'Lithology': None, 'Drainage Desc': None, 'Drainage Code': None, 'Geology': None, 'Effective Depth': None, 'Depth Class': None, 'Biological activity': None, 'Notes': None}
+
+Row 6:
+{'PRID': 'AMP-2T.S.16s', 'Dataset': 'AMP', 'PRID Let': 'AMP', 'PRID Dig': '2T.S.16s', 'ALT PRID': '2T.S.16s', 'Date \n(YYYY-MM-DD)': None, 'Date \n(DD-Mon-YY)': None, 'Date \n(DD/MM/YYYY)': None, 'Year': None, 'Month': None, 'Day': None, 'Coordinate Reference System': 'Geographic, WGS84', 'Latitude': -23.814, 'Longitude': 14.9914, 'Elevation m \nGPS': None, 'Elevation m\nSRTM': 495, 'Country ID': 'NA', 'Data Origin': 'Africa Microbiome Project', 'Surveyor(s)': 'Cowen', 'Status': 'topsoil sampling', 'Profile Classification Original': None, 'Profile Classification Original Code': None, 'Classification System': None, 'WRB2015 Reclassification RSG': None, 'WRB2015 Reclassification Principal Qualifiers': None, 'WRB2015 Reclassification Supplementary Qualifiers': None, 'WRB Classification by S Nambambi': None, 'Degree Square': 2314, 'Quarter Degree Square': '2314DD', 'Farm No': None, 'Farm Name': '', 'Location': None, 'Diagnostic Horizon / \nProperty / Material': None, 'Present Weather Code': None, 'Present Weather Desc': None, 'Past Weather Code': None, 'Past Weather Desc': None, 'Soil Temperature Regime\nCode': 'HT', 'Soil Temperature Regime Desc': 'hyperthermic', 'Soil Moisture Regime \nCode': None, 'Soil Moisture Regime \nDesc': None, 'Slope Gradient Class': None, 'Slope Form Vert': None, 'Slope Form Hor': None, 'Slope Gradient \nMeasured %': None, 'Slope Gradient Desc': None, 'Gradient % (for landform) \nfrom SRTM': '< 10', 'Slope % SRTM': 2, 'Relief m/km': None, 'Drainage density': None, 'Present Land Use Code': None, 'Present land Use Desc': None, 'Past Land Use Code': None, 'Past Land Use Desc': None, 'Grazer Type': None, 'Human Influence Code': None, 'Human Influence Desc': None, 'Rock Outcrops Abundance/Cover Code': None, 'Rock Outcrops Cover %': None, 'Rock Outcrops Cover Desc': None, 'Rock Outcrops - m between': None, 'Rock Outcrops Type': None, 'Coarse Surface Fragments Cover Code': None, 'Coarse Surface Fragments Cover %': None, 'Coarse Surface Fragments Cover Desc': None, 'Coarse Surface Fragments Size Code': None, 'Coarse Surface Fragments Size cm': None, 'Coarse Surface Fragments Size Desc': None, 'Surface Coarse Surface Fragments Type': None, 'Erosion Type Code': None, 'Erosion Type': None, 'Erosion Area Affected Code': None, 'Erosion Area Affected %': None, 'Erosion Degree Code': None, 'Erosion Degree Desc': None, 'Erosion Status Code': None, 'Erosion Status Desc': None, 'Surface Sealing Thickness Code': None, 'Surface Sealing Thickness mm': None, 'Surface Sealing Thickness Desc': None, 'Surface Sealing Hardness Code': None, 'Surface Sealing Hardness Desc': None, 'Surface Cracks Width cm': None, 'Surface Cracks Width Code': None, 'Distance Between Surface Cracks  (m)': None, 'Salt (Surface Salinity)': None, 'Bleached Sand Code': None, 'Bleached Sand %': None, 'Bleached Sand Desc': None, 'Flooded >2 weeks/a': None, 'Major Landform Code (2nd level)': None, 'Major Landform Desc': None, 'Minor Landform desc': None, 'Position code': None, 'Position Desc': None, 'Vegetation': 'bare', 'Land Cover': ' bare areas', 'Parent Material': None, 'Lithology': None, 'Drainage Desc': None, 'Drainage Code': None, 'Geology': None, 'Effective Depth': None, 'Depth Class': None, 'Biological activity': None, 'Notes': None}
+
+=================================================================
+WORKSHEET: Hor_lab
+=================================================================
+
+COLUMN HEADERS:
+1. PRID
+2. HONU
+3. Dataset
+4. Latitude
+5. Longitude
+6. Laboratory
+7. Soil Lab ID
+8. Representative Profile
+9. Hor thickness cm [contains >]
+10. Upper Depth cm [contains >]
+11. Lower Depth cm [contains >]
+12. Hor thickness cm
+13. Upper Depth cm
+14. Lower Depth cm
+15. Horizon Code Short
+16. Dominant Sand Grade Code
+17. Dominant Sand Grade Desc
+18. Sand %
+< 53 µm 
+(SDTO)
+19. Silt % 
+[2-53µm]
+(STPC)
+20. Clay % 
+[< 2 µm] 
+(CLPC)
+21. Silt + Clay %
+22. Texture  Code 
+(PSCL)
+23. Texture  Desc
+24. Bulk Density kg/dm3
+25. pH CaCl2 (PHCA) [2 soil:5 CaCl2 suspension]
+26. pH water (PHAQ)
+27. pH water other lab
+28. pH KCl (PHKC)
+29. Electrical Conductivity µS/cm [2 soil:5 water suspension] (EL25)
+30. Electrical Conductivity dS/m [2 soil:5 water suspension] (EL25)
+31. Electrical Conductivity µS/cm [Saturated Paste Extract] (ELCO)
+32. Electrical Conductivity dS/m [Saturated Paste Extract] (ELCO)
+33. Ca % [Exchangeable & Soluble; Mehlich #3, ICP-AES]
+34. Mg % [Exchangeable & Soluble; Mehlich #3, ICP-AES]
+35. K % [Exchangeable & Soluble; Mehlich #3, ICP-AES]
+36. Na % [Exchangeable & Soluble; Mehlich #3, ICP-AES]
+37. Ca mg/kg [Extractable; 1M NH4acetate, AAS] (SOCA)
+38. Mg mg/kg [Extractable; 1M NH4acetate, AAS] (SOMG)
+39. K mg/kg [Extractable; 1M NH4acetate, AAS] (SOLK)
+40. Na mg/kg [Extractable; 1M NH4acetate, AAS] (SONA)
+41. Cl mg/kg [Extractable] (SOCL)
+42. Chloride % [Extractable]
+43. SSO4 ppm
+44. Sulfate %
+45. Soluble carbonate meq/l (SCO3)
+46. Total Carbonate Equivalent g/kg
+(TCEQ)
+47. Carbonate Estimate  %
+48. Exchangeable Calcium\
+cmol(+)/kg 
+(EXCA)
+49. Exchangeable Magnesium
+cmol(+)/kg 
+(EXMG)
+50. Exchangeable Potassium
+cmol(+)/kg 
+(EXCK)
+51. Exchangeable Sodium
+cmol(+)/kg 
+(EXNA)
+52. CEC Effective 
+cmol(+)/kg
+[Sum of Exchangeable Bases]
+53. CEC Measured 
+cmol(+)/kg
+54. Base Saturation Estimate 
+%
+[from pHwater]
+55. Base Saturation 
+% 
+[CECeffective/CECmeasured]
+56. Gypsum
+%
+57. Gypsum 
+g/kg
+(GYPS)
+58. Total Nitrogen  mg/kg
+(TOTN)
+59. Total Nitrogen  g/kg
+(TOTN) Kjeldahl
+60. Total Nitrogen %
+61. Total Phosphorus mg/kg [Mehlich #3, ICP-AES]
+62. Total P unknown method & unit
+63. Phosphorus [Olsen] mg/kg
+64. P2O5 mg/kg
+[Olsen; P x 2.291]
+65. Organic Carbon % LOI
+66. Organic Carbon % WB
+67. Organic Carbon g/kg WB
+68. Organic Matter % [OC*1.74]
+69. Mn mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]
+70. Fe mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]
+71. Al mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]
+72. Porosity Measured
+73. Fe_ox mg/g
+acid-oxalate extr
+74. Al_ox mg/g
+acid-oxalate extr
+75. Al
+mg/kg?
+76. B
+mg/kg?
+77. Cu
+mg/kg?
+78. Fe
+mg/kg?
+79. Mn
+mg/kg?
+80. P  
+mg/kg?
+81. S  
+mg/kg?
+82. Zn
+mg/kg?
+83. coSa
+%
+84. meSa
+%
+85. fiSa
+%
+86. vfiSa
+%
+87. coSi
+%
+88. fiSi
+%
+89. EC (1:5)
+mS/m
+90. CaCO3
+g/kg
+91. inorgC
+g/kg
+92. totC
+g/kg
+93. orgC
+g/kg
+CNS analyser
+94. exchH
+cmol(-)/kg
+95. exchAl
+cmol(-)/kg
+96. BaseSat
+% 
+?
+97. exchAcid
+cmol(+)/kg
+98. totMo EPA 6010C?:2007
+99. totCd mg/kg
+EPA 6010C:2007
+100. totPb mg/kg
+EPA 6010C:2007
+101. totV mg/kg
+EPA  6020A:2007
+102. totHg mg/kg
+EPA  6020A:2007
+103. totCr mg/kg
+EPA 6010C:2007
+104. totCo mg/kg
+EPA 6010C:2007
+105. totNi mg/kg
+EPA 6010C:2007
+106. totCu mg/kg
+EPA 6010C:2007
+107. totZn mg/kg
+EPA 6010C:2007
+108. totAs mg/kg
+EPA  6020A:2007
+109. totSb mg/kg
+EPA  6020A:2007
+
+Possible coordinate columns: ['Latitude', 'Longitude', 'Laboratory', 'Clay % \n[< 2 µm] \n(CLPC)', 'Silt + Clay %', 'Texture  Code \n(PSCL)', 'Texture  Desc', 'Bulk Density kg/dm3', 'Electrical Conductivity µS/cm [2 soil:5 water suspension] (EL25)', 'Electrical Conductivity dS/m [2 soil:5 water suspension] (EL25)', 'Electrical Conductivity µS/cm [Saturated Paste Extract] (ELCO)', 'Electrical Conductivity dS/m [Saturated Paste Extract] (ELCO)', 'Ca % [Exchangeable & Soluble; Mehlich #3, ICP-AES]', 'Mg % [Exchangeable & Soluble; Mehlich #3, ICP-AES]', 'K % [Exchangeable & Soluble; Mehlich #3, ICP-AES]', 'Na % [Exchangeable & Soluble; Mehlich #3, ICP-AES]', 'Ca mg/kg [Extractable; 1M NH4acetate, AAS] (SOCA)', 'Mg mg/kg [Extractable; 1M NH4acetate, AAS] (SOMG)', 'K mg/kg [Extractable; 1M NH4acetate, AAS] (SOLK)', 'Na mg/kg [Extractable; 1M NH4acetate, AAS] (SONA)', 'Cl mg/kg [Extractable] (SOCL)', 'Chloride % [Extractable]', 'Exchangeable Calcium\\\ncmol(+)/kg \n(EXCA)', 'Exchangeable Magnesium\ncmol(+)/kg \n(EXMG)', 'Exchangeable Potassium\ncmol(+)/kg \n(EXCK)', 'Exchangeable Sodium\ncmol(+)/kg \n(EXNA)', 'CEC Effective \ncmol(+)/kg\n[Sum of Exchangeable Bases]', 'Gypsum\n%', 'Gypsum \ng/kg\n(GYPS)', 'P2O5 mg/kg\n[Olsen; P x 2.291]', 'Mn mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]', 'Fe mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]', 'Al mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]', 'Porosity Measured', 'Fe_ox mg/g\nacid-oxalate extr', 'Al_ox mg/g\nacid-oxalate extr', 'orgC\ng/kg\nCNS analyser', 'exchH\ncmol(-)/kg', 'exchAl\ncmol(-)/kg', 'exchAcid\ncmol(+)/kg']
+Possible identifier columns: ['PRID', 'Soil Lab ID', 'Representative Profile', 'Horizon Code Short', 'Chloride % [Extractable]', 'Fe_ox mg/g\nacid-oxalate extr', 'Al_ox mg/g\nacid-oxalate extr', 'exchAcid\ncmol(+)/kg']
+
+SAMPLE RECORDS:
+
+Row 2:
+{'PRID': 'AMP-1l.S.16s', 'HONU': 1, 'Dataset': 'AMP', 'Latitude': -23.788017, 'Longitude': 15.080583, 'Laboratory': 'AMP', 'Soil Lab ID': None, 'Representative Profile': None, 'Hor thickness cm [contains >]': 20, 'Upper Depth cm [contains >]': 0, 'Lower Depth cm [contains >]': 20, 'Hor thickness cm': 20, 'Upper Depth cm': 0, 'Lower Depth cm': 20, 'Horizon Code Short': None, 'Dominant Sand Grade Code': None, 'Dominant Sand Grade Desc': None, 'Sand %\n< 53 µm \n(SDTO)': 99.5104, 'Silt % \n[2-53µm]\n(STPC)': 0.2448, 'Clay % \n[< 2 µm] \n(CLPC)': 0.2448, 'Silt + Clay %': 0.4896, 'Texture  Code \n(PSCL)': 'S', 'Texture  Desc': 'sand', 'Bulk Density kg/dm3': None, 'pH CaCl2 (PHCA) [2 soil:5 CaCl2 suspension]': 6.9, 'pH water (PHAQ)': None, 'pH water other lab': None, 'pH KCl (PHKC)': None, 'Electrical Conductivity µS/cm [2 soil:5 water suspension] (EL25)': None, 'Electrical Conductivity dS/m [2 soil:5 water suspension] (EL25)': None, 'Electrical Conductivity µS/cm [Saturated Paste Extract] (ELCO)': None, 'Electrical Conductivity dS/m [Saturated Paste Extract] (ELCO)': None, 'Ca % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 4.43, 'Mg % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 1.12, 'K % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 1.98, 'Na % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 6.34, 'Ca mg/kg [Extractable; 1M NH4acetate, AAS] (SOCA)': None, 'Mg mg/kg [Extractable; 1M NH4acetate, AAS] (SOMG)': None, 'K mg/kg [Extractable; 1M NH4acetate, AAS] (SOLK)': None, 'Na mg/kg [Extractable; 1M NH4acetate, AAS] (SONA)': None, 'Cl mg/kg [Extractable] (SOCL)': None, 'Chloride % [Extractable]': None, 'SSO4 ppm': None, 'Sulfate %': None, 'Soluble carbonate meq/l (SCO3)': None, 'Total Carbonate Equivalent g/kg\n(TCEQ)': None, 'Carbonate Estimate  %': None, 'Exchangeable Calcium\\\ncmol(+)/kg \n(EXCA)': None, 'Exchangeable Magnesium\ncmol(+)/kg \n(EXMG)': None, 'Exchangeable Potassium\ncmol(+)/kg \n(EXCK)': None, 'Exchangeable Sodium\ncmol(+)/kg \n(EXNA)': None, 'CEC Effective \ncmol(+)/kg\n[Sum of Exchangeable Bases]': None, 'CEC Measured \ncmol(+)/kg': None, 'Base Saturation Estimate \n%\n[from pHwater]': None, 'Base Saturation \n% \n[CECeffective/CECmeasured]': None, 'Gypsum\n%': None, 'Gypsum \ng/kg\n(GYPS)': None, 'Total Nitrogen  mg/kg\n(TOTN)': None, 'Total Nitrogen  g/kg\n(TOTN) Kjeldahl': None, 'Total Nitrogen %': None, 'Total Phosphorus mg/kg [Mehlich #3, ICP-AES]': None, 'Total P unknown method & unit': 0.18, 'Phosphorus [Olsen] mg/kg': None, 'P2O5 mg/kg\n[Olsen; P x 2.291]': None, 'Organic Carbon % LOI': None, 'Organic Carbon % WB': 0.0364286441, 'Organic Carbon g/kg WB': 0.364286441, 'Organic Matter % [OC*1.74]': 0.063385840734, 'Mn mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]': None, 'Fe mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]': None, 'Al mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]': None, 'Porosity Measured': None, 'Fe_ox mg/g\nacid-oxalate extr': None, 'Al_ox mg/g\nacid-oxalate extr': None, 'Al\nmg/kg?': None, 'B\nmg/kg?': None, 'Cu\nmg/kg?': None, 'Fe\nmg/kg?': None, 'Mn\nmg/kg?': None, 'P  \nmg/kg?': None, 'S  \nmg/kg?': None, 'Zn\nmg/kg?': None, 'coSa\n%': None, 'meSa\n%': None, 'fiSa\n%': None, 'vfiSa\n%': None, 'coSi\n%': None, 'fiSi\n%': None, 'EC (1:5)\nmS/m': None, 'CaCO3\ng/kg': None, 'inorgC\ng/kg': None, 'totC\ng/kg': None, 'orgC\ng/kg\nCNS analyser': None, 'exchH\ncmol(-)/kg': None, 'exchAl\ncmol(-)/kg': None, 'BaseSat\n% \n?': None, 'exchAcid\ncmol(+)/kg': None, 'totMo EPA 6010C?:2007': None, 'totCd mg/kg\nEPA 6010C:2007': None, 'totPb mg/kg\nEPA 6010C:2007': None, 'totV mg/kg\nEPA  6020A:2007': None, 'totHg mg/kg\nEPA  6020A:2007': None, 'totCr mg/kg\nEPA 6010C:2007': None, 'totCo mg/kg\nEPA 6010C:2007': None, 'totNi mg/kg\nEPA 6010C:2007': None, 'totCu mg/kg\nEPA 6010C:2007': None, 'totZn mg/kg\nEPA 6010C:2007': None, 'totAs mg/kg\nEPA  6020A:2007': None, 'totSb mg/kg\nEPA  6020A:2007': None, '': None}
+
+Row 3:
+{'PRID': 'AMP-1S.S.16s', 'HONU': 1, 'Dataset': 'AMP', 'Latitude': -23.7852, 'Longitude': 15.0801, 'Laboratory': 'AMP', 'Soil Lab ID': None, 'Representative Profile': None, 'Hor thickness cm [contains >]': 20, 'Upper Depth cm [contains >]': 0, 'Lower Depth cm [contains >]': 20, 'Hor thickness cm': 20, 'Upper Depth cm': 0, 'Lower Depth cm': 20, 'Horizon Code Short': None, 'Dominant Sand Grade Code': None, 'Dominant Sand Grade Desc': None, 'Sand %\n< 53 µm \n(SDTO)': 99.808, 'Silt % \n[2-53µm]\n(STPC)': 0.096, 'Clay % \n[< 2 µm] \n(CLPC)': 0.096, 'Silt + Clay %': 0.192, 'Texture  Code \n(PSCL)': 'S', 'Texture  Desc': 'sand', 'Bulk Density kg/dm3': None, 'pH CaCl2 (PHCA) [2 soil:5 CaCl2 suspension]': 6.7, 'pH water (PHAQ)': None, 'pH water other lab': None, 'pH KCl (PHKC)': None, 'Electrical Conductivity µS/cm [2 soil:5 water suspension] (EL25)': None, 'Electrical Conductivity dS/m [2 soil:5 water suspension] (EL25)': None, 'Electrical Conductivity µS/cm [Saturated Paste Extract] (ELCO)': None, 'Electrical Conductivity dS/m [Saturated Paste Extract] (ELCO)': None, 'Ca % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 2.52, 'Mg % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 1.03, 'K % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 1.6, 'Na % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 9.88, 'Ca mg/kg [Extractable; 1M NH4acetate, AAS] (SOCA)': None, 'Mg mg/kg [Extractable; 1M NH4acetate, AAS] (SOMG)': None, 'K mg/kg [Extractable; 1M NH4acetate, AAS] (SOLK)': None, 'Na mg/kg [Extractable; 1M NH4acetate, AAS] (SONA)': None, 'Cl mg/kg [Extractable] (SOCL)': None, 'Chloride % [Extractable]': None, 'SSO4 ppm': None, 'Sulfate %': None, 'Soluble carbonate meq/l (SCO3)': None, 'Total Carbonate Equivalent g/kg\n(TCEQ)': None, 'Carbonate Estimate  %': None, 'Exchangeable Calcium\\\ncmol(+)/kg \n(EXCA)': None, 'Exchangeable Magnesium\ncmol(+)/kg \n(EXMG)': None, 'Exchangeable Potassium\ncmol(+)/kg \n(EXCK)': None, 'Exchangeable Sodium\ncmol(+)/kg \n(EXNA)': None, 'CEC Effective \ncmol(+)/kg\n[Sum of Exchangeable Bases]': None, 'CEC Measured \ncmol(+)/kg': None, 'Base Saturation Estimate \n%\n[from pHwater]': None, 'Base Saturation \n% \n[CECeffective/CECmeasured]': None, 'Gypsum\n%': None, 'Gypsum \ng/kg\n(GYPS)': None, 'Total Nitrogen  mg/kg\n(TOTN)': None, 'Total Nitrogen  g/kg\n(TOTN) Kjeldahl': None, 'Total Nitrogen %': None, 'Total Phosphorus mg/kg [Mehlich #3, ICP-AES]': None, 'Total P unknown method & unit': 0.18, 'Phosphorus [Olsen] mg/kg': None, 'P2O5 mg/kg\n[Olsen; P x 2.291]': None, 'Organic Carbon % LOI': None, 'Organic Carbon % WB': 0.0364286441, 'Organic Carbon g/kg WB': 0.364286441, 'Organic Matter % [OC*1.74]': 0.063385840734, 'Mn mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]': None, 'Fe mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]': None, 'Al mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]': None, 'Porosity Measured': None, 'Fe_ox mg/g\nacid-oxalate extr': None, 'Al_ox mg/g\nacid-oxalate extr': None, 'Al\nmg/kg?': None, 'B\nmg/kg?': None, 'Cu\nmg/kg?': None, 'Fe\nmg/kg?': None, 'Mn\nmg/kg?': None, 'P  \nmg/kg?': None, 'S  \nmg/kg?': None, 'Zn\nmg/kg?': None, 'coSa\n%': None, 'meSa\n%': None, 'fiSa\n%': None, 'vfiSa\n%': None, 'coSi\n%': None, 'fiSi\n%': None, 'EC (1:5)\nmS/m': None, 'CaCO3\ng/kg': None, 'inorgC\ng/kg': None, 'totC\ng/kg': None, 'orgC\ng/kg\nCNS analyser': None, 'exchH\ncmol(-)/kg': None, 'exchAl\ncmol(-)/kg': None, 'BaseSat\n% \n?': None, 'exchAcid\ncmol(+)/kg': None, 'totMo EPA 6010C?:2007': None, 'totCd mg/kg\nEPA 6010C:2007': None, 'totPb mg/kg\nEPA 6010C:2007': None, 'totV mg/kg\nEPA  6020A:2007': None, 'totHg mg/kg\nEPA  6020A:2007': None, 'totCr mg/kg\nEPA 6010C:2007': None, 'totCo mg/kg\nEPA 6010C:2007': None, 'totNi mg/kg\nEPA 6010C:2007': None, 'totCu mg/kg\nEPA 6010C:2007': None, 'totZn mg/kg\nEPA 6010C:2007': None, 'totAs mg/kg\nEPA  6020A:2007': None, 'totSb mg/kg\nEPA  6020A:2007': None, '': None}
+
+Row 4:
+{'PRID': 'AMP-1T.S.16s', 'HONU': 1, 'Dataset': 'AMP', 'Latitude': -23.7834, 'Longitude': 15.0804, 'Laboratory': 'AMP', 'Soil Lab ID': None, 'Representative Profile': None, 'Hor thickness cm [contains >]': 20, 'Upper Depth cm [contains >]': 0, 'Lower Depth cm [contains >]': 20, 'Hor thickness cm': 20, 'Upper Depth cm': 0, 'Lower Depth cm': 20, 'Horizon Code Short': None, 'Dominant Sand Grade Code': None, 'Dominant Sand Grade Desc': None, 'Sand %\n< 53 µm \n(SDTO)': 99.753801, 'Silt % \n[2-53µm]\n(STPC)': 0.1231, 'Clay % \n[< 2 µm] \n(CLPC)': 0.1231, 'Silt + Clay %': 0.2462, 'Texture  Code \n(PSCL)': 'S', 'Texture  Desc': 'sand', 'Bulk Density kg/dm3': None, 'pH CaCl2 (PHCA) [2 soil:5 CaCl2 suspension]': 6.6, 'pH water (PHAQ)': None, 'pH water other lab': None, 'pH KCl (PHKC)': None, 'Electrical Conductivity µS/cm [2 soil:5 water suspension] (EL25)': None, 'Electrical Conductivity dS/m [2 soil:5 water suspension] (EL25)': None, 'Electrical Conductivity µS/cm [Saturated Paste Extract] (ELCO)': None, 'Electrical Conductivity dS/m [Saturated Paste Extract] (ELCO)': None, 'Ca % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 0.88, 'Mg % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 0.42, 'K % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 0.76, 'Na % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 10.44, 'Ca mg/kg [Extractable; 1M NH4acetate, AAS] (SOCA)': None, 'Mg mg/kg [Extractable; 1M NH4acetate, AAS] (SOMG)': None, 'K mg/kg [Extractable; 1M NH4acetate, AAS] (SOLK)': None, 'Na mg/kg [Extractable; 1M NH4acetate, AAS] (SONA)': None, 'Cl mg/kg [Extractable] (SOCL)': None, 'Chloride % [Extractable]': None, 'SSO4 ppm': None, 'Sulfate %': None, 'Soluble carbonate meq/l (SCO3)': None, 'Total Carbonate Equivalent g/kg\n(TCEQ)': None, 'Carbonate Estimate  %': None, 'Exchangeable Calcium\\\ncmol(+)/kg \n(EXCA)': None, 'Exchangeable Magnesium\ncmol(+)/kg \n(EXMG)': None, 'Exchangeable Potassium\ncmol(+)/kg \n(EXCK)': None, 'Exchangeable Sodium\ncmol(+)/kg \n(EXNA)': None, 'CEC Effective \ncmol(+)/kg\n[Sum of Exchangeable Bases]': None, 'CEC Measured \ncmol(+)/kg': None, 'Base Saturation Estimate \n%\n[from pHwater]': None, 'Base Saturation \n% \n[CECeffective/CECmeasured]': None, 'Gypsum\n%': None, 'Gypsum \ng/kg\n(GYPS)': None, 'Total Nitrogen  mg/kg\n(TOTN)': None, 'Total Nitrogen  g/kg\n(TOTN) Kjeldahl': None, 'Total Nitrogen %': None, 'Total Phosphorus mg/kg [Mehlich #3, ICP-AES]': None, 'Total P unknown method & unit': 0.1, 'Phosphorus [Olsen] mg/kg': None, 'P2O5 mg/kg\n[Olsen; P x 2.291]': None, 'Organic Carbon % LOI': None, 'Organic Carbon % WB': 0.0861040678, 'Organic Carbon g/kg WB': 0.8610406780000001, 'Organic Matter % [OC*1.74]': 0.149821077972, 'Mn mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]': None, 'Fe mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]': None, 'Al mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]': None, 'Porosity Measured': None, 'Fe_ox mg/g\nacid-oxalate extr': None, 'Al_ox mg/g\nacid-oxalate extr': None, 'Al\nmg/kg?': None, 'B\nmg/kg?': None, 'Cu\nmg/kg?': None, 'Fe\nmg/kg?': None, 'Mn\nmg/kg?': None, 'P  \nmg/kg?': None, 'S  \nmg/kg?': None, 'Zn\nmg/kg?': None, 'coSa\n%': None, 'meSa\n%': None, 'fiSa\n%': None, 'vfiSa\n%': None, 'coSi\n%': None, 'fiSi\n%': None, 'EC (1:5)\nmS/m': None, 'CaCO3\ng/kg': None, 'inorgC\ng/kg': None, 'totC\ng/kg': None, 'orgC\ng/kg\nCNS analyser': None, 'exchH\ncmol(-)/kg': None, 'exchAl\ncmol(-)/kg': None, 'BaseSat\n% \n?': None, 'exchAcid\ncmol(+)/kg': None, 'totMo EPA 6010C?:2007': None, 'totCd mg/kg\nEPA 6010C:2007': None, 'totPb mg/kg\nEPA 6010C:2007': None, 'totV mg/kg\nEPA  6020A:2007': None, 'totHg mg/kg\nEPA  6020A:2007': None, 'totCr mg/kg\nEPA 6010C:2007': None, 'totCo mg/kg\nEPA 6010C:2007': None, 'totNi mg/kg\nEPA 6010C:2007': None, 'totCu mg/kg\nEPA 6010C:2007': None, 'totZn mg/kg\nEPA 6010C:2007': None, 'totAs mg/kg\nEPA  6020A:2007': None, 'totSb mg/kg\nEPA  6020A:2007': None, '': None}
+
+Row 5:
+{'PRID': 'AMP-2l.S.16s', 'HONU': 1, 'Dataset': 'AMP', 'Latitude': -23.813233, 'Longitude': 14.9889, 'Laboratory': 'AMP', 'Soil Lab ID': None, 'Representative Profile': None, 'Hor thickness cm [contains >]': 20, 'Upper Depth cm [contains >]': 0, 'Lower Depth cm [contains >]': 20, 'Hor thickness cm': 20, 'Upper Depth cm': 0, 'Lower Depth cm': 20, 'Horizon Code Short': None, 'Dominant Sand Grade Code': None, 'Dominant Sand Grade Desc': None, 'Sand %\n< 53 µm \n(SDTO)': 91.3858, 'Silt % \n[2-53µm]\n(STPC)': 4.3071, 'Clay % \n[< 2 µm] \n(CLPC)': 4.3071, 'Silt + Clay %': 8.6142, 'Texture  Code \n(PSCL)': 'S', 'Texture  Desc': 'sand', 'Bulk Density kg/dm3': None, 'pH CaCl2 (PHCA) [2 soil:5 CaCl2 suspension]': 7.1, 'pH water (PHAQ)': None, 'pH water other lab': None, 'pH KCl (PHKC)': None, 'Electrical Conductivity µS/cm [2 soil:5 water suspension] (EL25)': None, 'Electrical Conductivity dS/m [2 soil:5 water suspension] (EL25)': None, 'Electrical Conductivity µS/cm [Saturated Paste Extract] (ELCO)': None, 'Electrical Conductivity dS/m [Saturated Paste Extract] (ELCO)': None, 'Ca % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 3.13, 'Mg % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 1.48, 'K % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 1.69, 'Na % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 21.42, 'Ca mg/kg [Extractable; 1M NH4acetate, AAS] (SOCA)': None, 'Mg mg/kg [Extractable; 1M NH4acetate, AAS] (SOMG)': None, 'K mg/kg [Extractable; 1M NH4acetate, AAS] (SOLK)': None, 'Na mg/kg [Extractable; 1M NH4acetate, AAS] (SONA)': None, 'Cl mg/kg [Extractable] (SOCL)': None, 'Chloride % [Extractable]': None, 'SSO4 ppm': None, 'Sulfate %': None, 'Soluble carbonate meq/l (SCO3)': None, 'Total Carbonate Equivalent g/kg\n(TCEQ)': None, 'Carbonate Estimate  %': None, 'Exchangeable Calcium\\\ncmol(+)/kg \n(EXCA)': None, 'Exchangeable Magnesium\ncmol(+)/kg \n(EXMG)': None, 'Exchangeable Potassium\ncmol(+)/kg \n(EXCK)': None, 'Exchangeable Sodium\ncmol(+)/kg \n(EXNA)': None, 'CEC Effective \ncmol(+)/kg\n[Sum of Exchangeable Bases]': None, 'CEC Measured \ncmol(+)/kg': None, 'Base Saturation Estimate \n%\n[from pHwater]': None, 'Base Saturation \n% \n[CECeffective/CECmeasured]': None, 'Gypsum\n%': None, 'Gypsum \ng/kg\n(GYPS)': None, 'Total Nitrogen  mg/kg\n(TOTN)': None, 'Total Nitrogen  g/kg\n(TOTN) Kjeldahl': None, 'Total Nitrogen %': None, 'Total Phosphorus mg/kg [Mehlich #3, ICP-AES]': None, 'Total P unknown method & unit': 0.34, 'Phosphorus [Olsen] mg/kg': None, 'P2O5 mg/kg\n[Olsen; P x 2.291]': None, 'Organic Carbon % LOI': None, 'Organic Carbon % WB': 0.1655847458, 'Organic Carbon g/kg WB': 1.655847458, 'Organic Matter % [OC*1.74]': 0.288117457692, 'Mn mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]': None, 'Fe mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]': None, 'Al mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]': None, 'Porosity Measured': None, 'Fe_ox mg/g\nacid-oxalate extr': None, 'Al_ox mg/g\nacid-oxalate extr': None, 'Al\nmg/kg?': None, 'B\nmg/kg?': None, 'Cu\nmg/kg?': None, 'Fe\nmg/kg?': None, 'Mn\nmg/kg?': None, 'P  \nmg/kg?': None, 'S  \nmg/kg?': None, 'Zn\nmg/kg?': None, 'coSa\n%': None, 'meSa\n%': None, 'fiSa\n%': None, 'vfiSa\n%': None, 'coSi\n%': None, 'fiSi\n%': None, 'EC (1:5)\nmS/m': None, 'CaCO3\ng/kg': None, 'inorgC\ng/kg': None, 'totC\ng/kg': None, 'orgC\ng/kg\nCNS analyser': None, 'exchH\ncmol(-)/kg': None, 'exchAl\ncmol(-)/kg': None, 'BaseSat\n% \n?': None, 'exchAcid\ncmol(+)/kg': None, 'totMo EPA 6010C?:2007': None, 'totCd mg/kg\nEPA 6010C:2007': None, 'totPb mg/kg\nEPA 6010C:2007': None, 'totV mg/kg\nEPA  6020A:2007': None, 'totHg mg/kg\nEPA  6020A:2007': None, 'totCr mg/kg\nEPA 6010C:2007': None, 'totCo mg/kg\nEPA 6010C:2007': None, 'totNi mg/kg\nEPA 6010C:2007': None, 'totCu mg/kg\nEPA 6010C:2007': None, 'totZn mg/kg\nEPA 6010C:2007': None, 'totAs mg/kg\nEPA  6020A:2007': None, 'totSb mg/kg\nEPA  6020A:2007': None, '': None}
+
+Row 6:
+{'PRID': 'AMP-2T.S.16s', 'HONU': 1, 'Dataset': 'AMP', 'Latitude': -23.814, 'Longitude': 14.9914, 'Laboratory': 'AMP', 'Soil Lab ID': None, 'Representative Profile': None, 'Hor thickness cm [contains >]': 20, 'Upper Depth cm [contains >]': 0, 'Lower Depth cm [contains >]': 20, 'Hor thickness cm': 20, 'Upper Depth cm': 0, 'Lower Depth cm': 20, 'Horizon Code Short': None, 'Dominant Sand Grade Code': None, 'Dominant Sand Grade Desc': None, 'Sand %\n< 53 µm \n(SDTO)': 99.383801, 'Silt % \n[2-53µm]\n(STPC)': 0.3081, 'Clay % \n[< 2 µm] \n(CLPC)': 0.3081, 'Silt + Clay %': 0.6162, 'Texture  Code \n(PSCL)': 'S', 'Texture  Desc': 'sand', 'Bulk Density kg/dm3': None, 'pH CaCl2 (PHCA) [2 soil:5 CaCl2 suspension]': 7.4, 'pH water (PHAQ)': None, 'pH water other lab': None, 'pH KCl (PHKC)': None, 'Electrical Conductivity µS/cm [2 soil:5 water suspension] (EL25)': None, 'Electrical Conductivity dS/m [2 soil:5 water suspension] (EL25)': None, 'Electrical Conductivity µS/cm [Saturated Paste Extract] (ELCO)': None, 'Electrical Conductivity dS/m [Saturated Paste Extract] (ELCO)': None, 'Ca % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 0.75, 'Mg % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 0.27, 'K % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 0.57, 'Na % [Exchangeable & Soluble; Mehlich #3, ICP-AES]': 17.55, 'Ca mg/kg [Extractable; 1M NH4acetate, AAS] (SOCA)': None, 'Mg mg/kg [Extractable; 1M NH4acetate, AAS] (SOMG)': None, 'K mg/kg [Extractable; 1M NH4acetate, AAS] (SOLK)': None, 'Na mg/kg [Extractable; 1M NH4acetate, AAS] (SONA)': None, 'Cl mg/kg [Extractable] (SOCL)': None, 'Chloride % [Extractable]': None, 'SSO4 ppm': None, 'Sulfate %': None, 'Soluble carbonate meq/l (SCO3)': None, 'Total Carbonate Equivalent g/kg\n(TCEQ)': None, 'Carbonate Estimate  %': None, 'Exchangeable Calcium\\\ncmol(+)/kg \n(EXCA)': None, 'Exchangeable Magnesium\ncmol(+)/kg \n(EXMG)': None, 'Exchangeable Potassium\ncmol(+)/kg \n(EXCK)': None, 'Exchangeable Sodium\ncmol(+)/kg \n(EXNA)': None, 'CEC Effective \ncmol(+)/kg\n[Sum of Exchangeable Bases]': None, 'CEC Measured \ncmol(+)/kg': None, 'Base Saturation Estimate \n%\n[from pHwater]': None, 'Base Saturation \n% \n[CECeffective/CECmeasured]': None, 'Gypsum\n%': None, 'Gypsum \ng/kg\n(GYPS)': None, 'Total Nitrogen  mg/kg\n(TOTN)': None, 'Total Nitrogen  g/kg\n(TOTN) Kjeldahl': None, 'Total Nitrogen %': None, 'Total Phosphorus mg/kg [Mehlich #3, ICP-AES]': None, 'Total P unknown method & unit': 0.11, 'Phosphorus [Olsen] mg/kg': None, 'P2O5 mg/kg\n[Olsen; P x 2.291]': None, 'Organic Carbon % LOI': None, 'Organic Carbon % WB': 0.0264935593, 'Organic Carbon g/kg WB': 0.264935593, 'Organic Matter % [OC*1.74]': 0.046098793182, 'Mn mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]': None, 'Fe mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]': None, 'Al mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]': None, 'Porosity Measured': None, 'Fe_ox mg/g\nacid-oxalate extr': None, 'Al_ox mg/g\nacid-oxalate extr': None, 'Al\nmg/kg?': None, 'B\nmg/kg?': None, 'Cu\nmg/kg?': None, 'Fe\nmg/kg?': None, 'Mn\nmg/kg?': None, 'P  \nmg/kg?': None, 'S  \nmg/kg?': None, 'Zn\nmg/kg?': None, 'coSa\n%': None, 'meSa\n%': None, 'fiSa\n%': None, 'vfiSa\n%': None, 'coSi\n%': None, 'fiSi\n%': None, 'EC (1:5)\nmS/m': None, 'CaCO3\ng/kg': None, 'inorgC\ng/kg': None, 'totC\ng/kg': None, 'orgC\ng/kg\nCNS analyser': None, 'exchH\ncmol(-)/kg': None, 'exchAl\ncmol(-)/kg': None, 'BaseSat\n% \n?': None, 'exchAcid\ncmol(+)/kg': None, 'totMo EPA 6010C?:2007': None, 'totCd mg/kg\nEPA 6010C:2007': None, 'totPb mg/kg\nEPA 6010C:2007': None, 'totV mg/kg\nEPA  6020A:2007': None, 'totHg mg/kg\nEPA  6020A:2007': None, 'totCr mg/kg\nEPA 6010C:2007': None, 'totCo mg/kg\nEPA 6010C:2007': None, 'totNi mg/kg\nEPA 6010C:2007': None, 'totCu mg/kg\nEPA 6010C:2007': None, 'totZn mg/kg\nEPA 6010C:2007': None, 'totAs mg/kg\nEPA  6020A:2007': None, 'totSb mg/kg\nEPA  6020A:2007': None, '': None}
+
+=================================================================
+WORKSHEET: Hor_field
+=================================================================
+
+COLUMN HEADERS:
+1. PRID
+2. HONU
+3. Dataset
+4. Latitude
+5. Longitude
+6. Hor thickness cm
+7. Upper Depth cm
+8. Lower Depth cm
+9. Diagnostic Horizon / Property / Material Code
+10. Diagnostic Horizon
+11. Diagnostic Property
+12. Diagnostic Material
+13. Qualifier
+14. Horizon Code Short
+15. Horizon Code Original
+16. Subordinate Horizon Code
+17. Lithology of R/C
+18. Horizon Transition Distinctness Code
+19. Horizon Transition Distinctness Desc
+20. Horizon Transition Distinctness cm
+21. Horizon Transition Topography Code
+22. Horizon Transition Topography Desc
+23. Structure Type Code
+24. Structure Type Desc
+25. Structure Strength Code
+26. Structure Strength Desc
+27. Structure Size Code
+28. Structure Size Desc
+29. Coarse Fragments Abundance Code
+30. Coarse Fragments Abundance Desc
+31. Coarse Fragments Abundance %
+32. Coarse Fragments Size Code
+33. Coarse Fragments Size Desc
+34. Coarse Fragments Size mm
+35. Course Fragments Shape Code
+36. Coarse Fragments Shape Desc
+37. Coarse Fragments Degree of Weathering
+38. Coarse Fragments Type
+39. Drainage Code
+40. Drainage Desc
+41. Field Texture Code
+42. Field Texture Desc
+43. Carbonate Estimate  %.1
+44. Carbonate Reaction Code
+45. Carbonate Reaction Desc
+46. Secondary Carbonates Code
+47. Secondary Carbonates Desc
+48. Munsell_col_moist
+49. Hue_moist
+50. Value_moist
+51. Chroma_moist
+52. Colour Moist Desc [Munsell]
+53. Munsell_col_dry
+54. Hue_dry
+55. Value_dry
+56. Chroma_dry
+57. Colour Dry Desc 
+[Munsell]
+58. Mottling Desc
+59. Vertic Properties
+60. properties for classification
+61. CLAF
+62. LOWER LEVEL UNITS
+63. REFERENCE GROUP
+64. CLAV
+65. ALT PRID
+66. Consistence Dry Code
+67. Consistence Dry Desc
+68. Consistence Moist Code
+69. Consistence Moist Desc
+70. Consistence Wet - Stickiness Code
+71. Consistence Wet - Stickiness  Desc
+72. Consistence Wet - Plasticity Code
+73. Consistence Wet - Plasticity Desc
+74. Porosity Class Code
+75. Porosity Class Desc
+76. Porosity Class %
+77. Voids Type Code
+78. Voids Type Desc
+79. Voids Size Class
+80. Voids Size Desc
+81. Voids Size mm
+82. Voids Abundance Class
+83. Voids Abundance Desc
+84. Voids Abundance Number
+85. Coatings Nature Code
+86. Coatings Nature Desc
+87. Coatings Form Code
+88. Coatings Form Desc
+89. Coatings Location Code
+90. Coatings Location Desc
+91. Cementation /  Compaction Nature Code
+92. Cementation / Compaction Nature Desc
+93. Cementation /  Compaction Continuity Code
+94. Cementation / Compaction Continuity Desc
+95. Cementation /  Compaction Fabric Code
+96. Cementation / Compaction Fabric Desc
+97. Mineral Concentrations Nature Code
+98. Mineral Concentrations Nature Desc
+99. Mineral Concentrations Abundance Code
+100. Mineral Concentrations Abundance Desc
+101. Mineral Concentrations Abundance %
+102. Mineral Concentrations Size Code
+103. Mineral Concentrations Size Desc
+104. Mineral Concentrations Shape Code
+105. Mineral Concentrations Shape Desc
+106. Mineral Concentrations Hardness Code
+107. Mineral Concentrations Hardness Desc
+108. Roots Abundance Code
+109. Roots Abundance Desc
+110. Roots Abundance No
+111. Roots Diameter Code
+112. Roots Diameter Desc
+113. Roots Diameter mm
+114. Biological Features Code
+115. Biological Features Desc
+116. Notes
+
+Possible coordinate columns: ['Latitude', 'Longitude', 'Diagnostic Horizon / Property / Material Code', 'Diagnostic Property', 'Lithology of R/C', 'Horizon Transition Topography Code', 'Horizon Transition Topography Desc', 'Structure Type Code', 'Structure Type Desc', 'Coarse Fragments Type', 'Field Texture Code', 'Field Texture Desc', 'Secondary Carbonates Code', 'Secondary Carbonates Desc', 'Munsell_col_dry', 'Hue_dry', 'Value_dry', 'Chroma_dry', 'Colour Dry Desc \n[Munsell]', 'Consistence Dry Code', 'Consistence Dry Desc', 'Consistence Wet - Plasticity Code', 'Consistence Wet - Plasticity Desc', 'Porosity Class Code', 'Porosity Class Desc', 'Porosity Class %', 'Voids Type Code', 'Voids Type Desc', 'Cementation /  Compaction Continuity Code', 'Cementation / Compaction Continuity Desc']
+Possible identifier columns: ['PRID', 'Diagnostic Horizon / Property / Material Code', 'Diagnostic Horizon', 'Horizon Code Short', 'Horizon Code Original', 'Subordinate Horizon Code', 'Horizon Transition Distinctness Code', 'Horizon Transition Distinctness Desc', 'Horizon Transition Distinctness cm', 'Horizon Transition Topography Code', 'Horizon Transition Topography Desc', 'ALT PRID', 'Voids Type Code', 'Voids Type Desc', 'Voids Size Class', 'Voids Size Desc', 'Voids Size mm', 'Voids Abundance Class', 'Voids Abundance Desc', 'Voids Abundance Number']
+
+SAMPLE RECORDS:
+
+Row 2:
+{'PRID': 'AMP-1l.S.16s', 'HONU': 1, 'Dataset': 'AMP', 'Latitude': -23.788017, 'Longitude': 15.080583, 'Hor thickness cm': 20, 'Upper Depth cm': 0, 'Lower Depth cm': 20, 'Diagnostic Horizon / Property / Material Code': None, 'Diagnostic Horizon': None, 'Diagnostic Property': None, 'Diagnostic Material': 'Mineral', 'Qualifier': 'Ochric', 'Horizon Code Short': None, 'Horizon Code Original': None, 'Subordinate Horizon Code': None, 'Lithology of R/C': None, 'Horizon Transition Distinctness Code': None, 'Horizon Transition Distinctness Desc': None, 'Horizon Transition Distinctness cm': None, 'Horizon Transition Topography Code': None, 'Horizon Transition Topography Desc': None, 'Structure Type Code': None, 'Structure Type Desc': None, 'Structure Strength Code': None, 'Structure Strength Desc': None, 'Structure Size Code': None, 'Structure Size Desc': None, 'Coarse Fragments Abundance Code': None, 'Coarse Fragments Abundance Desc': None, 'Coarse Fragments Abundance %': None, 'Coarse Fragments Size Code': None, 'Coarse Fragments Size Desc': None, 'Coarse Fragments Size mm': None, 'Course Fragments Shape Code': None, 'Coarse Fragments Shape Desc': None, 'Coarse Fragments Degree of Weathering': None, 'Coarse Fragments Type': None, 'Drainage Code': None, 'Drainage Desc': None, 'Field Texture Code': None, 'Field Texture Desc': None, 'Carbonate Estimate  %.1': None, 'Carbonate Reaction Code': None, 'Carbonate Reaction Desc': None, 'Secondary Carbonates Code': None, 'Secondary Carbonates Desc': None, 'Munsell_col_moist': None, 'Hue_moist': None, 'Value_moist': None, 'Chroma_moist': None, 'Colour Moist Desc [Munsell]': None, 'Munsell_col_dry': None, 'Hue_dry': None, 'Value_dry': None, 'Chroma_dry': None, 'Colour Dry Desc \n[Munsell]': None, 'Mottling Desc': None, 'Vertic Properties': None, 'properties for classification': None, 'CLAF': None, 'LOWER LEVEL UNITS': None, 'REFERENCE GROUP': None, 'CLAV': None, 'ALT PRID': None, 'Consistence Dry Code': None, 'Consistence Dry Desc': None, 'Consistence Moist Code': None, 'Consistence Moist Desc': None, 'Consistence Wet - Stickiness Code': None, 'Consistence Wet - Stickiness  Desc': None, 'Consistence Wet - Plasticity Code': None, 'Consistence Wet - Plasticity Desc': None, 'Porosity Class Code': None, 'Porosity Class Desc': None, 'Porosity Class %': None, 'Voids Type Code': None, 'Voids Type Desc': None, 'Voids Size Class': None, 'Voids Size Desc': None, 'Voids Size mm': None, 'Voids Abundance Class': None, 'Voids Abundance Desc': None, 'Voids Abundance Number': None, 'Coatings Nature Code': None, 'Coatings Nature Desc': None, 'Coatings Form Code': None, 'Coatings Form Desc': None, 'Coatings Location Code': None, 'Coatings Location Desc': None, 'Cementation /  Compaction Nature Code': None, 'Cementation / Compaction Nature Desc': None, 'Cementation /  Compaction Continuity Code': None, 'Cementation / Compaction Continuity Desc': None, 'Cementation /  Compaction Fabric Code': None, 'Cementation / Compaction Fabric Desc': None, 'Mineral Concentrations Nature Code': None, 'Mineral Concentrations Nature Desc': None, 'Mineral Concentrations Abundance Code': None, 'Mineral Concentrations Abundance Desc': None, 'Mineral Concentrations Abundance %': None, 'Mineral Concentrations Size Code': None, 'Mineral Concentrations Size Desc': None, 'Mineral Concentrations Shape Code': None, 'Mineral Concentrations Shape Desc': None, 'Mineral Concentrations Hardness Code': None, 'Mineral Concentrations Hardness Desc': None, 'Roots Abundance Code': None, 'Roots Abundance Desc': None, 'Roots Abundance No': None, 'Roots Diameter Code': None, 'Roots Diameter Desc': None, 'Roots Diameter mm': None, 'Biological Features Code': None, 'Biological Features Desc': None, 'Notes': None, '': None}
+
+Row 3:
+{'PRID': 'AMP-1S.S.16s', 'HONU': 1, 'Dataset': 'AMP', 'Latitude': -23.7852, 'Longitude': 15.0801, 'Hor thickness cm': 20, 'Upper Depth cm': 0, 'Lower Depth cm': 20, 'Diagnostic Horizon / Property / Material Code': None, 'Diagnostic Horizon': None, 'Diagnostic Property': None, 'Diagnostic Material': 'Mineral', 'Qualifier': 'Ochric', 'Horizon Code Short': None, 'Horizon Code Original': None, 'Subordinate Horizon Code': None, 'Lithology of R/C': None, 'Horizon Transition Distinctness Code': None, 'Horizon Transition Distinctness Desc': None, 'Horizon Transition Distinctness cm': None, 'Horizon Transition Topography Code': None, 'Horizon Transition Topography Desc': None, 'Structure Type Code': None, 'Structure Type Desc': None, 'Structure Strength Code': None, 'Structure Strength Desc': None, 'Structure Size Code': None, 'Structure Size Desc': None, 'Coarse Fragments Abundance Code': None, 'Coarse Fragments Abundance Desc': None, 'Coarse Fragments Abundance %': None, 'Coarse Fragments Size Code': None, 'Coarse Fragments Size Desc': None, 'Coarse Fragments Size mm': None, 'Course Fragments Shape Code': None, 'Coarse Fragments Shape Desc': None, 'Coarse Fragments Degree of Weathering': None, 'Coarse Fragments Type': None, 'Drainage Code': None, 'Drainage Desc': None, 'Field Texture Code': None, 'Field Texture Desc': None, 'Carbonate Estimate  %.1': None, 'Carbonate Reaction Code': None, 'Carbonate Reaction Desc': None, 'Secondary Carbonates Code': None, 'Secondary Carbonates Desc': None, 'Munsell_col_moist': None, 'Hue_moist': None, 'Value_moist': None, 'Chroma_moist': None, 'Colour Moist Desc [Munsell]': None, 'Munsell_col_dry': None, 'Hue_dry': None, 'Value_dry': None, 'Chroma_dry': None, 'Colour Dry Desc \n[Munsell]': None, 'Mottling Desc': None, 'Vertic Properties': None, 'properties for classification': None, 'CLAF': None, 'LOWER LEVEL UNITS': None, 'REFERENCE GROUP': None, 'CLAV': None, 'ALT PRID': None, 'Consistence Dry Code': None, 'Consistence Dry Desc': None, 'Consistence Moist Code': None, 'Consistence Moist Desc': None, 'Consistence Wet - Stickiness Code': None, 'Consistence Wet - Stickiness  Desc': None, 'Consistence Wet - Plasticity Code': None, 'Consistence Wet - Plasticity Desc': None, 'Porosity Class Code': None, 'Porosity Class Desc': None, 'Porosity Class %': None, 'Voids Type Code': None, 'Voids Type Desc': None, 'Voids Size Class': None, 'Voids Size Desc': None, 'Voids Size mm': None, 'Voids Abundance Class': None, 'Voids Abundance Desc': None, 'Voids Abundance Number': None, 'Coatings Nature Code': None, 'Coatings Nature Desc': None, 'Coatings Form Code': None, 'Coatings Form Desc': None, 'Coatings Location Code': None, 'Coatings Location Desc': None, 'Cementation /  Compaction Nature Code': None, 'Cementation / Compaction Nature Desc': None, 'Cementation /  Compaction Continuity Code': None, 'Cementation / Compaction Continuity Desc': None, 'Cementation /  Compaction Fabric Code': None, 'Cementation / Compaction Fabric Desc': None, 'Mineral Concentrations Nature Code': None, 'Mineral Concentrations Nature Desc': None, 'Mineral Concentrations Abundance Code': None, 'Mineral Concentrations Abundance Desc': None, 'Mineral Concentrations Abundance %': None, 'Mineral Concentrations Size Code': None, 'Mineral Concentrations Size Desc': None, 'Mineral Concentrations Shape Code': None, 'Mineral Concentrations Shape Desc': None, 'Mineral Concentrations Hardness Code': None, 'Mineral Concentrations Hardness Desc': None, 'Roots Abundance Code': None, 'Roots Abundance Desc': None, 'Roots Abundance No': None, 'Roots Diameter Code': None, 'Roots Diameter Desc': None, 'Roots Diameter mm': None, 'Biological Features Code': None, 'Biological Features Desc': None, 'Notes': None, '': None}
+
+Row 4:
+{'PRID': 'AMP-1T.S.16s', 'HONU': 1, 'Dataset': 'AMP', 'Latitude': -23.7834, 'Longitude': 15.0804, 'Hor thickness cm': 20, 'Upper Depth cm': 0, 'Lower Depth cm': 20, 'Diagnostic Horizon / Property / Material Code': None, 'Diagnostic Horizon': None, 'Diagnostic Property': None, 'Diagnostic Material': 'Mineral', 'Qualifier': 'Ochric', 'Horizon Code Short': None, 'Horizon Code Original': None, 'Subordinate Horizon Code': None, 'Lithology of R/C': None, 'Horizon Transition Distinctness Code': None, 'Horizon Transition Distinctness Desc': None, 'Horizon Transition Distinctness cm': None, 'Horizon Transition Topography Code': None, 'Horizon Transition Topography Desc': None, 'Structure Type Code': None, 'Structure Type Desc': None, 'Structure Strength Code': None, 'Structure Strength Desc': None, 'Structure Size Code': None, 'Structure Size Desc': None, 'Coarse Fragments Abundance Code': None, 'Coarse Fragments Abundance Desc': None, 'Coarse Fragments Abundance %': None, 'Coarse Fragments Size Code': None, 'Coarse Fragments Size Desc': None, 'Coarse Fragments Size mm': None, 'Course Fragments Shape Code': None, 'Coarse Fragments Shape Desc': None, 'Coarse Fragments Degree of Weathering': None, 'Coarse Fragments Type': None, 'Drainage Code': None, 'Drainage Desc': None, 'Field Texture Code': None, 'Field Texture Desc': None, 'Carbonate Estimate  %.1': None, 'Carbonate Reaction Code': None, 'Carbonate Reaction Desc': None, 'Secondary Carbonates Code': None, 'Secondary Carbonates Desc': None, 'Munsell_col_moist': None, 'Hue_moist': None, 'Value_moist': None, 'Chroma_moist': None, 'Colour Moist Desc [Munsell]': None, 'Munsell_col_dry': None, 'Hue_dry': None, 'Value_dry': None, 'Chroma_dry': None, 'Colour Dry Desc \n[Munsell]': None, 'Mottling Desc': None, 'Vertic Properties': None, 'properties for classification': None, 'CLAF': None, 'LOWER LEVEL UNITS': None, 'REFERENCE GROUP': None, 'CLAV': None, 'ALT PRID': None, 'Consistence Dry Code': None, 'Consistence Dry Desc': None, 'Consistence Moist Code': None, 'Consistence Moist Desc': None, 'Consistence Wet - Stickiness Code': None, 'Consistence Wet - Stickiness  Desc': None, 'Consistence Wet - Plasticity Code': None, 'Consistence Wet - Plasticity Desc': None, 'Porosity Class Code': None, 'Porosity Class Desc': None, 'Porosity Class %': None, 'Voids Type Code': None, 'Voids Type Desc': None, 'Voids Size Class': None, 'Voids Size Desc': None, 'Voids Size mm': None, 'Voids Abundance Class': None, 'Voids Abundance Desc': None, 'Voids Abundance Number': None, 'Coatings Nature Code': None, 'Coatings Nature Desc': None, 'Coatings Form Code': None, 'Coatings Form Desc': None, 'Coatings Location Code': None, 'Coatings Location Desc': None, 'Cementation /  Compaction Nature Code': None, 'Cementation / Compaction Nature Desc': None, 'Cementation /  Compaction Continuity Code': None, 'Cementation / Compaction Continuity Desc': None, 'Cementation /  Compaction Fabric Code': None, 'Cementation / Compaction Fabric Desc': None, 'Mineral Concentrations Nature Code': None, 'Mineral Concentrations Nature Desc': None, 'Mineral Concentrations Abundance Code': None, 'Mineral Concentrations Abundance Desc': None, 'Mineral Concentrations Abundance %': None, 'Mineral Concentrations Size Code': None, 'Mineral Concentrations Size Desc': None, 'Mineral Concentrations Shape Code': None, 'Mineral Concentrations Shape Desc': None, 'Mineral Concentrations Hardness Code': None, 'Mineral Concentrations Hardness Desc': None, 'Roots Abundance Code': None, 'Roots Abundance Desc': None, 'Roots Abundance No': None, 'Roots Diameter Code': None, 'Roots Diameter Desc': None, 'Roots Diameter mm': None, 'Biological Features Code': None, 'Biological Features Desc': None, 'Notes': None, '': None}
+
+Row 5:
+{'PRID': 'AMP-2l.S.16s', 'HONU': 1, 'Dataset': 'AMP', 'Latitude': -23.813233, 'Longitude': 14.9889, 'Hor thickness cm': 20, 'Upper Depth cm': 0, 'Lower Depth cm': 20, 'Diagnostic Horizon / Property / Material Code': None, 'Diagnostic Horizon': None, 'Diagnostic Property': None, 'Diagnostic Material': 'Mineral', 'Qualifier': 'Ochric', 'Horizon Code Short': None, 'Horizon Code Original': None, 'Subordinate Horizon Code': None, 'Lithology of R/C': None, 'Horizon Transition Distinctness Code': None, 'Horizon Transition Distinctness Desc': None, 'Horizon Transition Distinctness cm': None, 'Horizon Transition Topography Code': None, 'Horizon Transition Topography Desc': None, 'Structure Type Code': None, 'Structure Type Desc': None, 'Structure Strength Code': None, 'Structure Strength Desc': None, 'Structure Size Code': None, 'Structure Size Desc': None, 'Coarse Fragments Abundance Code': None, 'Coarse Fragments Abundance Desc': None, 'Coarse Fragments Abundance %': None, 'Coarse Fragments Size Code': None, 'Coarse Fragments Size Desc': None, 'Coarse Fragments Size mm': None, 'Course Fragments Shape Code': None, 'Coarse Fragments Shape Desc': None, 'Coarse Fragments Degree of Weathering': None, 'Coarse Fragments Type': None, 'Drainage Code': None, 'Drainage Desc': None, 'Field Texture Code': None, 'Field Texture Desc': None, 'Carbonate Estimate  %.1': None, 'Carbonate Reaction Code': None, 'Carbonate Reaction Desc': None, 'Secondary Carbonates Code': None, 'Secondary Carbonates Desc': None, 'Munsell_col_moist': None, 'Hue_moist': None, 'Value_moist': None, 'Chroma_moist': None, 'Colour Moist Desc [Munsell]': None, 'Munsell_col_dry': None, 'Hue_dry': None, 'Value_dry': None, 'Chroma_dry': None, 'Colour Dry Desc \n[Munsell]': None, 'Mottling Desc': None, 'Vertic Properties': None, 'properties for classification': None, 'CLAF': None, 'LOWER LEVEL UNITS': None, 'REFERENCE GROUP': None, 'CLAV': None, 'ALT PRID': None, 'Consistence Dry Code': None, 'Consistence Dry Desc': None, 'Consistence Moist Code': None, 'Consistence Moist Desc': None, 'Consistence Wet - Stickiness Code': None, 'Consistence Wet - Stickiness  Desc': None, 'Consistence Wet - Plasticity Code': None, 'Consistence Wet - Plasticity Desc': None, 'Porosity Class Code': None, 'Porosity Class Desc': None, 'Porosity Class %': None, 'Voids Type Code': None, 'Voids Type Desc': None, 'Voids Size Class': None, 'Voids Size Desc': None, 'Voids Size mm': None, 'Voids Abundance Class': None, 'Voids Abundance Desc': None, 'Voids Abundance Number': None, 'Coatings Nature Code': None, 'Coatings Nature Desc': None, 'Coatings Form Code': None, 'Coatings Form Desc': None, 'Coatings Location Code': None, 'Coatings Location Desc': None, 'Cementation /  Compaction Nature Code': None, 'Cementation / Compaction Nature Desc': None, 'Cementation /  Compaction Continuity Code': None, 'Cementation / Compaction Continuity Desc': None, 'Cementation /  Compaction Fabric Code': None, 'Cementation / Compaction Fabric Desc': None, 'Mineral Concentrations Nature Code': None, 'Mineral Concentrations Nature Desc': None, 'Mineral Concentrations Abundance Code': None, 'Mineral Concentrations Abundance Desc': None, 'Mineral Concentrations Abundance %': None, 'Mineral Concentrations Size Code': None, 'Mineral Concentrations Size Desc': None, 'Mineral Concentrations Shape Code': None, 'Mineral Concentrations Shape Desc': None, 'Mineral Concentrations Hardness Code': None, 'Mineral Concentrations Hardness Desc': None, 'Roots Abundance Code': None, 'Roots Abundance Desc': None, 'Roots Abundance No': None, 'Roots Diameter Code': None, 'Roots Diameter Desc': None, 'Roots Diameter mm': None, 'Biological Features Code': None, 'Biological Features Desc': None, 'Notes': None, '': None}
+
+Row 6:
+{'PRID': 'AMP-2T.S.16s', 'HONU': 1, 'Dataset': 'AMP', 'Latitude': -23.814, 'Longitude': 14.9914, 'Hor thickness cm': 20, 'Upper Depth cm': 0, 'Lower Depth cm': 20, 'Diagnostic Horizon / Property / Material Code': None, 'Diagnostic Horizon': None, 'Diagnostic Property': None, 'Diagnostic Material': 'Mineral', 'Qualifier': 'Ochric', 'Horizon Code Short': None, 'Horizon Code Original': None, 'Subordinate Horizon Code': None, 'Lithology of R/C': None, 'Horizon Transition Distinctness Code': None, 'Horizon Transition Distinctness Desc': None, 'Horizon Transition Distinctness cm': None, 'Horizon Transition Topography Code': None, 'Horizon Transition Topography Desc': None, 'Structure Type Code': None, 'Structure Type Desc': None, 'Structure Strength Code': None, 'Structure Strength Desc': None, 'Structure Size Code': None, 'Structure Size Desc': None, 'Coarse Fragments Abundance Code': None, 'Coarse Fragments Abundance Desc': None, 'Coarse Fragments Abundance %': None, 'Coarse Fragments Size Code': None, 'Coarse Fragments Size Desc': None, 'Coarse Fragments Size mm': None, 'Course Fragments Shape Code': None, 'Coarse Fragments Shape Desc': None, 'Coarse Fragments Degree of Weathering': None, 'Coarse Fragments Type': None, 'Drainage Code': None, 'Drainage Desc': None, 'Field Texture Code': None, 'Field Texture Desc': None, 'Carbonate Estimate  %.1': None, 'Carbonate Reaction Code': None, 'Carbonate Reaction Desc': None, 'Secondary Carbonates Code': None, 'Secondary Carbonates Desc': None, 'Munsell_col_moist': None, 'Hue_moist': None, 'Value_moist': None, 'Chroma_moist': None, 'Colour Moist Desc [Munsell]': None, 'Munsell_col_dry': None, 'Hue_dry': None, 'Value_dry': None, 'Chroma_dry': None, 'Colour Dry Desc \n[Munsell]': None, 'Mottling Desc': None, 'Vertic Properties': None, 'properties for classification': None, 'CLAF': None, 'LOWER LEVEL UNITS': None, 'REFERENCE GROUP': None, 'CLAV': None, 'ALT PRID': None, 'Consistence Dry Code': None, 'Consistence Dry Desc': None, 'Consistence Moist Code': None, 'Consistence Moist Desc': None, 'Consistence Wet - Stickiness Code': None, 'Consistence Wet - Stickiness  Desc': None, 'Consistence Wet - Plasticity Code': None, 'Consistence Wet - Plasticity Desc': None, 'Porosity Class Code': None, 'Porosity Class Desc': None, 'Porosity Class %': None, 'Voids Type Code': None, 'Voids Type Desc': None, 'Voids Size Class': None, 'Voids Size Desc': None, 'Voids Size mm': None, 'Voids Abundance Class': None, 'Voids Abundance Desc': None, 'Voids Abundance Number': None, 'Coatings Nature Code': None, 'Coatings Nature Desc': None, 'Coatings Form Code': None, 'Coatings Form Desc': None, 'Coatings Location Code': None, 'Coatings Location Desc': None, 'Cementation /  Compaction Nature Code': None, 'Cementation / Compaction Nature Desc': None, 'Cementation /  Compaction Continuity Code': None, 'Cementation / Compaction Continuity Desc': None, 'Cementation /  Compaction Fabric Code': None, 'Cementation / Compaction Fabric Desc': None, 'Mineral Concentrations Nature Code': None, 'Mineral Concentrations Nature Desc': None, 'Mineral Concentrations Abundance Code': None, 'Mineral Concentrations Abundance Desc': None, 'Mineral Concentrations Abundance %': None, 'Mineral Concentrations Size Code': None, 'Mineral Concentrations Size Desc': None, 'Mineral Concentrations Shape Code': None, 'Mineral Concentrations Shape Desc': None, 'Mineral Concentrations Hardness Code': None, 'Mineral Concentrations Hardness Desc': None, 'Roots Abundance Code': None, 'Roots Abundance Desc': None, 'Roots Abundance No': None, 'Roots Diameter Code': None, 'Roots Diameter Desc': None, 'Roots Diameter mm': None, 'Biological Features Code': None, 'Biological Features Desc': None, 'Notes': None, '': None}
+
+=================================================================
+WORKSHEET: Metadata
+=================================================================
+
+COLUMN HEADERS:
+1. DATASET
+2. NUMBER
+3. DATE
+4. CRS
+5. DESCRIPTION
+6. DISTRIBUTION MAP
+7. SURVEY OR PROJECT
+8. SURVEYOR, [PROJECT LEADER]
+9. OWNER, CONTACT
+10. REFERENCE
+11. NOTES
+12. HYPERLINK
+
+Possible coordinate columns: ['SURVEY OR PROJECT', 'SURVEYOR, [PROJECT LEADER]', 'HYPERLINK']
+Possible identifier columns: []
+
+SAMPLE RECORDS:
+
+Row 2:
+{'DATASET': 'AMP\n\nAMP-NA\n\nAMP-NDLS', 'NUMBER': '62\n\n108\n\n9', 'DATE': '\n\n\n\n05/2018', 'CRS': 'WGS84; geographic', 'DESCRIPTION': 'georeferenced\ntopsoil samples\nper depth class: 0-20 cm \n4 x 50g sub-samples, 0-20cm depth, per 50m x 50m quadrat on each side of road, every app. 50 km to determine soil microbiome', 'DISTRIBUTION MAP': None, 'SURVEY OR PROJECT': 'African Soil Microbial Genomics Project', 'SURVEYOR, [PROJECT LEADER]': 'Don Cowan', 'OWNER, CONTACT': 'Centre for Microbial Ecology and Genomics, University of Pretoria\n(+27) 12 420 5873, www.up.ac.za/CMEG', 'REFERENCE': "Wild, S. (2016). Mapping Africa's soil microbiome. Nature Vol 539, p. 152, 10 Nov 2016 (general information)", 'NOTES': 'METHODS:\nTexture (Bouyoucos hydrometer method), pH(water)(1:2.5), pH (CaCl2) (0.01M; 1:2.5), oxidisable carbon (dichromate oxidation; Walkley-Black method), exchangeable and soluble Na, K, Ca, Mg,Al,Fe, Mn, P (Mehlich No 3; ICP-AEZ), total soil N (Dumas method; catalysed high temperature combustion)', 'HYPERLINK': ''}
+
+Row 3:
+{'DATASET': 'AO', 'NUMBER': 69, 'DATE': '10/2000', 'CRS': 'WGS84; geographic', 'DESCRIPTION': 'georeferenced \nsite and augering descriptions \n69 Site & soil profile descriptions\nanalytical data for 30 samples\nper genetic horizon', 'DISTRIBUTION MAP': None, 'SURVEY OR PROJECT': 'MAWF-AEZ Auao-Oanob Conservancy', 'SURVEYOR, [PROJECT LEADER]': 'Josephath Kutuahupira, Heiner Mouton, [Marina Coetzee]', 'OWNER, CONTACT': 'MAWRD/MAWF/MAWLR/MAWFLR\nAnalyses: Albertha Sipapo, Agriclab, MAWFLR, Alberta.Sipapo@mawlr.gov.na, +264 61 208 7073\nSurvey: Josephath Kutuahupira, MAWFLR, josephath_tjeripo@yahoo.co.uk\nPrivate Bag 13184, Windhoek', 'REFERENCE': 'Kutuahupira, J.K., Mouton, H.D. (2006b). Soils Report: Auas-Oanob Conservancy. Internal report, Agro-ecological Zoning Project, Ministry of Agriculture, Water and Forestry. Windhoek, Namibia.', 'NOTES': '', 'HYPERLINK': ''}
+
+Row 4:
+{'DATASET': 'BIOTA', 'NUMBER': 257, 'DATE': '2009', 'CRS': 'WGS84; geographic', 'DESCRIPTION': 'georeferenced \nper 3 depth classes: 0-10 cm, 10-30 cm, 30-60 cm\nsoil profile descriptions \nanalytical data\n1 landscape and 1 profile photo per point\nfrom 13 BIOTA Observatories\nnested plots on each observatory, randomly placed across a square kilometre', 'DISTRIBUTION MAP': None, 'SURVEY OR PROJECT': 'BIOTA Project', 'SURVEYOR, [PROJECT LEADER]': 'Andreas Petersen', 'OWNER, CONTACT': 'BIOTA Southern Africa\ncontact@biota-africa.org, \nNorbert Jürgens (overall BIOTA Project Coordinator) Norbert.Juergens@t-online.de, \nAlexander Gröngröft (soils coordinator?) Alexander.Groengroeft@uni-hamburg.de, \nAndreas Peterson (PhD student at the time), A.Petersen@ifb.uni-hamburg.de, \nAnnette Eschenbach (Soil Institute) Annette.Eschenbach@uni-hamburg.de', 'REFERENCE': 'Petersen, A. (2008). Pedodiversity of southern African drylands. PhD dissertation. University of Hamburg, Germany.', 'NOTES': '', 'HYPERLINK': 'https://www.biota-africa.org/dataaccess_list_ba.php?Page_ID=L600_02&datalist_id=2'}
+
+Row 5:
+{'DATASET': 'DAM', 'NUMBER': 28, 'DATE': '1995', 'CRS': 'Schwarzeck; geographic', 'DESCRIPTION': 'georeferenced \nsite and soil profile descriptions \nanalytical data\nper genetic horizon', 'DISTRIBUTION MAP': None, 'SURVEY OR PROJECT': 'Rural Water Supply Project, Southern Kunene Region', 'SURVEYOR, [PROJECT LEADER]': 'Sophie Simmonds & T.J.M. Forbes Irving', 'OWNER, CONTACT': 'Africare (done by Interconsult  Namibia (Pty)Ltd for Africare)\nSophie Simmonds, sophie@geonamibia.net', 'REFERENCE': 'Simmonds, S.E.B.,  Forbes Irving, T.J.M. 1995. Soils Assessment and Land Evaluation. Report prepared by Interconsult Namibia (Pty) Ltd for Aricare, for Rural Water Suppply Maintenance Project in Southern Kunene Region, Namibia.', 'NOTES': 'Soils assessement & land evaluation for Rural Water Supply Project, Southern Kunene Region, 1995', 'HYPERLINK': ''}
+
+Row 6:
+{'DATASET': 'DOR', 'NUMBER': 59, 'DATE': '2004', 'CRS': 'WGS84; geographic', 'DESCRIPTION': 'georeferenced \naugerings \nsoil profile descriptions \nanalytical data\nper genetic horizon', 'DISTRIBUTION MAP': None, 'SURVEY OR PROJECT': 'MAWF-AEZ QLPP', 'SURVEYOR, [PROJECT LEADER]': 'Josephath Kutuahupira, Heiner Mouton, Heleon Beukes', 'OWNER, CONTACT': 'MAWRD/MAWF/MAWLR/MAWFLR\nAnalyses: Albertha Sipapo, Agriclab, MAWFLR, Alberta.Sipapo@mawlr.gov.na, +264 61 208 7073\nSurvey: Josephath Kutuahupira, MAWFLR, josephath_tjeripo@yahoo.co.uk\nPrivate Bag 13184, Windhoek', 'REFERENCE': 'Kutuahupira J.T., Mouton, H.D. (2006a). Soil survey under the pilot project ‘Quantification of Land Production Potential’. Unpublished report of the AEZ Programme, Ministry of Agriculture, Water and Forestry, Windhoek, Namibia. ', 'NOTES': '', 'HYPERLINK': ''}

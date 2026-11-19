@@ -1,0 +1,33 @@
+BOREMAN GROUNDWATER DATA AUDIT
+==================================================
+
+Original records: 30143
+Valid coordinate records: 30143
+Invalid coordinate records: 0
+Records within 100 km: 2279
+
+Available fields:
+
+- Source
+- ID
+- LONGITUDE
+- LATITUDE
+- ELEVATION
+- SAMPLE_NAM
+- SAMPLING_D
+- TOTAL_DISS
+- SULPHATE_A
+- FLUORIDE_A
+- NITRATE_AS
+- T
+- S
+- F
+- NO3
+- WQ
+- Multiple_D
+
+Data limitations:
+- Units need verification.
+- Sampling dates need verification.
+- Censored measurements must be preserved.
+- Repeated borehole records need review.

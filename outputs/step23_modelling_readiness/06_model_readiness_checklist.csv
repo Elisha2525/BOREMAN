@@ -1,0 +1,10 @@
+readiness_item,status,evidence_or_action
+Source record traceability,PASS,Unique source_row_number retained for every input record.
+Namibia local timestamps,PASS,Timestamps parsed in Africa/Windhoek; date grouping cross-checked.
+Plateau observations separated,PASS,Plateau-review observations labelled separately; not deleted.
+Review flags retained,PASS,"Zero, negative, humidity-range, IQR, abrupt-change and duplicate flags retained."
+Chronological split proposal,PROPOSED,Date-block split only; requires review before model use.
+Ground-truth target labels,NOT_PROVIDED,Sensor-only data does not establish a supervised target or verified water-quality class.
+Independent laboratory/reference measurements,NOT_PROVIDED,Obtain calibrated reference or laboratory measurements before claiming predictive accuracy.
+Sensor calibration and field maintenance log,NOT_PROVIDED,"Confirm sensor model, calibration dates, maintenance, installation and field-testing periods."
+External validation period/site,NOT_PROVIDED,A separate time period or location is needed to test generalisation.

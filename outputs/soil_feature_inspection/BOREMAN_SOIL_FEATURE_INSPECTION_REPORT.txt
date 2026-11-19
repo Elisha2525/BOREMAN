@@ -1,0 +1,240 @@
+BOREMAN - SOIL FEATURE INSPECTION
+=================================================================
+This report inspects source data without modifying it.
+
+
+DATASET: profiles
+-----------------------------------------------------------------
+File: BOREMAN_OKAHANDJA_SOIL_PROFILES.csv
+Rows: 439
+Columns: 107
+PRID column: PRID
+HONU column: None
+Dataset column: Dataset
+
+Dataset distribution:
+  BIOTA: 89
+  LandPKS: 77
+  NAM NSS: 66
+  AO: 41
+  JAN: 41
+  NH: 41
+  OVI: 36
+  GIZ-Bush-SOC: 17
+  KH: 14
+  LDN: 8
+  AMP-NA: 4
+  SASSCAL: 3
+  TWO NSS: 1
+  MAWF-AEZ MISC: 1
+PRID: 439 populated; 439 unique
+
+Potentially relevant soil columns:
+  - Latitude
+  - Longitude
+  - Elevation m 
+GPS
+  - Elevation m
+SRTM
+  - WRB2015 Reclassification RSG 
+  - WRB2015 Reclassification Principal Qualifiers 
+  - WRB2015 Reclassification Supplementary Qualifiers
+  - Slope Gradient Class 
+  - Slope Form Vert
+  - Slope Form Hor
+  - Slope Gradient 
+Measured %
+  - Slope Gradient Desc
+  - Slope % SRTM
+  - Drainage density
+  - Erosion Area Affected Code
+  - Erosion Area Affected %
+  - Surface Sealing Thickness Code
+  - Surface Sealing Thickness mm
+  - Surface Sealing Thickness Desc
+  - Bleached Sand Code
+  - Bleached Sand %
+  - Bleached Sand Desc
+  - Parent Material
+  - Lithology
+  - Drainage Desc
+  - Drainage Code
+  - Geology
+  - Effective Depth
+  - Depth Class
+
+DATASET: lab_horizons
+-----------------------------------------------------------------
+File: BOREMAN_OKAHANDJA_SOIL_HORIZONS.csv
+Rows: 1,172
+Columns: 109
+PRID column: PRID
+HONU column: HONU
+Dataset column: Dataset
+
+Dataset distribution:
+  BIOTA: 253
+  LandPKS: 176
+  NAM NSS: 175
+  NH: 159
+  JAN: 115
+  AO: 98
+  OVI: 90
+  KH: 52
+  GIZ-Bush-SOC: 17
+  LDN: 16
+  SASSCAL: 14
+  AMP-NA: 4
+  MAWF-AEZ MISC: 2
+  TWO NSS: 1
+PRID: 1,172 populated; 438 unique
+HONU: 1,172 populated; 10 unique
+
+Potentially relevant soil columns:
+  - Latitude
+  - Longitude
+  - Hor thickness cm [contains >]
+  - Upper Depth cm [contains >]
+  - Lower Depth cm [contains >]
+  - Hor thickness cm 
+  - Upper Depth cm 
+  - Lower Depth cm 
+  - Dominant Sand Grade Code
+  - Dominant Sand Grade Desc
+  - Sand %
+< 53 µm 
+(SDTO)
+  - Silt % 
+[2-53µm]
+(STPC)
+  - Clay % 
+[< 2 µm] 
+(CLPC)
+  - Silt + Clay %
+  - Texture  Code 
+(PSCL)
+  - Texture  Desc
+  - Bulk Density kg/dm3
+  - pH CaCl2 (PHCA) [2 soil:5 CaCl2 suspension]
+  - pH water (PHAQ)
+  - pH water other lab
+  - pH KCl (PHKC)
+  - Electrical Conductivity µS/cm [2 soil:5 water suspension] (EL25)
+  - Electrical Conductivity dS/m [2 soil:5 water suspension] (EL25)
+  - Electrical Conductivity µS/cm [Saturated Paste Extract] (ELCO)
+  - Electrical Conductivity dS/m [Saturated Paste Extract] (ELCO)
+  - Chloride % [Extractable]
+  - Sulfate %
+  - Soluble carbonate meq/l (SCO3)
+  - Total Carbonate Equivalent g/kg
+(TCEQ)
+  - Carbonate Estimate  %
+  - Exchangeable Calcium\
+cmol(+)/kg 
+(EXCA)
+  - Exchangeable Magnesium
+cmol(+)/kg 
+(EXMG)
+  - Exchangeable Potassium
+cmol(+)/kg 
+(EXCK)
+  - Exchangeable Sodium
+cmol(+)/kg 
+(EXNA)
+  - CEC Effective 
+cmol(+)/kg
+[Sum of Exchangeable Bases]
+  - CEC Measured 
+cmol(+)/kg 
+
+  - Base Saturation Estimate 
+%
+[from pHwater]
+  - Base Saturation 
+% 
+[CECeffective/CECmeasured]
+  - Total Nitrogen  mg/kg
+(TOTN)
+  - Total Nitrogen  g/kg
+(TOTN) Kjeldahl
+  - Total Nitrogen %
+
+  - Total Phosphorus mg/kg [Mehlich #3, ICP-AES]
+  - Phosphorus [Olsen] mg/kg
+  - Organic Carbon % LOI
+  - Organic Carbon % WB
+  - Organic Carbon g/kg WB
+  - Porosity Measured
+  - EC (1:5)
+mS/m
+
+DATASET: field_horizons
+-----------------------------------------------------------------
+File: BOREMAN_OKAHANDJA_SOIL_FIELD_HORIZONS.csv
+Rows: 1,172
+Columns: 116
+PRID column: PRID
+HONU column: HONU
+Dataset column: Dataset
+
+Dataset distribution:
+  BIOTA: 253
+  LandPKS: 176
+  NAM NSS: 175
+  NH: 159
+  JAN: 115
+  AO: 98
+  OVI: 90
+  KH: 52
+  GIZ-Bush-SOC: 17
+  LDN: 16
+  SASSCAL: 14
+  AMP-NA: 4
+  MAWF-AEZ MISC: 2
+  TWO NSS: 1
+PRID: 1,172 populated; 438 unique
+HONU: 1,172 populated; 10 unique
+
+Potentially relevant soil columns:
+  - Latitude
+  - Longitude
+  - Hor thickness cm 
+  - Upper Depth cm 
+  - Lower Depth cm 
+  - Lithology of R/C
+  - Horizon Transition Topography Code
+  - Horizon Transition Topography Desc
+  - Structure Type Code
+  - Structure Type Desc
+  - Structure Strength Code
+  - Structure Strength Desc
+  - Structure Size Code
+  - Structure Size Desc
+  - Drainage Code
+  - Drainage Desc
+  - Field Texture Code
+  - Field Texture Desc
+  - Carbonate Estimate  %.1
+  - Carbonate Reaction Code
+  - Carbonate Reaction Desc
+  - Secondary Carbonates Code
+  - Secondary Carbonates Desc
+  - Porosity Class Code
+  - Porosity Class Desc
+  - Porosity Class %
+  - Roots Abundance Code
+  - Roots Abundance Desc
+  - Roots Abundance No
+  - Roots Diameter Code
+  - Roots Diameter Desc
+  - Roots Diameter mm
+
+
+OUTPUT FILES
+=================================================================
+01_SOIL_COLUMN_INVENTORY.csv
+02_SOIL_COLUMN_COVERAGE.csv
+03_SOIL_COLUMN_SAMPLE_VALUES.csv
+04_POTENTIAL_SOIL_FEATURES.csv
+
+IMPORTANT: Numeric parsing is an inspection only. It does not confirm measurement units, scientific validity, or suitability for groundwater prediction.

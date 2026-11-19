@@ -1,0 +1,208 @@
+======================================================================
+BOREMAN OKAHANDJA SOIL DATA VALIDATION REPORT
+======================================================================
+Generated: 2026-11-04 00:36:11.649582
+
+1. DATASET COUNTS
+----------------------------------------------------------------------
+Soil profiles: 439
+Laboratory horizons: 1,172
+Field horizons: 1,172
+
+2. PROFILE IDENTIFIERS
+----------------------------------------------------------------------
+Profiles with usable PRID: 439
+Profiles with duplicate PRID rows: 0
+Lab horizons without matching profile: 0
+Field horizons without matching profile: 0
+Lab horizons missing PRID: 0
+Field horizons missing PRID: 0
+
+3. COORDINATE QUALITY
+----------------------------------------------------------------------
+Profiles with valid numeric coordinates: 439
+Profiles within approximate Namibia coordinate range: 439
+Note: Namibia range check is a plausibility check, not CRS verification.
+
+4. COORDINATE REFERENCE SYSTEMS
+----------------------------------------------------------------------
+AMP-NA | NO MATCHING METADATA | 4
+AO | WGS84; geographic | 41
+BIOTA | WGS84; geographic | 89
+GIZ-Bush-SOC | WGS84; geographic | 17
+JAN | WGS84; geographic | 41
+KH | Schwarzeck; geographic | 14
+LDN | WGS84; geographic | 8
+LandPKS | WGS84; geographic | 77
+MAWF-AEZ MISC | WGS84; geographic | 1
+NAM NSS | Schwarzeck; geographic | 66
+NH | Schwarzeck; geographic | 41
+OVI | WGS84; geographic | 36
+SASSCAL | WGS84; geographic | 3
+TWO NSS | Schwarzeck; geographic | 1
+
+5. HORIZON LINKAGE
+----------------------------------------------------------------------
+Lab horizons with a matching profile: 1,172
+Field horizons with a matching profile: 1,172
+Profiles with equal lab and field horizon counts: 439
+
+6. LABORATORY MEASUREMENT COVERAGE
+----------------------------------------------------------------------
+Hor thickness cm [contains >]: 921 numeric (78.58%)
+Hor thickness cm : 921 numeric (78.58%)
+Silt + Clay %: 541 numeric (46.16%)
+Sand %
+< 53 µm 
+(SDTO): 541 numeric (46.16%)
+Organic Carbon g/kg WB: 504 numeric (43.0%)
+Organic Carbon % WB: 504 numeric (43.0%)
+Electrical Conductivity dS/m [2 soil:5 water suspension] (EL25): 473 numeric (40.36%)
+Electrical Conductivity µS/cm [2 soil:5 water suspension] (EL25): 473 numeric (40.36%)
+Silt % 
+[2-53µm]
+(STPC): 291 numeric (24.83%)
+Clay % 
+[< 2 µm] 
+(CLPC): 291 numeric (24.83%)
+pH water (PHAQ): 270 numeric (23.04%)
+Carbonate Estimate  %: 269 numeric (22.95%)
+Total Nitrogen  mg/kg
+(TOTN): 254 numeric (21.67%)
+pH CaCl2 (PHCA) [2 soil:5 CaCl2 suspension]: 254 numeric (21.67%)
+Total Nitrogen  g/kg
+(TOTN) Kjeldahl: 254 numeric (21.67%)
+Total Nitrogen %
+: 254 numeric (21.67%)
+Ca mg/kg [Extractable; 1M NH4acetate, AAS] (SOCA): 223 numeric (19.03%)
+K mg/kg [Extractable; 1M NH4acetate, AAS] (SOLK): 220 numeric (18.77%)
+Mg mg/kg [Extractable; 1M NH4acetate, AAS] (SOMG): 220 numeric (18.77%)
+Na mg/kg [Extractable; 1M NH4acetate, AAS] (SONA): 218 numeric (18.6%)
+P2O5 mg/kg
+[Olsen; P x 2.291]: 216 numeric (18.43%)
+Phosphorus [Olsen] mg/kg: 216 numeric (18.43%)
+Bulk Density kg/dm3: 203 numeric (17.32%)
+CEC Measured 
+cmol(+)/kg 
+: 118 numeric (10.07%)
+CEC Effective 
+cmol(+)/kg
+[Sum of Exchangeable Bases]: 66 numeric (5.63%)
+Exchangeable Sodium
+cmol(+)/kg 
+(EXNA): 66 numeric (5.63%)
+Base Saturation 
+% 
+[CECeffective/CECmeasured]: 66 numeric (5.63%)
+Exchangeable Calcium\
+cmol(+)/kg 
+(EXCA): 66 numeric (5.63%)
+Exchangeable Magnesium
+cmol(+)/kg 
+(EXMG): 66 numeric (5.63%)
+Exchangeable Potassium
+cmol(+)/kg 
+(EXCK): 65 numeric (5.55%)
+Cl mg/kg [Extractable] (SOCL): 25 numeric (2.13%)
+Electrical Conductivity dS/m [Saturated Paste Extract] (ELCO): 25 numeric (2.13%)
+Electrical Conductivity µS/cm [Saturated Paste Extract] (ELCO): 25 numeric (2.13%)
+SSO4 ppm: 25 numeric (2.13%)
+Total Carbonate Equivalent g/kg
+(TCEQ): 17 numeric (1.45%)
+Organic Carbon % LOI: 17 numeric (1.45%)
+Al mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]: 4 numeric (0.34%)
+Soluble carbonate meq/l (SCO3): 4 numeric (0.34%)
+Mn mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]: 4 numeric (0.34%)
+Total Phosphorus mg/kg [Mehlich #3, ICP-AES]: 4 numeric (0.34%)
+Fe mg/kg [Exchangeable & Soluble; Mehlich #3, ICP-AES]: 4 numeric (0.34%)
+pH KCl (PHKC): 0 numeric (0.0%)
+Texture  Desc: 0 numeric (0.0%)
+Dominant Sand Grade Code: 0 numeric (0.0%)
+Dominant Sand Grade Desc: 0 numeric (0.0%)
+Texture  Code 
+(PSCL): 0 numeric (0.0%)
+Na % [Exchangeable & Soluble; Mehlich #3, ICP-AES]: 0 numeric (0.0%)
+K % [Exchangeable & Soluble; Mehlich #3, ICP-AES]: 0 numeric (0.0%)
+Total P unknown method & unit: 0 numeric (0.0%)
+Gypsum 
+g/kg
+(GYPS): 0 numeric (0.0%)
+Ca % [Exchangeable & Soluble; Mehlich #3, ICP-AES]: 0 numeric (0.0%)
+Mg % [Exchangeable & Soluble; Mehlich #3, ICP-AES]: 0 numeric (0.0%)
+Fe_ox mg/g
+acid-oxalate extr: 0 numeric (0.0%)
+Al_ox mg/g
+acid-oxalate extr: 0 numeric (0.0%)
+Al
+mg/kg?
+: 0 numeric (0.0%)
+B
+mg/kg?
+: 0 numeric (0.0%)
+Cu
+mg/kg?
+: 0 numeric (0.0%)
+Fe
+mg/kg?
+: 0 numeric (0.0%)
+Mn
+mg/kg?
+: 0 numeric (0.0%)
+P  
+mg/kg?: 0 numeric (0.0%)
+S  
+mg/kg?
+: 0 numeric (0.0%)
+Zn
+mg/kg?
+: 0 numeric (0.0%)
+CaCO3
+g/kg: 0 numeric (0.0%)
+inorgC
+g/kg: 0 numeric (0.0%)
+totC
+g/kg: 0 numeric (0.0%)
+orgC
+g/kg
+CNS analyser: 0 numeric (0.0%)
+exchH
+cmol(-)/kg: 0 numeric (0.0%)
+exchAl
+cmol(-)/kg: 0 numeric (0.0%)
+exchAcid
+cmol(+)/kg: 0 numeric (0.0%)
+totCd mg/kg
+EPA 6010C:2007: 0 numeric (0.0%)
+totPb mg/kg
+EPA 6010C:2007: 0 numeric (0.0%)
+totV mg/kg
+EPA  6020A:2007: 0 numeric (0.0%)
+totHg mg/kg
+EPA  6020A:2007: 0 numeric (0.0%)
+totCr mg/kg
+EPA 6010C:2007: 0 numeric (0.0%)
+totCo mg/kg
+EPA 6010C:2007: 0 numeric (0.0%)
+totNi mg/kg
+EPA 6010C:2007: 0 numeric (0.0%)
+totCu mg/kg
+EPA 6010C:2007: 0 numeric (0.0%)
+totZn mg/kg
+EPA 6010C:2007: 0 numeric (0.0%)
+totAs mg/kg
+EPA  6020A:2007: 0 numeric (0.0%)
+totSb mg/kg
+EPA  6020A:2007: 0 numeric (0.0%)
+
+7. VALIDATION NOTES
+----------------------------------------------------------------------
+- Coordinate values have not been transformed between CRS systems.
+- Dataset metadata must be reviewed before spatial distance calculations.
+- Soil measurements must not be treated as groundwater measurements.
+- Horizon rows are not independent soil profiles.
+- Numeric coverage does not establish scientific suitability.
+- No records have been deleted or chemically modified by this script.
+
+OUTPUT FOLDER
+C:\Users\mayan\OneDrive\Documents\water-quality-dashboard\water-quality-dashboard\outputs\soil_validation
+======================================================================

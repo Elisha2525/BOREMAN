@@ -1,0 +1,4 @@
+split,date_count,start_date,end_date,record_count,percentage_of_primary_candidates
+TRAIN,11,2026-10-04,2026-10-14,11948,69.252
+VALIDATION,2,2026-10-15,2026-10-16,2800,16.229
+TEST,8,2026-10-17,2026-10-29,2505,14.519

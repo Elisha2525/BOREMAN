@@ -1,0 +1,33 @@
+BOREMAN STEP 18 INVESTIGATION REPORT
+=======================================================
+
+total_original_observations: 58121
+valid_timestamp_records: 58120
+invalid_timestamp_records: 1
+confirmed_testing_records: 6682
+constant_plateau_segments: 24
+constant_plateau_records: 30430
+zero_tds_records: 322
+negative_tds_records: 0
+humidity_outside_0_100_records: 2
+significant_time_gaps: 4
+median_sampling_interval_minutes: 1.002
+timezone_source: Asia/Kolkata
+timezone_target: Africa/Windhoek
+
+DATA CLASSIFICATION
+-------------------------------------------------------
+SUSPECT_CONSTANT_PLATEAU: 30430
+VALID_CANDIDATE: 20842
+CONFIRMED_TEST: 6682
+SUSPECT_ZERO_TDS: 166
+INVALID_TIMESTAMP: 1
+
+IMPORTANT NOTES
+-------------------------------------------------------
+All original observations are preserved.
+Confirmed testing observations are classified separately.
+Constant-value plateaus are flagged for investigation, not automatically rejected.
+Zero TDS readings are retained.
+No missing-value imputation or resampling was performed.
+All analysis timestamps use Africa/Windhoek timezone.

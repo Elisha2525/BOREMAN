@@ -1,0 +1,9 @@
+deployment_gate,evidence_or_requirement,status
+Forecast target meaning,"TDS, humidity and temperature are sensor readings; forecasts are not water-safety classifications.",REQUIRED
+Test temporal coverage,"Only 3 distinct TEST origin dates observed: 2026-10-17, 2026-10-18, 2026-10-24.",BLOCKER_FOR_GENERAL_DEPLOYMENT
+Walk-forward stability,Step 37 shows model performance varies by target and horizon; retain persistence where it is competitive.,REVIEWED_WITH_LIMITATIONS
+Sensor calibration/reference,No independent reference-meter or laboratory validation is established by these forecasting outputs.,REQUIRED
+Plateau and data quality,Earlier steps identified extensive constant-plateau records and review flags; live quality monitoring must remain visible.,REQUIRED
+Operational monitoring,"Log forecast, actual reading, horizon, model version, input timestamp and missing/stale-input status.",REQUIRED
+Fallback,"Use persistence when model inputs are missing, stale, out of supported range or feature history is incomplete.",REQUIRED
+Automatic water-safety decision,Do not classify water as safe/unsafe from these forecasts or TDS alone.,NOT_APPROVED

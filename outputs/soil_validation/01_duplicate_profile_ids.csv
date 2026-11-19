@@ -1,0 +1,12 @@
+PRID,Dataset,PRID Let,PRID Dig,ALT PRID,"Date 
+(YYYY-MM-DD)","Date 
+(DD-Mon-YY)","Date 
+(DD/MM/YYYY)",Year,Month,Day,Coordinate Reference System,Latitude,Longitude,"Elevation m 
+GPS","Elevation m
+SRTM",Country ID,Data Origin,Surveyor(s),Status,Profile Classification Original,Profile Classification Original Code ,Classification System,WRB2015 Reclassification RSG ,WRB2015 Reclassification Principal Qualifiers ,WRB2015 Reclassification Supplementary Qualifiers,WRB Classification by S Nambambi,Degree Square,Quarter Degree Square,Farm No ,Farm Name ,Location,"Diagnostic Horizon / 
+Property / Material",Present Weather Code,Present Weather Desc,Past Weather Code,Past Weather Desc,"Soil Temperature Regime
+Code",Soil Temperature Regime Desc,"Soil Moisture Regime 
+Code","Soil Moisture Regime 
+Desc",Slope Gradient Class ,Slope Form Vert,Slope Form Hor,"Slope Gradient 
+Measured %",Slope Gradient Desc,"Gradient % (for landform) 
+from SRTM",Slope % SRTM,Relief m/km,Drainage density,Present Land Use Code,Present land Use Desc,Past Land Use Code,Past Land Use Desc,Grazer Type,Human Influence Code,Human Influence Desc,Rock Outcrops Abundance/Cover Code,Rock Outcrops Cover %,Rock Outcrops Cover Desc,Rock Outcrops - m between,Rock Outcrops Type,Coarse Surface Fragments Cover Code,Coarse Surface Fragments Cover %,Coarse Surface Fragments Cover Desc,Coarse Surface Fragments Size Code,Coarse Surface Fragments Size cm,Coarse Surface Fragments Size Desc,Surface Coarse Surface Fragments Type,Erosion Type Code,Erosion Type,Erosion Area Affected Code,Erosion Area Affected %,Erosion Degree Code,Erosion Degree Desc,Erosion Status Code,Erosion Status Desc,Surface Sealing Thickness Code,Surface Sealing Thickness mm,Surface Sealing Thickness Desc,Surface Sealing Hardness Code,Surface Sealing Hardness Desc,Surface Cracks Width cm,Surface Cracks Width Code,Distance Between Surface Cracks  (m),Salt (Surface Salinity),Bleached Sand Code,Bleached Sand %,Bleached Sand Desc,Flooded >2 weeks/a,Major Landform Code (2nd level) ,Major Landform Desc,Minor Landform desc,Position code,Position Desc,Vegetation,Land Cover,Parent Material,Lithology,Drainage Desc,Drainage Code,Geology,Effective Depth,Depth Class,Biological activity,Notes,DISTANCE_FROM_OKAHANDJA_KM,_PRID

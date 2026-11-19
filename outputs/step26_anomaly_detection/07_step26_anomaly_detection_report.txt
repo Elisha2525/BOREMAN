@@ -1,0 +1,39 @@
+BOREMAN STEP 26 - ISOLATION FOREST ANOMALY DETECTION REPORT
+====================================================================
+Input records: 51,437
+Output records: 51,437
+Unique source row numbers: 51,437
+Complete-feature records scored: 50,546
+Records not scored due to missing model features: 891
+
+MODEL FITTING
+Algorithm: IsolationForest
+Training group: PRIMARY_CANDIDATE_NO_CURRENT_REVIEW_FLAGS
+Training split: TRAIN
+Complete training records: 11,838
+Features: tds_current, humidity_current, Temperature_current, tds_deviation_from_previous_5_mean, humidity_deviation_from_previous_5_mean, Temperature_deviation_from_previous_5_mean
+Estimators: 300
+Contamination: 0.0100
+Random state: 42
+Anomaly score threshold: 0.6034938412
+
+SCORING SUMMARY
+Alerts across all scored groups: 479
+Alerts within primary candidates: 166
+
+INTERPRETATION AND LIMITATIONS
+- The model was fitted only on complete primary-candidate TRAIN records.
+- Primary VALIDATION and TEST records were scored, not used for fitting.
+- Secondary and plateau groups were scored for exploratory review only.
+- Primary candidates are not verified normal ground truth.
+- Anomaly alerts indicate statistical unusualness, not confirmed sensor faults.
+- No verified fault/event labels are available; precision, recall, F1 and accuracy cannot be claimed.
+- The 1% contamination setting is an initial modelling threshold, not measured anomaly prevalence.
+- No source records were deleted and no missing features were imputed.
+- All original sensor values and quality flags are retained.
+
+INTEGRITY CHECKS
+Row count preserved: PASSED
+Source row identity preserved: PASSED
+Missing-feature rows retained without predictions: PASSED
+Training restricted to primary TRAIN split: PASSED

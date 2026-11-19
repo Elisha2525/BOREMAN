@@ -1,0 +1,14 @@
+metric,value
+total_original_observations,58121
+all_observations_output,58121
+environmental_candidate_records,51437
+confirmed_testing_excluded,6682
+suspect_observations,30597
+invalid_timestamp_records,1
+constant_plateau_records,30430
+zero_tds_records,322
+negative_tds_records,0
+invalid_humidity_records,2
+missing_sensor_value_records,0
+eligible_records_with_warnings,30596
+records_with_no_current_quality_flags,20841

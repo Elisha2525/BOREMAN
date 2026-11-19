@@ -1,0 +1,42 @@
+BOREMAN STEP 37 - WALK-FORWARD FORECASTING FEATURE ABLATION
+==================================================================================
+Input supervised rows read: 62891
+TRAIN supervised rows used: 42951
+TRAIN origin dates verified: 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-11, 2026-10-12, 2026-10-13, 2026-10-14
+Metrics generated: 144
+Prediction rows generated: 294384
+
+FOLD DESIGN (Step 32 chronological windows)
+- FOLD_1: train origins 2026-10-04 to 2026-10-08; validation 2026-10-09 to 2026-10-10
+- FOLD_2: train origins 2026-10-04 to 2026-10-10; validation 2026-10-11 to 2026-10-12
+- FOLD_3: train origins 2026-10-04 to 2026-10-12; validation 2026-10-13 to 2026-10-14
+
+CONFIGURATIONS
+- PERSISTENCE: origin sensor reading as future forecast.
+- TARGET_HISTORY_ONLY: target sensor's current/history features plus clock and sampling features.
+- TARGET_PLUS_OTHER_CURRENT: target history plus current readings from the other two sensors.
+- FULL_SENSOR_HISTORY: current, change, rate, lag and rolling-history features from all three sensors plus clock/sampling features.
+
+VALIDATION SAFEGUARDS
+- Only Step 27 supervised rows with proposed_temporal_split == TRAIN are used.
+- Step 32 three expanding-window folds are reproduced.
+- Training samples are purged when target timestamp reaches the validation period start.
+- Ridge alpha is selected using an inner chronological split within each outer training window.
+- Imputation and standardisation are fitted inside each training pipeline only.
+- The final Step 27 VALIDATION and TEST partitions are not used.
+- No model is selected for deployment from this analysis alone.
+
+METRIC INTERPRETATION
+- Lower MAE and RMSE are better; higher R-squared is better.
+- Compare feature configurations against persistence and across all three folds.
+- Small fold counts and non-stationary sensor behaviour limit generalisation claims.
+- Sensor correlations do not establish causation or measurement accuracy.
+
+OUTPUTS
+- 01_walkforward_feature_ablation_metrics.csv
+- 02_aggregate_feature_ablation_metrics.csv
+- 03_model_leaders_by_target_horizon.csv
+- 04_ridge_alpha_selection.csv
+- 05_feature_configuration_dictionary.csv
+- 06_walkforward_predictions.csv
+- 07_step37_feature_ablation_report.txt

@@ -1,0 +1,28 @@
+BOREMAN STEP 21 - TEMPORAL BEHAVIOUR AND SENSOR STABILITY
+====================================================================
+Input: outputs\step20_environmental_validation\02_all_candidates_with_statistical_flags.csv
+Input records: 51,437
+Valid Namibia timestamps: 51,437
+Duplicate timestamp records: 2
+Records flagged for abrupt changes: 1,205
+Constant plateau segments (minimum 30 records): 24
+Records preserved: 51,437
+
+Sampling intervals (minutes):
+Count: 51,436
+Median: 1.0
+Maximum: 13.018066666666666
+
+Abrupt change thresholds:
+     sensor  baseline_nonzero_change_count  baseline_difference_median  baseline_difference_mad  review_lower_threshold  review_upper_threshold  abrupt_change_review_count                                                 threshold_method              flagging_interval_rule
+        tds                          20291                       -0.01                     0.53               -4.724668                4.704668                         378 Non-zero changes, intervals 0-5 min; median +/- 6 * 1.4826 * MAD Only intervals > 0 and <= 5 minutes
+   humidity                          18835                        0.03                     0.21               -1.838076                1.898076                         586 Non-zero changes, intervals 0-5 min; median +/- 6 * 1.4826 * MAD Only intervals > 0 and <= 5 minutes
+Temperature                          17434                       -0.01                     0.04               -0.365824                0.345824                         502 Non-zero changes, intervals 0-5 min; median +/- 6 * 1.4826 * MAD Only intervals > 0 and <= 5 minutes
+
+Interpretation:
+- Duplicate timestamps and abrupt changes are review flags, not automatic errors.
+- Abrupt-change thresholds use non-zero consecutive changes with intervals > 0 and <= 5 minutes.
+- Constant plateaus are excluded from the abrupt-change baseline so they cannot force MAD to zero.
+- A constant plateau is not proof of sensor malfunction.
+- No records were deleted or imputed.
+- All time-based summaries use Africa/Windhoek.

@@ -1,0 +1,13 @@
+horizon_minutes,target,best_test_MAE_model_descriptive_only,best_test_MAE
+5,Temperature,Ridge,0.1774700659949128
+5,humidity,Ridge,0.7632738067967473
+5,tds,Persistence,1.5778090575275392
+15,Temperature,Ridge,0.4482254650754428
+15,humidity,Ridge,1.5924837488966357
+15,tds,Persistence,3.324030654515327
+30,Temperature,Ridge,0.773148965993862
+30,humidity,Ridge,2.595072807912541
+30,tds,Persistence,5.443539635438745
+60,Temperature,Ridge,1.1861105753561527
+60,humidity,Ridge,3.528764229660419
+60,tds,Persistence,7.931172014260251

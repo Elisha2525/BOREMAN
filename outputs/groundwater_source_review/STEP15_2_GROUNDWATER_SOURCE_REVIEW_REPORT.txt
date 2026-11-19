@@ -1,0 +1,33 @@
+BOREMAN – STEP 15.2 GROUNDWATER OUTLIER AND SOURCE REVIEW
+
+Input records: 2,279
+Unique groundwater record IDs: 2279
+
+SOURCE COUNTS
+GW_Source
+GROWAS              2257
+Namwater P-Drive      21
+Namwater               1
+
+PARAMETER REVIEW
+parameter  valid_records    q1  median      q3  lower_fence  upper_fence  flagged_records  flagged_percent
+      TDS           2279 450.5   655.0 1007.75     -385.375     1843.625              233            10.22
+ Sulphate           2279  14.0    42.0  129.00     -158.500      301.500              292            12.81
+ Fluoride           2276   0.4     0.6    1.00       -0.500        1.900              155             6.81
+  Nitrate           1940   1.0     4.5   12.50      -16.250       29.750              235            12.11
+
+ZERO VALUES
+parameter
+Fluoride     15
+Nitrate     267
+Sulphate     12
+TDS           5
+
+IMPORTANT INTERPRETATION RULES
+- IQR flags are statistical review indicators, not confirmed measurement errors.
+- Zero values are flagged for investigation, not automatically changed or deleted.
+- The script preserves source rows and does not modify the input dataset.
+- Geographic grid summaries are descriptive bins, not proof of spatial clustering.
+- Source comparisons must account for unequal source sample sizes and possible method differences.
+- Confirm parameter units, analytical methods, detection limits and source definitions from Atlas documentation.
+- Do not interpret drinking-water compliance from these values until units and methods are verified.

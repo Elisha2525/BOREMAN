@@ -1,0 +1,631 @@
+import os
+import json
+from pathlib import Path
+from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
+from sqlalchemy.dialects.postgresql import insert as pg_insert
+import joblib
+import numpy as np
+import pandas as pd
+import requests
+from sqlalchemy import text
+
+from fastapi import FastAPI, HTTPException
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+from auth_system.database import (
+    Base as AuthBase,
+    engine as auth_engine,
+    SessionLocal,
+)
+from auth_system.router import router as auth_router
+from auth_system.models import SensorReading, Prediction
+from auth_system.config import settings as auth_settings
+from fastapi.middleware.cors import CORSMiddleware
+
+BASE_DIR = Path(__file__).resolve().parent
+FRONTEND_DIR = BASE_DIR / "frontend"
+MODEL_DIR = BASE_DIR / "models"
+MANIFEST_PATH = MODEL_DIR / "model_manifest.json"
+
+NAMIBIA_TZ = ZoneInfo("Africa/Windhoek")
+ADA_URL = "https://io.adafruit.com/api/v2/Jesica_April"
+API_KEY = os.getenv("ADAFRUIT_IO_KEY")
+
+app = FastAPI(title="BOREMAN AI API", version="1.0.0")
+AuthBase.metadata.create_all(bind=auth_engine)
+app.include_router(auth_router)
+
+if (FRONTEND_DIR / "assets").is_dir():
+    app.mount(
+        "/assets",
+        StaticFiles(directory=str(FRONTEND_DIR / "assets")),
+        name="frontend-assets",
+    )
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "http://127.0.0.1:5173",
+    "http://127.0.0.1:5174",
+    "https://boreman-frontend-lhrsxmdd.onslate.com",
+ ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+if not MANIFEST_PATH.exists():
+    raise RuntimeError(f"Model manifest not found: {MANIFEST_PATH}")
+
+with open(MANIFEST_PATH, "r", encoding="utf-8") as f:
+    MANIFEST = json.load(f)
+
+MODELS = {}
+for model_info in MANIFEST.get("models", {}).values():
+    filename = model_info["file"]
+    model_path = MODEL_DIR / filename
+    if model_path.exists():
+        MODELS[filename] = joblib.load(model_path)
+    else:
+        print(f"WARNING: Model file not found: {model_path}")
+
+
+def local_time(value):
+    return value.astimezone(NAMIBIA_TZ).isoformat()
+
+
+
+def fetch_feed(feed, limit=100):
+    if not API_KEY:
+        raise HTTPException(
+            status_code=503,
+            detail="ADAFRUIT_IO_KEY is not configured on the server.",
+        )
+
+    url = f"{ADA_URL}/feeds/{feed}/data"
+
+    try:
+        response = requests.get(
+            url,
+            headers={"X-AIO-Key": API_KEY},
+            params={"limit": limit},
+            timeout=20,
+        )
+        response.raise_for_status()
+        records = response.json()
+
+    except requests.RequestException:
+        raise HTTPException(
+            status_code=502,
+            detail=f"Unable to retrieve the {feed} sensor feed.",
+        )
+
+    rows = []
+
+    for item in records:
+        try:
+            timestamp = pd.to_datetime(item["created_at"], utc=True)
+            value = float(item["value"])
+            source_record_id = str(item["id"])
+
+            if np.isfinite(value):
+                rows.append({
+                    "timestamp": timestamp,
+                    feed: value,
+                    f"{feed}_record_id": source_record_id,
+                })
+
+        except (KeyError, TypeError, ValueError):
+            continue
+
+    if not rows:
+        raise HTTPException(
+            status_code=502,
+            detail=f"No usable readings returned for {feed}.",
+        )
+
+    return pd.DataFrame(rows).sort_values("timestamp")
+
+def get_live_history():
+    tds = fetch_feed("tds")
+    temperature = fetch_feed("temperature")
+    humidity = fetch_feed("humidity")
+
+    aligned = pd.merge_asof(
+        tds.sort_values("timestamp"),
+        temperature.sort_values("timestamp"),
+        on="timestamp",
+        direction="nearest",
+        tolerance=pd.Timedelta(seconds=2),
+    )
+
+    aligned = pd.merge_asof(
+        aligned.sort_values("timestamp"),
+        humidity.sort_values("timestamp"),
+        on="timestamp",
+        direction="nearest",
+        tolerance=pd.Timedelta(seconds=2),
+    )
+
+    aligned = aligned.dropna(
+        subset=["tds", "temperature", "humidity"]
+    ).sort_values("timestamp").reset_index(drop=True)
+
+    if aligned.empty:
+        raise HTTPException(
+            status_code=502,
+            detail="No readings could be aligned within the 2-second tolerance.",
+        )
+
+    return aligned
+
+
+
+def store_sensor_readings(history):
+    records = []
+
+    for _, row in history.iterrows():
+        for feed in ("tds", "temperature", "humidity"):
+            record_id = row.get(f"{feed}_record_id")
+            value = row.get(feed)
+
+            if pd.isna(record_id) or pd.isna(value):
+                continue
+
+            records.append({
+                "source": "Adafruit IO",
+                "feed": feed,
+                "source_record_id": str(record_id),
+                "value": float(value),
+                "recorded_at": row["timestamp"].to_pydatetime(),
+            })
+
+    if not records:
+        return 0
+
+    db = SessionLocal()
+
+    try:
+        statement = (
+            pg_insert(SensorReading)
+            .values(records)
+            .on_conflict_do_nothing(
+                constraint="uq_sensor_source_feed_record"
+            )
+            .returning(SensorReading.id)
+        )
+
+        result = db.execute(statement)
+        inserted_ids = result.scalars().all()
+
+        db.commit()
+        return len(inserted_ids)
+
+    except Exception:
+        db.rollback()
+        raise
+
+    finally:
+        db.close()
+
+
+def build_features(history):
+    df = history.copy().sort_values("timestamp").reset_index(drop=True)
+
+    local = df["timestamp"].dt.tz_convert(NAMIBIA_TZ)
+    hour_decimal = (
+        local.dt.hour + local.dt.minute / 60 + local.dt.second / 3600
+    )
+    df["hour_sin"] = np.sin(2 * np.pi * hour_decimal / 24)
+    df["hour_cos"] = np.cos(2 * np.pi * hour_decimal / 24)
+    df["weekday_sin"] = np.sin(2 * np.pi * local.dt.dayofweek / 7)
+    df["weekday_cos"] = np.cos(2 * np.pi * local.dt.dayofweek / 7)
+
+    seconds = df["timestamp"].diff().dt.total_seconds()
+    segment = []
+    current_segment = 0
+
+    for i, delta in enumerate(seconds):
+        if i == 0 or pd.isna(delta) or delta <= 0 or delta > 300:
+            current_segment += 1
+        segment.append(current_segment)
+
+    df["feature_segment_id"] = segment
+    feature_rows = []
+
+    sensor_mapping = [
+        ("tds", "tds"),
+        ("humidity", "humidity"),
+        ("temperature", "Temperature"),
+    ]
+
+    for _, group in df.groupby("feature_segment_id", sort=False):
+        group = group.copy()
+
+        for raw_sensor, feature_prefix in sensor_mapping:
+            values = group[raw_sensor]
+            previous = values.shift(1)
+
+            group[f"{feature_prefix}_current"] = values
+            group[f"{feature_prefix}_change_from_previous"] = values.diff()
+
+            elapsed = group["timestamp"].diff().dt.total_seconds() / 60
+            group[f"{feature_prefix}_rate_per_minute"] = values.diff() / elapsed
+
+            for lag in [1, 3, 5]:
+                group[f"{feature_prefix}_lag_{lag}"] = values.shift(lag)
+
+            for window in [5, 15, 30]:
+                rolling = previous.rolling(window=window, min_periods=2)
+                mean = rolling.mean()
+                group[f"{feature_prefix}_rolling_mean_previous_{window}"] = mean
+                group[f"{feature_prefix}_rolling_std_previous_{window}"] = rolling.std()
+                group[f"{feature_prefix}_deviation_from_previous_{window}_mean"] = values - mean
+
+        group["sampling_interval_minutes"] = (
+            group["timestamp"].diff().dt.total_seconds() / 60
+        )
+        feature_rows.append(group)
+
+    return pd.concat(feature_rows).sort_values("timestamp").reset_index(drop=True)
+
+
+def infer_forecasts(history):
+    features = build_features(history)
+    latest = features.iloc[-1]
+    forecasts = {}
+
+    latest_age = (
+        pd.Timestamp.now(tz="UTC") - latest["timestamp"]
+    ).total_seconds()
+
+    if latest_age > 300:
+        return forecasts, "STALE_DATA"
+
+    latest_segment = features[
+        features["feature_segment_id"] == latest["feature_segment_id"]
+    ]
+
+    if len(latest_segment) < 6:
+        return forecasts, "INSUFFICIENT_CONTINUOUS_HISTORY"
+
+    policies = MANIFEST.get("models", {})
+
+    target_mapping = [
+        ("tds", "tds"),
+        ("temperature", "Temperature"),
+        ("humidity", "humidity"),
+    ]
+
+    for target, manifest_target in target_mapping:
+        current_value = float(latest[target])
+
+        for horizon in [5, 15, 30, 60]:
+            key = f"{target}_{horizon}m"
+
+            deployment_policy = MANIFEST.get("deployment_policy", {})
+            selected_method = deployment_policy.get(manifest_target, {}).get(str(horizon), "PERSISTENCE")
+
+            if selected_method != "RIDGE_SHADOW":
+                forecasts[key] = {
+                    "value": current_value,
+                    "method": "PERSISTENCE",
+                    "label": "Persistence baseline",
+                }
+                continue
+            manifest_key = f"{manifest_target}_{horizon}m"
+            model_info = policies.get(manifest_key)
+
+            if not model_info:
+                forecasts[key] = {
+                    "value": current_value,
+                    "method": "PERSISTENCE",
+                    "label": "Persistence baseline",
+                }
+                continue
+
+            model_filename = model_info.get("file")
+            model = MODELS.get(model_filename)
+
+            if model is None:
+                forecasts[key] = {
+                    "value": None,
+                    "method": "UNAVAILABLE",
+                    "label": "Model file unavailable",
+                }
+                continue
+
+            expected_features = list(model.feature_names_in_)
+            row = {
+                name: latest[name] if name in latest.index else np.nan
+                for name in expected_features
+            }
+
+            X = pd.DataFrame([row], columns=expected_features)
+            prediction = float(model.predict(X)[0])
+
+            forecasts[key] = {
+                "value": prediction,
+                "method": "RIDGE_SHADOW",
+                "label": "Experimental model forecast",
+            }
+
+    return forecasts, "OK"
+
+
+@app.get("/")
+def root():
+    index_path = FRONTEND_DIR / "index.html"
+    if index_path.is_file():
+        return FileResponse(index_path)
+
+    return {
+        "service": "BOREMAN AI API",
+        "status": "running",
+        "version": MANIFEST.get("version"),
+    }
+
+
+@app.get("/health")
+def health():
+    return {
+        "status": "healthy",
+        "models_loaded": len(MODELS),
+        "models_expected": len(MANIFEST.get("models", {})),
+        "adafruit_configured": bool(API_KEY),
+        "version": MANIFEST.get("version"),
+    }
+
+
+@app.get("/models")
+def models():
+    return MANIFEST
+
+
+@app.get("/api/live")
+def live():
+    history = get_live_history()
+
+    stored_records = store_sensor_readings(history)
+
+    forecasts, forecast_status = infer_forecasts(history)
+
+    latest = history.iloc[-1]
+    now_utc = pd.Timestamp.now(tz="UTC")
+    age_seconds = (now_utc - latest["timestamp"]).total_seconds()
+
+    readings = []
+    for _, row in history.iterrows():
+        readings.append({
+            "timestamp": row["timestamp"].isoformat(),
+            "time": local_time(row["timestamp"].to_pydatetime()),
+            "tds": round(float(row["tds"]), 3),
+            "temperature": round(float(row["temperature"]), 3),
+            "humidity": round(float(row["humidity"]), 3),
+        })
+
+    return {
+        "source": "Adafruit IO",
+        "database": {
+        "provider": "Neon PostgreSQL",
+        "new_records_stored": stored_records,
+        "storage_enabled": True,
+       },
+        "timezone": "Africa/Windhoek",
+        "status": "LIVE" if age_seconds <= 300 else "STALE",
+        "updated_at_utc": latest["timestamp"].isoformat(),
+        "updated_at_namibia": local_time(latest["timestamp"].to_pydatetime()),
+        "age_seconds": round(age_seconds, 1),
+        "current": {
+            "tds": float(latest["tds"]),
+            "temperature": float(latest["temperature"]),
+            "humidity": float(latest["humidity"]),
+        },
+        "readings": readings,
+        "forecasts": forecasts,
+        "forecast_status": forecast_status,
+        "data_quality": {
+            "aligned_readings": len(history),
+            "alignment_tolerance_seconds": 2,
+            "interpolation_used": False,
+            "conductivity_available": False,
+        },
+        "notes": [
+            "TDS forecasts use a persistence baseline, not an AI model.",
+            "Ridge forecasts are experimental shadow predictions.",
+            "Humidity is an environmental measurement, not a direct water-quality measurement.",
+            "These readings and forecasts do not certify drinking-water safety.",
+        ],
+    }
+
+
+
+
+
+@app.get("/api/database/stats")
+def database_stats():
+    db = SessionLocal()
+
+    try:
+        total = db.execute(
+            text("SELECT COUNT(*) FROM sensor_readings")
+        ).scalar_one()
+
+        last_stored = db.execute(
+            text("SELECT MAX(stored_at) FROM sensor_readings")
+        ).scalar_one()
+
+        rows = db.execute(
+            text("""
+                SELECT feed, COUNT(*) AS record_count,
+                       MAX(recorded_at) AS latest_record
+                FROM sensor_readings
+                GROUP BY feed
+            """)
+        ).mappings().all()
+
+        feeds = {
+            "tds": {"count": 0, "latest_record": None},
+            "temperature": {"count": 0, "latest_record": None},
+            "humidity": {"count": 0, "latest_record": None},
+        }
+
+        for row in rows:
+            if row["feed"] in feeds:
+                feeds[row["feed"]] = {
+                    "count": row["record_count"],
+                    "latest_record": (
+                        row["latest_record"].isoformat()
+                        if row["latest_record"] else None
+                    ),
+                }
+
+        return {
+            "database": "Neon PostgreSQL",
+            "status": "connected",
+            "total_records": total,
+            "last_record_stored_at": (
+                last_stored.isoformat() if last_stored else None
+            ),
+            "feeds": feeds,
+        }
+
+    finally:
+        db.close()
+
+
+
+@app.get("/api/history")
+def history(limit: int = 100):
+    if limit < 1 or limit > 100:
+        raise HTTPException(status_code=400, detail="Limit must be between 1 and 100.")
+
+    data = get_live_history().tail(limit)
+    return [
+        {
+            "timestamp": row["timestamp"].isoformat(),
+            "tds": float(row["tds"]),
+            "temperature": float(row["temperature"]),
+            "humidity": float(row["humidity"]),
+        }
+        for _, row in data.iterrows()
+    ]
+
+
+
+@app.post("/api/chat")
+def chat(payload: dict):
+    question = str(payload.get("question", "")).strip()
+
+    if not question:
+        raise HTTPException(
+            status_code=400,
+            detail="Please provide a question."
+        )
+
+    context = payload.get("context") or {}
+    readings = context.get("latest_readings") or {}
+    forecasts = context.get("forecasts") or {}
+
+    query = question.lower()
+
+    tds = readings.get("tds")
+    temperature = readings.get("temperature")
+    humidity = readings.get("humidity")
+
+    def display(value, unit):
+        if value is None:
+            return "not available"
+        try:
+            return f"{float(value):.1f} {unit}"
+        except (TypeError, ValueError):
+            return "not available"
+
+    if any(word in query for word in ["hello", "hi", "hey"]):
+        answer = (
+            "Hello! I am the BOREMAN Assistant. "
+            "I can help explain sensor readings, forecasts "
+            "and water-quality monitoring data."
+        )
+
+    elif "tds" in query or "dissolved solids" in query:
+        answer = (
+            "Total dissolved solids (TDS) represent dissolved "
+            "substances measured by the sensor. The latest reading "
+            f"is {display(tds, 'ppm')}. TDS alone cannot establish "
+            "whether water is safe to drink."
+        )
+
+    elif "temperature" in query or "temp" in query:
+        answer = (
+            "The latest measured water temperature is "
+            f"{display(temperature, 'degrees C')}. "
+            "This is a sensor measurement, not a forecast."
+        )
+
+    elif "humidity" in query:
+        answer = (
+            "The latest ambient humidity reading is "
+            f"{display(humidity, '%')}. This is an environmental "
+            "measurement, not a direct water-quality measurement."
+        )
+
+    elif "conductivity" in query or " ec " in f" {query} ":
+        answer = (
+            "A separate electrical conductivity feed is not "
+            "currently connected to the BOREMAN dashboard."
+        )
+
+    elif "forecast" in query or "prediction" in query:
+        available = []
+
+        for key, item in forecasts.items():
+            if isinstance(item, dict) and item.get("value") is not None:
+                available.append(
+                    f"{key}: {item['value']} ({item.get('method', 'method unspecified')})"
+                )
+
+        if available:
+            answer = (
+                "The current experimental forecasts are:\n"
+                + "\n".join(available)
+                + "\nThese forecasts are for monitoring and do not "
+                  "certify drinking-water safety."
+            )
+        else:
+            answer = "No forecast values are currently available."
+
+    elif "source" in query or "data" in query:
+        answer = (
+            f"The current data source is {context.get('source', 'not available')}. "
+            f"The frontend has {context.get('loaded_readings', 0)} readings loaded."
+        )
+
+    else:
+        answer = (
+            "I can currently help with TDS, water temperature, "
+            "ambient humidity, forecasts, conductivity availability "
+            "and the dashboard data source. Please ask about one "
+            "of these topics."
+        )
+
+    return {
+        "status": "success",
+        "answer": answer
+    }
+
+
+@app.get("/{full_path:path}")
+def frontend_fallback(full_path: str):
+    if full_path == "api" or full_path.startswith("api/"):
+        raise HTTPException(status_code=404, detail="API endpoint not found")
+
+    index_path = FRONTEND_DIR / "index.html"
+    if not index_path.is_file():
+        raise HTTPException(status_code=404, detail="Frontend not found")
+
+    return FileResponse(index_path)

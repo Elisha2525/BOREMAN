@@ -1,0 +1,11 @@
+﻿feature,expected_source_identifier,actual_source_column,status,details
+sand_percent,sdto,"Sand %
+< 53 µm 
+(SDTO)",PASS,Expected source identifier found.
+silt_percent,stpc,"Silt % 
+[2-53µm]
+(STPC)",PASS,Expected source identifier found.
+clay_percent,clpc,"Clay % 
+[< 2 µm] 
+(CLPC)",PASS,Expected source identifier found.
+silt_clay_percent,silt + clay,Silt + Clay %,PASS,Expected source identifier found.

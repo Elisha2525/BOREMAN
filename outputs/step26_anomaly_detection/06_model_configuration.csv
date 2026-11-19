@@ -1,0 +1,14 @@
+﻿setting,value
+algorithm,IsolationForest
+training_group,PRIMARY_CANDIDATE_NO_CURRENT_REVIEW_FLAGS
+training_split,TRAIN
+training_rows_complete,11838
+n_estimators,300
+contamination,0.01
+random_state,42
+max_samples,auto
+features,"tds_current, humidity_current, Temperature_current, tds_deviation_from_previous_5_mean, humidity_deviation_from_previous_5_mean, Temperature_deviation_from_previous_5_mean"
+anomaly_score_definition,Negative of sklearn score_samples; higher means more unusual
+alert_rule,Isolation Forest prediction == -1
+threshold_score,0.6034938412499804
+ground_truth_available,No verified fault labels

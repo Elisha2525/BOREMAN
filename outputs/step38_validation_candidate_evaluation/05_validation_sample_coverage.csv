@@ -1,0 +1,5 @@
+horizon_minutes,train_after_purge,inner_train,inner_validation,outer_validation
+5,11506,9610,1896,2741
+15,11132,9294,1838,2689
+30,10607,8858,1749,2607
+60,9706,8131,1575,2435

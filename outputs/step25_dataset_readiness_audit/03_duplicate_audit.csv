@@ -1,0 +1,4 @@
+check,count
+duplicate values in source_row_number,0
+exact duplicate full rows,0
+duplicate timestamp rows (first detected timestamp column),48

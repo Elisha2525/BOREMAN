@@ -1,0 +1,44 @@
+﻿feature,source_column,total_horizons,numeric_count,missing_or_unparsed_count,numeric_coverage_percent
+sand_percent,"Sand %
+< 53 µm 
+(SDTO)",1172,541,631,46.16
+silt_percent,"Silt % 
+[2-53µm]
+(STPC)",1172,291,881,24.83
+clay_percent,"Clay % 
+[< 2 µm] 
+(CLPC)",1172,291,881,24.83
+silt_clay_percent,Silt + Clay %,1172,541,631,46.16
+bulk_density,Bulk Density kg/dm3,1172,203,969,17.32
+ph_cacl2,pH CaCl2 (PHCA) [2 soil:5 CaCl2 suspension],1172,254,918,21.67
+ph_water,pH water (PHAQ),1172,270,902,23.04
+ec_2soil5_water_us_cm,Electrical Conductivity µS/cm [2 soil:5 water suspension] (EL25),1172,473,699,40.36
+ec_2soil5_water_ds_m,Electrical Conductivity dS/m [2 soil:5 water suspension] (EL25),1172,473,699,40.36
+ec_saturated_paste_us_cm,Electrical Conductivity µS/cm [Saturated Paste Extract] (ELCO),1172,25,1147,2.13
+ec_saturated_paste_ds_m,Electrical Conductivity dS/m [Saturated Paste Extract] (ELCO),1172,25,1147,2.13
+organic_carbon,Organic Carbon % WB,1172,504,668,43.0
+total_nitrogen,"Total Nitrogen  mg/kg
+(TOTN)",1172,254,918,21.67
+carbonate_equivalent,"Total Carbonate Equivalent g/kg
+(TCEQ)",1172,17,1155,1.45
+exchangeable_calcium,"Exchangeable Calcium\
+cmol(+)/kg 
+(EXCA)",1172,66,1106,5.63
+exchangeable_magnesium,"Exchangeable Magnesium
+cmol(+)/kg 
+(EXMG)",1172,66,1106,5.63
+exchangeable_potassium,"Exchangeable Potassium
+cmol(+)/kg 
+(EXCK)",1172,65,1107,5.55
+exchangeable_sodium,"Exchangeable Sodium
+cmol(+)/kg 
+(EXNA)",1172,66,1106,5.63
+cec_effective,"CEC Effective 
+cmol(+)/kg
+[Sum of Exchangeable Bases]",1172,66,1106,5.63
+cec_measured,"CEC Measured 
+cmol(+)/kg 
+",1172,118,1054,10.07
+phosphorus_olsen,Phosphorus [Olsen] mg/kg,1172,216,956,18.43
+chloride,Chloride % [Extractable],1172,25,1147,2.13
+sulphate,Sulfate %,1172,25,1147,2.13

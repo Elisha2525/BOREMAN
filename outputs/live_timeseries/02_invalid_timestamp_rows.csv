@@ -1,0 +1,2 @@
+Timestamp,tds,humidity,Temperature,source_row_number,timestamp_parsed,flag_invalid_timestamp,flag_duplicate_timestamp,flag_tds_zero,flag_tds_45_temp_70_block,flag_humidity_202,flag_missing_sensor_value
+conductivity - September 19 2026 at 03:38AM,50.0,202.0,62.0,2,,True,False,False,False,True,False

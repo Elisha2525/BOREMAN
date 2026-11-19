@@ -1,0 +1,2 @@
+interval_count,minimum_minutes,p05_minutes,median_minutes,mean_minutes,p95_minutes,maximum_minutes,intervals_over_5_minutes,intervals_over_60_minutes
+51436,0.0,0.9594333333333334,1.0,1.001253262630583,1.0395708333333333,13.018066666666666,2,0

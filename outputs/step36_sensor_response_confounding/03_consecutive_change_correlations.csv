@@ -1,0 +1,3 @@
+relationship,consecutive_pairs,pearson_r,maximum_interval_minutes
+TDS_change_vs_temperature_change,11890,-0.6901749371503274,5
+TDS_change_vs_humidity_change,11890,0.20054219892959385,5

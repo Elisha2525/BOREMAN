@@ -1,0 +1,34 @@
+BOREMAN STEP 20 - ENVIRONMENTAL SENSOR VALIDATION
+============================================================
+Input file: outputs\step19_data_quality_control\02_environmental_candidate_dataset.csv
+Output directory: outputs\step20_environmental_validation
+Candidate rows loaded: 51,437
+Rows with valid Namibia timestamps: 51,437
+Rows with at least one IQR review flag: 4,285
+
+Timezone used for all time-based summaries: Africa/Windhoek
+Statistical outliers are review flags, not confirmed sensor errors.
+No records were deleted or imputed.
+No physical sensor limits were assumed.
+
+SENSOR SUMMARY
+     sensor  non_missing_count  missing_count  minimum     p01    p05    p25  median       mean    p75     p95    p99  maximum  standard_deviation  iqr_lower_review_threshold  iqr_upper_review_threshold  iqr_outlier_count  iqr_outlier_percent
+        tds              51437              0     0.00 18.2536 355.81 383.77  398.49 415.978634 459.55 527.530 716.89   737.85           89.155249                     270.100                     573.220               2307             4.485098
+   humidity              51437              0    16.38 20.3700  24.06  33.03   44.52  46.366517  51.87  91.620  91.92    94.55           17.206330                       4.770                      80.130               4250             8.262535
+Temperature              51437              0     9.88 13.0000  15.84  18.67   22.01  23.386478  28.92  32.562  36.54    40.83            5.469947                       3.295                      44.295                  0             0.000000
+
+CORRELATION MATRIX
+                  tds  humidity  Temperature
+tds          1.000000  0.052207    -0.029804
+humidity     0.052207  1.000000    -0.585411
+Temperature -0.029804 -0.585411     1.000000
+
+SAMPLING INTERVAL SUMMARY (minutes)
+ interval_count  minimum_minutes  p05_minutes  median_minutes  mean_minutes  p95_minutes  maximum_minutes  intervals_over_5_minutes  intervals_over_60_minutes
+          51436              0.0     0.959433             1.0      1.001253     1.039571        13.018067                         2                          0
+
+Interpretation reminder:
+- IQR flags identify values for review, not automatic rejection.
+- Correlation does not establish causation.
+- Constant plateaus and zero TDS remain in the candidate data.
+- Confirm physical operating ranges only after sensor specifications are supplied.

@@ -1,0 +1,4 @@
+sensor,baseline_nonzero_change_count,baseline_difference_median,baseline_difference_mad,review_lower_threshold,review_upper_threshold,abrupt_change_review_count,threshold_method,flagging_interval_rule
+tds,20291,-0.009999999999990905,0.5299999999999727,-4.724667999999747,4.704667999999765,378,"Non-zero changes, intervals 0-5 min; median +/- 6 * 1.4826 * MAD",Only intervals > 0 and <= 5 minutes
+humidity,18835,0.030000000000001137,0.21000000000000085,-1.8380760000000063,1.8980760000000085,586,"Non-zero changes, intervals 0-5 min; median +/- 6 * 1.4826 * MAD",Only intervals > 0 and <= 5 minutes
+Temperature,17434,-0.010000000000001563,0.03999999999999915,-0.36582399999999393,0.3458239999999908,502,"Non-zero changes, intervals 0-5 min; median +/- 6 * 1.4826 * MAD",Only intervals > 0 and <= 5 minutes

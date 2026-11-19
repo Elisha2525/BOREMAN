@@ -1,0 +1,44 @@
+BOREMAN STEP 23 - MODELLING READINESS ASSESSMENT
+============================================================
+Input file: outputs\step22_environmental_pattern_analysis\08_records_with_environmental_groups.csv
+Input records: 51,437
+Records preserved: 51,437
+Unique source records: 51,437
+Namibia date range: 2026-10-02 to 2026-11-07
+Distinct Namibia dates: 37
+
+READINESS GROUP COUNTS
+- PLATEAU_REVIEW_EXCLUDE_FROM_PRIMARY: 30,430
+- PRIMARY_CANDIDATE_NO_CURRENT_REVIEW_FLAGS: 17,253
+- SECONDARY_CANDIDATE_REVIEW_FLAGS_PRESENT: 3,754
+
+PROPOSED CHRONOLOGICAL SPLIT
+Primary candidate dates available: 21
+Split is based on chronological date blocks, not random row splitting.
+Records from the same Namibia date remain in the same split.
+This is a proposal only and must be reviewed before training.
+
+MODELLING LIMITATIONS
+- This dataset contains sensor observations, not verified target labels.
+- No supervised water-quality classification/regression target is established here.
+- Independent laboratory/reference measurements are not present in this input.
+- Sensor calibration and maintenance evidence must be collected.
+- Plateau-review records are not part of primary modelling candidates.
+- Secondary candidates remain available for sensitivity analysis.
+- No records were deleted, imputed or corrected.
+- A temporal split does not replace external/site-level validation.
+
+PRESERVATION CHECKS
+PASS: all input observations preserved.
+PASS: source_row_number remains unique.
+PASS: all records assigned to a readiness group.
+PASS: no Namibia date crosses proposed split boundaries.
+
+OUTPUT FILES
+- 01_all_records_with_readiness_labels.csv
+- 02_readiness_group_sensor_summary.csv
+- 03_readiness_and_flag_counts.csv
+- 04_daily_modelling_coverage.csv
+- 05_proposed_chronological_split.csv
+- 06_model_readiness_checklist.csv
+- 07_step23_modelling_readiness_report.txt

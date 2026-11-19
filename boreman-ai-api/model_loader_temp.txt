@@ -1,0 +1,8 @@
+MODELS = {}
+for model_info in MANIFEST.get("models", {}).values():
+    filename = model_info["file"]
+    path = MODEL_DIR / filename
+    if path.exists():
+        MODELS[filename] = joblib.load(path)
+    else:
+        print(f"WARNING: Model file not found: {path}")

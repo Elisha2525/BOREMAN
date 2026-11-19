@@ -1,0 +1,44 @@
+BOREMAN STEP 38 - VALIDATION CANDIDATE EVALUATION
+==============================================================================
+Input supervised rows read: 62891
+TRAIN rows used for fitting: 42951
+VALIDATION rows evaluated: 10472
+TRAIN dates: 2026-10-04, 2026-10-05, 2026-10-06, 2026-10-07, 2026-10-08, 2026-10-09, 2026-10-10, 2026-10-11, 2026-10-12, 2026-10-13, 2026-10-14
+VALIDATION dates: 2026-10-15, 2026-10-16
+
+PROTOCOL
+- Candidate feature configurations are carried forward from Step 37.
+- All candidate configurations are evaluated on the untouched Step 27 VALIDATION partition.
+- Step 27 TEST rows are excluded from loading and evaluation.
+- TRAIN rows are purged when target timestamp reaches the first validation origin timestamp.
+- Ridge alpha is selected using an inner chronological split within TRAIN: Oct 13-14 inner validation.
+- Ridge pipelines fit median imputation and standardisation on training data only.
+- Validation MAE ranks candidates; this is model selection, not final independent performance estimation.
+
+STEP 37 PREFERRED CANDIDATES
+- tds, 5 min: PERSISTENCE
+- tds, 15 min: PERSISTENCE
+- tds, 30 min: PERSISTENCE
+- tds, 60 min: PERSISTENCE
+- humidity, 5 min: PERSISTENCE
+- humidity, 15 min: FULL_SENSOR_HISTORY
+- humidity, 30 min: FULL_SENSOR_HISTORY
+- humidity, 60 min: PERSISTENCE
+- Temperature, 5 min: FULL_SENSOR_HISTORY
+- Temperature, 15 min: TARGET_HISTORY_ONLY
+- Temperature, 30 min: TARGET_HISTORY_ONLY
+- Temperature, 60 min: TARGET_PLUS_OTHER_CURRENT
+
+IMPORTANT
+- Do not inspect or use the final TEST partition until candidate configurations are frozen.
+- Validation results may be used to choose final candidate per target and horizon.
+- After selection, freeze features and alpha-selection procedure before final TEST evaluation.
+- Sensor readings do not establish water safety or laboratory accuracy.
+
+OUTPUTS
+- 01_validation_candidate_metrics.csv
+- 02_validation_candidate_leaders.csv
+- 03_validation_ridge_alpha_selection.csv
+- 04_validation_candidate_predictions.csv
+- 05_validation_sample_coverage.csv
+- 06_step38_validation_candidate_report.txt

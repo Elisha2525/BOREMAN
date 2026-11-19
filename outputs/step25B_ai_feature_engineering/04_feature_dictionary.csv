@@ -1,0 +1,52 @@
+feature,description,family,causal
+tds_current,Current observed tds value,current_measurement,Yes
+tds_change_from_previous,Difference from previous observation in same segment,change,Yes
+tds_rate_per_minute,Change divided by elapsed minutes,rate_of_change,Yes
+tds_lag_1,tds value 1 observations earlier in same segment,lag,Yes
+tds_lag_3,tds value 3 observations earlier in same segment,lag,Yes
+tds_lag_5,tds value 5 observations earlier in same segment,lag,Yes
+tds_rolling_mean_previous_5,"tds: mean of preceding observations, excluding current row; window=5 observations",rolling_statistics,Yes
+tds_rolling_std_previous_5,"tds: standard deviation of preceding observations, excluding current row; window=5 observations",rolling_statistics,Yes
+tds_deviation_from_previous_5_mean,tds: current value minus preceding-observation mean; window=5 observations,rolling_statistics,Yes
+tds_rolling_mean_previous_15,"tds: mean of preceding observations, excluding current row; window=15 observations",rolling_statistics,Yes
+tds_rolling_std_previous_15,"tds: standard deviation of preceding observations, excluding current row; window=15 observations",rolling_statistics,Yes
+tds_deviation_from_previous_15_mean,tds: current value minus preceding-observation mean; window=15 observations,rolling_statistics,Yes
+tds_rolling_mean_previous_30,"tds: mean of preceding observations, excluding current row; window=30 observations",rolling_statistics,Yes
+tds_rolling_std_previous_30,"tds: standard deviation of preceding observations, excluding current row; window=30 observations",rolling_statistics,Yes
+tds_deviation_from_previous_30_mean,tds: current value minus preceding-observation mean; window=30 observations,rolling_statistics,Yes
+humidity_current,Current observed humidity value,current_measurement,Yes
+humidity_change_from_previous,Difference from previous observation in same segment,change,Yes
+humidity_rate_per_minute,Change divided by elapsed minutes,rate_of_change,Yes
+humidity_lag_1,humidity value 1 observations earlier in same segment,lag,Yes
+humidity_lag_3,humidity value 3 observations earlier in same segment,lag,Yes
+humidity_lag_5,humidity value 5 observations earlier in same segment,lag,Yes
+humidity_rolling_mean_previous_5,"humidity: mean of preceding observations, excluding current row; window=5 observations",rolling_statistics,Yes
+humidity_rolling_std_previous_5,"humidity: standard deviation of preceding observations, excluding current row; window=5 observations",rolling_statistics,Yes
+humidity_deviation_from_previous_5_mean,humidity: current value minus preceding-observation mean; window=5 observations,rolling_statistics,Yes
+humidity_rolling_mean_previous_15,"humidity: mean of preceding observations, excluding current row; window=15 observations",rolling_statistics,Yes
+humidity_rolling_std_previous_15,"humidity: standard deviation of preceding observations, excluding current row; window=15 observations",rolling_statistics,Yes
+humidity_deviation_from_previous_15_mean,humidity: current value minus preceding-observation mean; window=15 observations,rolling_statistics,Yes
+humidity_rolling_mean_previous_30,"humidity: mean of preceding observations, excluding current row; window=30 observations",rolling_statistics,Yes
+humidity_rolling_std_previous_30,"humidity: standard deviation of preceding observations, excluding current row; window=30 observations",rolling_statistics,Yes
+humidity_deviation_from_previous_30_mean,humidity: current value minus preceding-observation mean; window=30 observations,rolling_statistics,Yes
+Temperature_current,Current observed Temperature value,current_measurement,Yes
+Temperature_change_from_previous,Difference from previous observation in same segment,change,Yes
+Temperature_rate_per_minute,Change divided by elapsed minutes,rate_of_change,Yes
+Temperature_lag_1,Temperature value 1 observations earlier in same segment,lag,Yes
+Temperature_lag_3,Temperature value 3 observations earlier in same segment,lag,Yes
+Temperature_lag_5,Temperature value 5 observations earlier in same segment,lag,Yes
+Temperature_rolling_mean_previous_5,"Temperature: mean of preceding observations, excluding current row; window=5 observations",rolling_statistics,Yes
+Temperature_rolling_std_previous_5,"Temperature: standard deviation of preceding observations, excluding current row; window=5 observations",rolling_statistics,Yes
+Temperature_deviation_from_previous_5_mean,Temperature: current value minus preceding-observation mean; window=5 observations,rolling_statistics,Yes
+Temperature_rolling_mean_previous_15,"Temperature: mean of preceding observations, excluding current row; window=15 observations",rolling_statistics,Yes
+Temperature_rolling_std_previous_15,"Temperature: standard deviation of preceding observations, excluding current row; window=15 observations",rolling_statistics,Yes
+Temperature_deviation_from_previous_15_mean,Temperature: current value minus preceding-observation mean; window=15 observations,rolling_statistics,Yes
+Temperature_rolling_mean_previous_30,"Temperature: mean of preceding observations, excluding current row; window=30 observations",rolling_statistics,Yes
+Temperature_rolling_std_previous_30,"Temperature: standard deviation of preceding observations, excluding current row; window=30 observations",rolling_statistics,Yes
+Temperature_deviation_from_previous_30_mean,Temperature: current value minus preceding-observation mean; window=30 observations,rolling_statistics,Yes
+hour_sin,Cyclical Namibia local hour sine,time,Yes
+hour_cos,Cyclical Namibia local hour cosine,time,Yes
+weekday_sin,Cyclical weekday sine,time,Yes
+weekday_cos,Cyclical weekday cosine,time,Yes
+sampling_interval_minutes,Interval from previous observation in same segment,sampling,Yes
+feature_segment_id,Sequence segment identifier; resets at gaps/duplicates,sequence_control,Yes

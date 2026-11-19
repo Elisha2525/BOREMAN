@@ -1,0 +1,9 @@
+required_metadata,availability_in_current_dataset,why_it_matters
+TDS sensor model and datasheet,NOT PROVIDED IN DATASET,Needed to establish temperature compensation method and range
+Temperature compensation enabled/disabled,NOT PROVIDED IN DATASET,Cannot infer compensation setting from correlations
+TDS sensor temperature coefficient / calibration setting,NOT PROVIDED IN DATASET,Needed to interpret compensated TDS/EC output
+SHT20 physical placement,NOT PROVIDED IN DATASET,"Cannot tell whether humidity/temperature represent ambient air, enclosure or another environment"
+TDS probe placement and immersion depth,NOT PROVIDED IN DATASET,Needed to assess installation and measurement conditions
+Reference EC/TDS meter readings,NOT PROVIDED IN DATASET,Needed for independent agreement / calibration assessment
+Water temperature measured at probe,NOT CONFIRMED,The Temperature column is from SHT20 context; do not assume it is water temperature
+Calibration and maintenance log,NOT PROVIDED IN DATASET,Needed to evaluate drift or maintenance-related changes

@@ -1,0 +1,37 @@
+BOREMAN STEP 32 - EXPANDING-WINDOW WALK-FORWARD BACKTEST
+======================================================================
+TRAIN supervised rows read: 42,951
+Distinct TRAIN origin dates: 11
+Fold metric rows: 108
+Alpha selection rows: 36
+
+METHOD
+- Uses TRAIN-period supervised samples only.
+- Expanding chronological history with the next two dates as validation.
+- Three folds are attempted: 5->2 dates, 7->2 dates, and 9->2 dates.
+- Training samples whose target timestamp reaches the validation cutoff are purged.
+- Ridge alpha is selected by an inner chronological validation date.
+- Ridge is refitted on the complete fold history after alpha selection.
+- Compares Ridge with persistence and linear drift.
+- Step 27 VALIDATION and TEST metrics are not used.
+- Step 27 TEST data is not read or evaluated.
+
+INTERPRETATION
+- Consistent fold performance is stronger evidence of stability than one validation window.
+- Small fold sample counts can make metrics unstable.
+- Linear drift may produce implausible values; inspect it as a diagnostic only.
+- This evaluates sensor forecasts, not water safety.
+
+MEAN FOLD MAE LEADERS
+5 min | Temperature | Ridge
+5 min | humidity | Persistence
+5 min | tds | Persistence
+15 min | Temperature | Ridge
+15 min | humidity | Ridge
+15 min | tds | Persistence
+30 min | Temperature | Ridge
+30 min | humidity | Ridge
+30 min | tds | Persistence
+60 min | Temperature | Ridge
+60 min | humidity | Persistence
+60 min | tds | Persistence

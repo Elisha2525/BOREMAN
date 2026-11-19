@@ -1,0 +1,7 @@
+dataset,sensor_1,sensor_2,pearson_correlation,records_used,interpretation_note
+ALL_ENVIRONMENTAL_CANDIDATES,tds,humidity,0.0522070157889977,51437,Association only; correlation does not establish causation.
+ALL_ENVIRONMENTAL_CANDIDATES,tds,Temperature,-0.029803786422661516,51437,Association only; correlation does not establish causation.
+ALL_ENVIRONMENTAL_CANDIDATES,humidity,Temperature,-0.5854110344528074,51437,Association only; correlation does not establish causation.
+NON_PLATEAU_CANDIDATES,tds,humidity,-0.1486104758299615,21007,Association only; correlation does not establish causation.
+NON_PLATEAU_CANDIDATES,tds,Temperature,-0.2502199203259572,21007,Association only; correlation does not establish causation.
+NON_PLATEAU_CANDIDATES,humidity,Temperature,-0.7750174940867443,21007,Association only; correlation does not establish causation.

@@ -1,0 +1,29 @@
+BOREMAN STEP 34 - REGIME-SHIFT INVESTIGATION REPORT
+========================================================================
+TRAIN supervised rows read: 42,951
+Distinct TRAIN origin dates: 11
+Walk-forward fold rows: 24,072
+
+METHOD
+- Uses TRAIN-period supervised records only.
+- Fold validation dates exactly follow Step 32: dates 6-7, 8-9 and 10-11.
+- Compares sensor distributions, correlations, engineered-feature drift,
+  source quality flags and daily sensor summaries across folds.
+- Quality flags are joined by origin source row number.
+- Repeated forecast horizons are reduced to unique origin records for flag counts.
+- No model retraining and no final TEST data use.
+
+INTERPRETATION
+- Distribution differences are descriptive and do not establish causation.
+- Correlation differences do not establish physical or causal relationships.
+- Quality flags indicate review conditions, not confirmed sensor faults.
+- The folds are overlapping expanding-window validation periods, not independent datasets.
+- This analysis concerns sensor readings, not water safety.
+
+OUTPUTS
+- 01_sensor_distributions_by_fold.csv
+- 02_sensor_correlations_by_fold.csv
+- 03_feature_drift_vs_fold1.csv
+- 04_quality_flag_composition_by_fold.csv
+- 05_daily_sensor_regime_summary.csv
+- 06_fold_coverage.csv

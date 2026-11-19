@@ -1,0 +1,43 @@
+======================================================================
+BOREMAN HORIZON PAIRING VALIDATION REPORT
+======================================================================
+Generated: 2026-11-04 00:42:15.950983
+
+INPUT COUNTS
+----------------------------------------------------------------------
+Laboratory rows: 1,172
+Field rows: 1,172
+
+IDENTIFIER QUALITY
+----------------------------------------------------------------------
+Lab rows missing PRID or HONU: 0
+Field rows missing PRID or HONU: 0
+
+DUPLICATE HORIZON KEYS
+----------------------------------------------------------------------
+Lab duplicate rows: 0
+Field duplicate rows: 0
+
+EXACT HORIZON MATCHING
+----------------------------------------------------------------------
+Unique lab horizon keys: 1,172
+Unique field horizon keys: 1,172
+Matched horizon keys: 1,172
+Lab-only horizon keys: 0
+Field-only horizon keys: 0
+
+INTERPRETATION
+----------------------------------------------------------------------
+EXACT KEY SETS MATCH
+No duplicate horizon keys found.
+
+IMPORTANT
+----------------------------------------------------------------------
+- Matching uses normalized PRID and HONU.
+- No measurements have been merged or modified.
+- Duplicate keys are reported, not automatically removed.
+- Equal key sets do not prove that measurements are scientifically equivalent.
+
+OUTPUT FOLDER
+C:\Users\mayan\OneDrive\Documents\water-quality-dashboard\water-quality-dashboard\outputs\soil_validation
+======================================================================

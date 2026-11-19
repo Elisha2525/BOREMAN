@@ -1,0 +1,33 @@
+BOREMAN STEP 33 - ROLLING-MEAN BASELINE WALK-FORWARD COMPARISON
+======================================================================
+TRAIN supervised rows: 42,951
+Metric rows: 108
+Alpha selection rows: 36
+
+METHOD
+- TRAIN-period supervised data only.
+- Three expanding chronological folds: 5->2, 7->2, 9->2 dates.
+- Purges training samples whose target timestamp reaches the outer validation cutoff.
+- Ridge alpha selected on an inner chronological validation date.
+- RollingMean5 uses the previous-five-observation mean feature already engineered in Step 25B.
+- No Step 27 VALIDATION or TEST data is used.
+- No source observations are modified or imputed.
+
+INTERPRETATION
+- Compare fold consistency as well as mean fold MAE.
+- RollingMean5 is a simple causal baseline, not a trained model.
+- This forecasts sensor readings, not water safety.
+
+MEAN FOLD MAE LEADERS
+5 min | Temperature | Ridge
+5 min | humidity | Persistence
+5 min | tds | Persistence
+15 min | Temperature | Ridge
+15 min | humidity | Ridge
+15 min | tds | Persistence
+30 min | Temperature | Ridge
+30 min | humidity | Ridge
+30 min | tds | Persistence
+60 min | Temperature | Ridge
+60 min | humidity | Persistence
+60 min | tds | Persistence

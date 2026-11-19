@@ -1,0 +1,75 @@
+BOREMAN GROUNDWATER DATA QUALITY REPORT
+=================================================================
+
+Input: C:\Users\mayan\OneDrive\Documents\water-quality-dashboard\water-quality-dashboard\outputs\BOREMAN_OKAHANDJA_100KM_GROUNDWATER.csv
+Total records: 2279
+Total columns: 18
+Exact duplicate rows: 0
+Repeated source/ID combinations: 0
+
+MISSING VALUES
+                    column  missing_count  missing_percentage
+                    Source              0                0.00
+                        ID              6                0.26
+                 LONGITUDE              0                0.00
+                  LATITUDE              0                0.00
+                 ELEVATION             47                2.06
+                SAMPLE_NAM              0                0.00
+                SAMPLING_D              5                0.22
+                TOTAL_DISS              0                0.00
+                SULPHATE_A              0                0.00
+                FLUORIDE_A              0                0.00
+                NITRATE_AS            312               13.69
+                         T              5                0.22
+                         S             12                0.53
+                         F              4                0.18
+                       NO3            334               14.66
+                        WQ              0                0.00
+                Multiple_D           2261               99.21
+distance_km_from_okahandja              0                0.00
+
+CHEMICAL PARAMETER SUMMARY
+ parameter  total_records  numeric_values  missing_values  censored_values  unparsed_values  negative_values  minimum  maximum       mean  median
+TOTAL_DISS           2279            2279               0                0                0                0      0.0  14033.0 911.679546   655.0
+SULPHATE_A           2279            2279               0                0                0                0      0.0   7015.0 152.271961    42.0
+FLUORIDE_A           2279            2279               0                0                0                3     -1.0     15.0   0.884822     0.6
+NITRATE_AS           2279            1962             312                5                0               22     -1.0    400.0  13.062238     4.2
+
+SAMPLING DATE SUMMARY
+ total_records  valid_dates  unparsed_or_missing_dates earliest_date latest_date
+          2279         2274                          5    1900-01-01  2011-02-17
+
+CLASSIFICATION DISTRIBUTION
+parameter classification  count  percentage
+        T              A   1701       74.64
+        T              B    367       16.10
+        T              C    193        8.47
+        T              D     13        0.57
+        T                     5        0.22
+        S              A   1592       69.86
+        S              B    383       16.81
+        S              C    241       10.57
+        S              D     51        2.24
+        S                    12        0.53
+        F              B   1147       50.33
+        F              A    876       38.44
+        F              D    133        5.84
+        F              C    119        5.22
+        F                     4        0.18
+      NO3              A   1152       50.55
+      NO3              C    491       21.54
+      NO3                   334       14.66
+      NO3              B    272       11.94
+      NO3              D     30        1.32
+       WQ              B   1083       47.52
+       WQ              C    670       29.40
+       WQ              A    320       14.04
+       WQ              D    206        9.04
+
+IMPORTANT NOTES
+
+Original chemical measurements are preserved.
+Censored measurements are flagged, not replaced.
+Negative values are flagged, not deleted.
+Repeated IDs are not automatically duplicates.
+Units and classification thresholds need verification.

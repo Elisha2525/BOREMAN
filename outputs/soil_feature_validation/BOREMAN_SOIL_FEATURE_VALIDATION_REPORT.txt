@@ -1,0 +1,34 @@
+BOREMAN - STEP 13 SOIL FEATURE VALIDATION REPORT
+======================================================================
+Horizon records: 1,172
+Profile records: 439
+Depth records: 1,172
+
+VALIDATION STATUS COUNTS
+----------------------------------------------------------------------
+PASS: 15
+REVIEW: 2
+
+IMPORTANT SCIENTIFIC NOTES
+----------------------------------------------------------------------
+1. Source mapping is checked against expected source identifiers.
+2. Range flags are screening indicators, not proof of errors.
+3. EC conversion uses 1 dS/m = 1000 µS/cm.
+4. Soil EC methods are kept separate.
+5. Sand particle-size definition requires source documentation.
+6. Silt + clay consistency is checked independently.
+7. No missing values are imputed.
+8. No soil measurements are treated as groundwater measurements.
+9. No prediction model is trained in this step.
+
+OUTPUT FILES
+----------------------------------------------------------------------
+01_SOURCE_MAPPING_VALIDATION.csv
+02_FEATURE_RANGE_SUMMARY.csv
+03_UNUSUAL_VALUE_FLAGS.csv
+04_EC_UNIT_VALIDATION.csv
+05_TEXTURE_CONSISTENCY_CHECK.csv
+06_DEPTH_VALIDATION.csv
+07_GROUNDWATER_SOIL_LINK_CHECK.csv (if applicable)
+08_FEATURE_MISSINGNESS.csv
+09_VALIDATION_RESULTS.csv

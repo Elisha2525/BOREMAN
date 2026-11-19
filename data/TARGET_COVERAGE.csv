@@ -1,0 +1,5 @@
+target,records,available_numeric_values,missing_numeric_values,coverage_percent
+GW_TOTAL_DISS_NUMERIC,2279,2279,0,100.0
+GW_SULPHATE_A_NUMERIC,2279,2279,0,100.0
+GW_FLUORIDE_A_NUMERIC,2279,2276,3,99.87
+GW_NITRATE_AS_NUMERIC,2279,1940,339,85.13

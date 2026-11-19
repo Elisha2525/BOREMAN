@@ -1,0 +1,76 @@
+BOREMAN – STEP 14 MODELLING-READY DATASET REPORT
+
+INPUTS
+- Groundwater quality-flagged dataset: 2,279 records
+- Engineered soil profile dataset: 439 profiles
+- Groundwater-to-soil spatial link: 2,279 records
+
+INTEGRITY CHECKS
+- Unique groundwater record IDs in link: 2,279
+- Unique soil profile IDs in engineered profile table: 439
+- Link rows with a soil profile ID: 2,279
+- Link IDs found in engineered profile table: 2,279
+- Unique soil profiles used as nearest matches: 268
+- Overall soil mean feature columns checked against profile file: 23
+- Mismatched overall mean feature columns: 0
+- Modelling-ready rows: 2,279
+- Modelling-ready columns: 88
+
+GROUNDWATER TARGET COVERAGE
+               target  records  available_numeric_values  missing_numeric_values  coverage_percent
+GW_TOTAL_DISS_NUMERIC     2279                      2279                       0            100.00
+GW_SULPHATE_A_NUMERIC     2279                      2279                       0            100.00
+GW_FLUORIDE_A_NUMERIC     2279                      2276                       3             99.87
+GW_NITRATE_AS_NUMERIC     2279                      1940                     339             85.13
+
+SOIL FEATURE COVERAGE
+                      feature  available_values  missing_values  coverage_percent  unique_soil_profiles_with_value
+            sand_percent_mean               686            1593             30.10                              115
+            silt_percent_mean               674            1605             29.57                              108
+            clay_percent_mean               674            1605             29.57                              108
+       silt_clay_percent_mean               686            1593             30.10                              115
+            bulk_density_mean               517            1762             22.69                               84
+                ph_cacl2_mean                12            2267              0.53                                7
+                ph_water_mean               664            1615             29.14                              105
+   ec_2soil5_water_us_cm_mean               643            1636             28.21                              109
+    ec_2soil5_water_ds_m_mean               643            1636             28.21                              109
+ec_saturated_paste_us_cm_mean                19            2260              0.83                                7
+ ec_saturated_paste_ds_m_mean                19            2260              0.83                                7
+          organic_carbon_mean               736            1543             32.29                              106
+          total_nitrogen_mean                12            2267              0.53                                7
+    carbonate_equivalent_mean                29            2250              1.27                                8
+    exchangeable_calcium_mean                74            2205              3.25                               23
+  exchangeable_magnesium_mean                74            2205              3.25                               23
+  exchangeable_potassium_mean                74            2205              3.25                               23
+     exchangeable_sodium_mean                74            2205              3.25                               23
+           cec_effective_mean                74            2205              3.25                               23
+            cec_measured_mean               193            2086              8.47                               52
+        phosphorus_olsen_mean               376            1903             16.50                               85
+                chloride_mean                19            2260              0.83                                7
+                sulphate_mean                19            2260              0.83                                7
+
+SPATIAL DISTANCE DISTRIBUTION
+distance_band  groundwater_records
+      0-10 KM                 1723
+     10-25 KM                  520
+     25-50 KM                   36
+
+IMPORTANT MODELLING RULES
+1. Numeric groundwater target columns are retained with their original raw values and quality flags.
+2. Missing or invalid target measurements are not imputed.
+3. Soil measurements are nearby profile-level proxies, not direct borehole measurements.
+4. A soil profile is reused for multiple boreholes. Use grouped/spatial validation so records linked
+   to the same soil profile do not leak across train and test sets.
+5. Do not use GW_WQ or derived GW_T/GW_S/GW_F/GW_NO3 fields as predictors when predicting
+   chemical concentrations. They may encode classifications derived from the target chemistry.
+6. Soil pH and soil EC are soil measurements, not groundwater pH or groundwater EC.
+7. The sand feature retains the source dataset's definition and should not be treated as a
+   conventional sand fraction or used for texture closure until source documentation confirms it.
+8. This file is a prepared dataset, not a trained model and not evidence of predictive performance.
+
+OUTPUT FILES
+- BOREMAN_OKAHANDJA_MODELLING_READY.csv
+- TARGET_COVERAGE.csv
+- SOIL_FEATURE_COVERAGE.csv
+- SPATIAL_DISTANCE_DISTRIBUTION.csv
+- STEP14_MODELLING_DATASET_REPORT.txt

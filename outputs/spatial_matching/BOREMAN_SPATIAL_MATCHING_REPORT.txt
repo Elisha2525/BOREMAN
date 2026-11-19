@@ -1,0 +1,45 @@
+======================================================================
+BOREMAN SPATIAL MATCHING REPORT
+======================================================================
+Generated: 2026-11-04 00:52:26.176698
+
+INPUT DATA
+----------------------------------------------------------------------
+Groundwater records loaded: 2,279
+Valid groundwater records: 2,279
+Invalid groundwater records: 0
+Verified soil profiles: 435
+
+MATCHING RESULTS
+----------------------------------------------------------------------
+Nearest soil matches: 2,279
+Top-five candidate rows: 11,395
+Unique soil profiles used as nearest match: 268
+
+NEAREST SOIL DISTANCE DISTRIBUTION
+----------------------------------------------------------------------
+0-10 KM: 1,723
+10-25 KM: 520
+25-50 KM: 36
+50-100 KM: 0
+OVER 100 KM: 0
+
+CUMULATIVE DISTANCE THRESHOLDS
+----------------------------------------------------------------------
+Within 10 km: 1,723 (75.6%)
+Within 25 km: 2,243 (98.42%)
+Within 50 km: 2,279 (100.0%)
+Within 100 km: 2,279 (100.0%)
+
+SCIENTIFIC LIMITATIONS
+----------------------------------------------------------------------
+- Nearest soil profile does not necessarily represent a borehole.
+- Distance alone does not establish geological similarity.
+- Soil horizons remain separate from groundwater measurements.
+- No original soil or groundwater measurements were modified.
+- No spatial matching threshold has been imposed for modelling.
+- Spatial proximity does not establish a causal relationship.
+
+OUTPUT FOLDER
+C:\Users\mayan\OneDrive\Documents\water-quality-dashboard\water-quality-dashboard\outputs\spatial_matching
+======================================================================

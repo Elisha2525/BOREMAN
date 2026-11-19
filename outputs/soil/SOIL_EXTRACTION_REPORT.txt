@@ -1,0 +1,38 @@
+BOREMAN OKAHANDJA SOIL EXTRACTION
+=======================================================
+Original site rows: 5094
+Local soil profile rows: 439
+Unique local profile IDs: 439
+Local laboratory horizon rows: 1172
+Local field horizon rows: 1172
+
+SOIL PROFILES BY DATASET
+Dataset
+BIOTA            89
+LandPKS          77
+NAM NSS          66
+JAN              41
+NH               41
+AO               41
+OVI              36
+GIZ-Bush-SOC     17
+KH               14
+LDN               8
+AMP-NA            4
+SASSCAL           3
+TWO NSS           1
+MAWF-AEZ MISC     1
+
+DISTANCE SUMMARY (KM)
+count    439.000000
+mean      60.100187
+std       25.096539
+min        4.215394
+25%       42.072673
+50%       61.347769
+75%       81.081936
+max       99.914218
+
+PROFILE LINKAGE
+Laboratory profiles not found in local site IDs: 0
+Field profiles not found in local site IDs: 0

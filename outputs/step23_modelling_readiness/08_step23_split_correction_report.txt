@@ -1,0 +1,27 @@
+BOREMAN STEP 23 - CHRONOLOGICAL SPLIT CORRECTION
+==========================================================
+Input records: 51,437
+Primary candidate records: 17,253
+Primary candidate dates: 21
+Method: chronological date blocks; whole dates stay together.
+Target proportions: 70% train, 15% validation, 15% test.
+Cut points selected by minimizing squared difference from target
+record proportions across all possible chronological date boundaries.
+
+CORRECTED SPLIT
+TRAIN: 11,948 records (69.252%), 2026-10-04 to 2026-10-14 (11 dates)
+VALIDATION: 2,800 records (16.229%), 2026-10-15 to 2026-10-16 (2 dates)
+TEST: 2,505 records (14.519%), 2026-10-17 to 2026-10-29 (8 dates)
+
+PRESERVATION CHECKS
+PASS: all source records preserved.
+PASS: source_row_number remains unique.
+PASS: only primary-candidate split labels were assigned.
+PASS: no Namibia date crosses split boundaries.
+PASS: split order is chronological.
+
+CAUTION
+The test period contains sparse primary-candidate dates after 18 October.
+The record proportions are improved, but this does not establish
+representativeness, independent validation, or model readiness.
+Ground-truth/reference labels and calibration evidence are still required.

@@ -1,0 +1,15 @@
+.boreman-auth-page{min-height:100vh;display:grid;place-items:center;background:#f2f5fa;padding:24px;color:#172b4d;font-family:Inter,system-ui,sans-serif}
+.boreman-auth-card{width:min(100%,430px);box-sizing:border-box;background:white;border:1px solid #e2e9f2;border-radius:18px;padding:32px;box-shadow:0 18px 55px #17345a12}
+.boreman-auth-card.wide{width:min(100%,900px);margin:35px auto}
+.boreman-auth-brand{display:flex;gap:12px;align-items:center;margin-bottom:28px}.boreman-auth-brand>span{width:46px;height:46px;display:grid;place-items:center;border-radius:13px;background:#2478ef;color:white;font-size:24px;font-weight:800}
+.boreman-auth-brand h1{font-size:19px;margin:0}.boreman-auth-brand small,.hint{color:#71819a;font-size:13px}
+.boreman-auth-card h2{font-size:22px;margin:0 0 5px}.boreman-auth-card label{display:block;margin-top:17px;font-size:13px;font-weight:650}
+.boreman-auth-card input{display:block;box-sizing:border-box;width:100%;margin-top:7px;padding:12px;border:1px solid #d8e1ed;border-radius:9px;font-size:14px}
+.boreman-auth-card button,.boreman-auth-top button{cursor:pointer;border:0;border-radius:8px;padding:10px 13px;font-weight:650}
+.boreman-auth-card .primary{width:100%;margin-top:22px;background:#2478ef;color:white}.boreman-auth-card .link{width:100%;margin-top:9px;background:transparent;color:#2478ef}
+.error,.success{padding:10px;border-radius:8px;font-size:13px}.error{background:#fff0f0;color:#a32626}.success{background:#ecfdf4;color:#087443}
+.boreman-auth-shell{min-height:100vh;background:#f2f5fa;color:#172b4d;font-family:Inter,system-ui,sans-serif}
+.boreman-auth-top{height:68px;background:#10243f;color:white;display:flex;justify-content:space-between;align-items:center;padding:0 24px}.boreman-auth-top small{display:block;color:#a9bad0}
+.boreman-auth-top button{margin-left:15px;background:#2478ef;color:white}.boreman-auth-row,.boreman-auth-user{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.boreman-auth-user{padding:13px 0;border-top:1px solid #e7edf4}.boreman-auth-user small{display:block;color:#71819a;margin-top:4px}
+.boreman-auth-user select{padding:8px;border:1px solid #d8e1ed;border-radius:7px}.boreman-auth-user button{background:#2478ef;color:white}.boreman-auth-user button.muted{background:#e9eff8;color:#29415f}

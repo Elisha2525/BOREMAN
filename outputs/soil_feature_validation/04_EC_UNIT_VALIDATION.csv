@@ -1,0 +1,3 @@
+﻿method,paired_count,median_absolute_difference,maximum_absolute_difference,within_1_percent_or_0_1_us_cm,outside_tolerance,status
+2 soil:5 water,473,0.0,0.0,473,0,PASS
+saturated paste,25,0.0,1.4210854715202004e-14,25,0,PASS

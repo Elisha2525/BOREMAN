@@ -1,0 +1,69 @@
+BOREMAN CLEANING AND QUALITY FLAG REPORT
+============================================================
+
+Original records: 2279
+Output records: 2279
+Records removed: 0
+
+DATE QUALITY
+----------------------------------------
+DATE_QUALITY_FLAG
+YEAR_ONLY_OR_DEFAULT_UNVERIFIED    1853
+LIKELY_PLACEHOLDER_UNVERIFIED       387
+RECORDED_DATE_PARSED                 34
+MISSING_DATE                          5
+
+IDENTIFIER QUALITY
+----------------------------------------
+IDENTIFIER_QUALITY_FLAG
+USABLE_ID     2273
+MISSING_ID       6
+
+CHEMICAL QUALITY
+----------------------------------------
+
+TOTAL_DISS
+TOTAL_DISS_QUALITY_FLAG
+VALID_NONNEGATIVE_NUMERIC    2279
+
+SULPHATE_A
+SULPHATE_A_QUALITY_FLAG
+VALID_NONNEGATIVE_NUMERIC    2279
+
+FLUORIDE_A
+FLUORIDE_A_QUALITY_FLAG
+VALID_NONNEGATIVE_NUMERIC         2276
+NEGATIVE_VALUE_UNVERIFIED_CODE       3
+
+NITRATE_AS
+NITRATE_AS_QUALITY_FLAG
+VALID_NONNEGATIVE_NUMERIC         1940
+MISSING_VALUE                      312
+NEGATIVE_VALUE_UNVERIFIED_CODE      22
+CENSORED_VALUE                       5
+
+OVERALL RECORD QUALITY
+----------------------------------------
+OVERALL_QUALITY_FLAG
+REVIEW_REQUIRED: DATE                      1906
+REVIEW_REQUIRED: DATE; NITRATE_AS           336
+NO_FLAGGED_ISSUES_IN_SELECTED_FIELDS         26
+REVIEW_REQUIRED: IDENTIFIER                   5
+REVIEW_REQUIRED: DATE; FLUORIDE_A             3
+REVIEW_REQUIRED: NITRATE_AS                   2
+REVIEW_REQUIRED: IDENTIFIER; NITRATE_AS       1
+
+CLEANING DECISIONS
+----------------------------------------
+- All original records were retained.
+- Original chemical columns were not overwritten.
+- Negative chemical values were excluded from numeric modelling columns.
+- Censored values were preserved in original columns.
+- Censored values were not converted to zero.
+- Negative values were not converted to zero.
+- 1900 and 1980 dates were flagged and excluded from clean date fields.
+- Blank identifiers were retained and flagged.
+- No original source records were deleted.
+- Units and negative-value codes still require source verification.
+
+The cleaned dataset is a quality-flagged research dataset, not yet a fully validated modelling dataset.

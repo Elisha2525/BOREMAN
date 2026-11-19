@@ -1,0 +1,39 @@
+BOREMAN STEP 29 - DISTRIBUTION-SHIFT ANALYSIS REPORT
+====================================================================
+Step 25B source rows: 51,437
+Primary-candidate rows in chronological splits: 17,253
+Step 27 supervised samples: 62,891
+Step 27 prediction rows: 59,820
+Feature variables compared: 32
+
+METHOD
+- Compares TRAIN, VALIDATION and TEST within the primary-candidate cohort.
+- Reports sensor and engineered-feature distributions, including TRAIN-relative standardized mean differences.
+- Signed RF error is prediction minus actual; positive means overprediction.
+- Prediction range checks compare RF predictions and actual targets with the TRAIN actual-value range.
+- Range exceedance is a diagnostic only; it does not establish physical invalidity.
+- No model retraining, imputation, source-row deletion or prior-output modification occurs.
+
+RANDOM FOREST TEST BIAS SUMMARY
+5 min | Temperature | n=2451 | mean signed error=0.6344 | overpredicts on average | RF MAE=0.9035 | Persistence MAE=0.1986
+5 min | humidity | n=2451 | mean signed error=-2.3064 | underpredicts on average | RF MAE=2.6669 | Persistence MAE=0.8033
+5 min | tds | n=2451 | mean signed error=8.9677 | overpredicts on average | RF MAE=9.8852 | Persistence MAE=1.5778
+15 min | Temperature | n=2414 | mean signed error=0.7741 | overpredicts on average | RF MAE=1.1521 | Persistence MAE=0.4742
+15 min | humidity | n=2414 | mean signed error=-2.9077 | underpredicts on average | RF MAE=3.7734 | Persistence MAE=1.7074
+15 min | tds | n=2414 | mean signed error=10.3135 | overpredicts on average | RF MAE=11.7854 | Persistence MAE=3.3240
+30 min | Temperature | n=2359 | mean signed error=1.1015 | overpredicts on average | RF MAE=1.5928 | Persistence MAE=0.8260
+30 min | humidity | n=2359 | mean signed error=-4.5470 | underpredicts on average | RF MAE=5.3024 | Persistence MAE=2.7975
+30 min | tds | n=2359 | mean signed error=11.9379 | overpredicts on average | RF MAE=13.6943 | Persistence MAE=5.4435
+60 min | Temperature | n=2244 | mean signed error=0.2823 | overpredicts on average | RF MAE=1.6415 | Persistence MAE=1.3560
+60 min | humidity | n=2244 | mean signed error=-5.7840 | underpredicts on average | RF MAE=6.7209 | Persistence MAE=4.0406
+60 min | tds | n=2244 | mean signed error=20.6822 | overpredicts on average | RF MAE=20.9645 | Persistence MAE=7.9312
+
+INTERPRETATION CAUTIONS
+- Distribution differences do not prove the cause of model underperformance.
+- Standardized mean differences are descriptive and can be unstable for near-zero TRAIN standard deviation.
+- The chronological TEST period is one holdout period, not external validation.
+- Sensor-reading forecasts do not establish water safety.
+
+SOURCE PRESERVATION
+- Step 25B and Step 27 files were read only.
+- No source observations were deleted, imputed or overwritten.
